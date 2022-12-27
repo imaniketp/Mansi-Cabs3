@@ -168,8 +168,7 @@
 .sidebardrop1 a, .sidebardrop2 a{
   display: flex;
   flex-direction: column;
-  font-size: medium;
-  margin-left: 2rem;
+  font-size: small;
 }
 
 .sidebar h5:hover{
@@ -179,7 +178,18 @@
   font-weight: bolder;
 }
 
-
+.sidebardrop1 div{
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 5px;
+}
+.sidebardrop2 div{
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 5px;
+}
 
 
 

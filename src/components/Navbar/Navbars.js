@@ -4,7 +4,12 @@ import { Button} from "react-bootstrap";
 import "./Navbars.css";
 import Modal from "react-bootstrap/Modal";
 import { ImFacebook } from "react-icons/im";
-import { BsCart3, BsChevronDown, BsTwitter } from "react-icons/bs";
+import { BsCardChecklist, BsCart3, BsChevronDown, BsTwitter } from "react-icons/bs";
+import { BiTrip} from "react-icons/bi";
+import { MdOutlineCreditCard, MdOutlineCreditCardOff} from "react-icons/md";
+import { GiCommercialAirplane, GiRoad} from "react-icons/gi";
+import { HiOutlineBuildingOffice2} from "react-icons/hi2";
+import { FcApproval, FcAutomotive, FcHome, FcInTransit, FcOnlineSupport, FcPortraitMode, FcReadingEbook} from "react-icons/fc";
 import { AiFillHome, AiOutlineCar, AiOutlineGooglePlus } from "react-icons/ai";
 import logo from "../../Assets/logo.png";
 import { FiMenu } from "react-icons/fi";
@@ -143,42 +148,47 @@ function Navbars() {
       <Offcanvas show={showSidebar} onHide={handleSidebarClose}>
         <div className="sidebar">
           <div className="sidebarTitle">
-            <AiFillHome className="sidebarhomeicon" />
+            <FcHome className="sidebarhomeicon" />
             <Link to="/myprofile" target='_blank'><h3>My Profile</h3></Link>
           </div>
 
           <div className="sidebarContent">
             <div className="sidebarDropbox" onClick={showdrop1}>
               
-              <h5><AiOutlineCar />Services</h5>
+              <h5><FcPortraitMode style={{fontSize:"20px", marginRight:"5px"}} />Services</h5>
                 <BsChevronDown />
             </div>
           { showDrop1 === true &&
             <div className="sidebardrop1" id="sidebardrop1">
-              <a href="/oneway">One Way</a>
-              <a href="/roundtrip">Round Trip</a>
-              <a href="/rental">Local/Rental</a>
-              <a href="/airport">Airport Transfer</a>
+              <div><GiRoad /><a href="/oneway">One Way</a></div>
+              <div><BiTrip /><a href="/roundtrip">Round Trip</a></div>
+              <div><HiOutlineBuildingOffice2 /><a href="/rental">Local/Rental</a></div>
+              <div><GiCommercialAirplane /><a href="/airport">Airport Transfer</a></div>
+              
+              
             </div>
           }
           
             <div className="sidebarDropbox" onClick={showdrop2}>
               
-              <h5><BsCart3 /> My Activity</h5>
+              <h5><FcReadingEbook style={{fontSize:"20px", marginRight:"5px"}} />My Activity</h5>
               <BsChevronDown />
             </div>
           {showDrop2 &&
             <div className="sidebardrop2" id="sidebardrop2">
-              <Link to="/mybooking">My Bookings</Link>
-              <Link href="/upcomingbookings">Upcoming Bookings</Link>
-              <Link to="/cancelbooking">Cancel Booking</Link>
+              <div><BsCardChecklist /><Link to="/mybooking">My Bookings</Link></div>
+              <div><MdOutlineCreditCard /><Link href="/upcomingbookings">Upcoming Bookings</Link></div>
+              <div><MdOutlineCreditCardOff /><Link to="/cancelbooking">Cancel Booking</Link></div>
+              
             </div>
           }
             <div>
+              <FcApproval style={{fontSize:"20px", marginRight:"5px"}} />
               <Link to="/offers">Offer</Link>
             </div>
 
             <div>
+              <FcOnlineSupport style={{fontSize:"20px", marginRight:"5px"}} />
               <Link to="/contactus">Contact Us</Link>
             </div>
           </div>

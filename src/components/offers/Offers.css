@@ -85,7 +85,7 @@
 }
 
 .mainofferslider .slick-slide:hover{
- transform: scale(1.2);
+    transform: scale(1.2);
     transition: all 0.5s;
     overflow:visible;
 }
@@ -238,21 +238,21 @@
     .offers{
         bottom: -33%;
     }
-
+    
 }
 @media all and (max-width:660px){
     
     /* .offers{
         bottom: -43%;
     } */
-
+    
 }
 @media all and (max-width:310px){
     
     /* .offers{
         bottom: -53%;
     } */
-
+    
 }
 
 
@@ -274,13 +274,13 @@
     }
 }
 @media all and (max-width:720px){
-
+    
     /* .offers{
         position: absolute;
         top: 52%;
         z-index: 1;
         width: 100%;
-      } */
+    } */
     .offerstamp{
         position: absolute;
         top: -112px;
@@ -289,14 +289,14 @@
     }
 }
 @media all and (max-width:593px){
-
+    
     /* .offers{
         position: absolute;
         top: 60%;
         z-index: 1;
         width: 100%;
-      }
-     */
+    }
+    */
 }
 
 @media all and (max-width:550px){
@@ -306,7 +306,7 @@
         top: 70%;
         z-index: 1;
         width: 100%;
-      } */
+    } */
     .offerstamp{
         position: absolute;
         top: -150px;
@@ -315,13 +315,13 @@
     }
 }
 @media all and (max-width:500px){
-
+    
     /* .offers{
         position: absolute;
         top: 54%;
         z-index: 1;
         width: 100%;
-      } */
+    } */
     .offerstamp{
         position: absolute;
         top: -116px;
@@ -330,13 +330,13 @@
     }
 }
 @media all and (max-width:288px){
-
+    
     /* .offers{
         position: absolute;
         top: 68%;
         z-index: 1;
         width: 100%;
-      } */
+    } */
     .offerstamp{
         position: absolute;
         top: -152px;
@@ -348,24 +348,37 @@
     .offers{
         padding: 1rem 0;
         margin: 0 2rem;
-      }
-      .mainofferslider{
+    }
+    .mainofferslider{
         padding: 0 2rem;
-      }
-      .innerofferslide12 h6{
+    }
+    .innerofferslide12 h6{
         font-size: 15px;
-      }
+    }
 }
 @media all and (max-width:420px){
     .offers{
         
         margin: 0;
-      }
-      .mainofferslider{
+    }
+    .mainofferslider{
         padding: 0;
-      }
+    }
       .innerofferslide12 h6{
         font-size: 12px;
       }
-}
+    }
+    
+    
+    @media all and (max-width:700px){
+        .offerSliderContainer{
+            margin: 0;
+        }
+        .offer{
+            padding: 0;
+        }
+        .offerSliderTitle h1{
+            margin-bottom: 0;
+        }
+    }
     

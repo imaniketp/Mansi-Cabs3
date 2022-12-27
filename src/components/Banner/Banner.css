@@ -21,7 +21,7 @@
      /* background: url('../../../public/main\ bg.jpg'); */
     background-position: 100%; 
     animation-name: bgimage;
-  animation-duration: 15s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
     background-size: cover;
     padding: 4rem 0;
