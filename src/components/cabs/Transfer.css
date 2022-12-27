@@ -1,0 +1,520 @@
+.transfer0{
+    background-color: #EBF8F4;
+    padding: 5% 4%;
+}
+.transfer2{
+    margin: 0% 2% 2% 2%;
+    padding: 5% 2% 12% 2%;
+    background-color: white;
+    border-radius: 0 0 7px 7px;
+}
+.transfer5{
+  background-color:#F8F8F8;
+  margin: 0% 2% 0% 2%;
+  padding: 0% 2% 0% 2%;
+  border-radius: 7px 7px 0 0;
+}
+.transfer5 h3{
+    font-size: 120%; 
+    display: flex;
+    color: rgb(123, 117, 117);
+    align-items: center;
+    text-align: left;
+    font-weight: 600;
+    margin: 2% 0 2% 4%;
+}
+.transfer5 span{
+    font-size: 200%;
+    margin-right:3%;
+    color: black;
+  
+}
+
+.transfer-price p{
+    font-size:100%;
+    text-align: left;
+    padding-bottom:0;
+    font-weight:600 ;
+}
+.transfer2 hr{
+    width: 80%;
+    margin:auto
+}
+.transfer-price input{
+    margin-right: 10%;
+}
+.transfer-price button{
+    width: 40%;
+    margin:auto;
+    padding: 3%;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-top: 5%;
+    background-color: #7142f8;
+}
+.transfer-viewd1{
+    color: #7142f8;
+}
+
+
+/* ----------------------------------------------*-----------------------------------*--------------------------------------------- */
+
+
+.transfer-sel1{
+    background-color: white;
+    border-radius: 0 0 7px 7px ;
+    padding: 1%;
+}
+.transfer-details-title1{
+  background-color:#F8F8F8;
+  padding: 0.5% 2% 0.5% 2%;
+  border-radius: 7px 7px 0 0;
+}
+.transfer-details-title1 h2{
+    color: gray;
+    font-size: 140%;
+    font-weight: 600;
+    text-align: left;
+}
+.transfer-details{
+    padding: 1%;
+}
+
+.transfer-details-img img{
+    width: 90%;
+}
+.transfer-details3 h3{
+    font-size: 120%;
+    font-weight: 600;
+}
+.transfer-details3 p{
+    font-size: 90%;
+    color: gray;
+    padding: 0;
+    text-align: right;
+}
+.transfer-details3 span{
+    font-size: 120%;
+    color: black;
+    margin-right: 1%;
+}
+.transfer-details4 p{
+    color: gray;
+    font-size: 90%;
+    padding: 0;
+    margin-bottom: 0;
+}
+.transfer-details4 span{
+    font-size: 85%;
+    font-weight: 600;
+}
+.transfer-details4 input{
+    border: none;
+    border-bottom: 2px solid black;
+    font-weight: 600;
+}
+.transfer-details4-arow{
+    font-size: 150%;
+    margin-top: 2%;
+}
+
+.transfer-viewd{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+}
+.transfer-viewd button{
+    border: none;
+    color: #7142f8;
+    font-size: 150%;
+    font-size: 75%;
+    font-weight: 700;
+    background-color: white;
+}
+.transfer-viewd span{
+  font-size: 130%;
+  
+}
+#transfer-block{
+  display: none;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+
+.transfer-inclusion0{
+    background-color: white;
+    border-radius: 7px;
+    padding: 1%;
+    margin-top: 0.5%;
+   
+}
+.transfer-inclusion h1{
+    font-size: 98%;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: left;
+}
+.transfer-inclusion span{
+    font-size: 100%;
+    font-weight:500;
+}
+.transfer-inclusion-check{
+    font-size: 150%;  
+    margin-right: 2%;
+}
+.transfer-inclusion li{
+    font-size: 80%;
+    text-align: left;
+    font-weight: 600; 
+    margin-left:8%; 
+}
+.transfer-exclusion-col{
+    border-right: 2px solid black;
+}
+.transfer-exclusion h1{
+    font-size: 98%;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: left;
+    margin: 1% 0;
+}
+.transfer-exclusion li{
+    font-size: 80%;
+    text-align: left;
+    list-style-position: outside;
+    font-weight: 600;
+    margin-left:8%; 
+}
+.transfer-exclusion span{
+    font-size: 100%;
+    font-weight:500;
+}
+
+
+/* ----------------------------#---------------------#------------$-------------------------%---------------- */
+#cancellation-policy{
+  display: none;
+}
+.transfer-cancellation-title p{
+  text-align: left;
+  font-size: 140%;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 0;
+ 
+}
+.transfer-cancellation-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2%;
+  
+}
+.transfer-cancellation-title-icon{
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 0.3%;
+  font-size: 150%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+.transfer-cancellation-title0{
+  background-color: #F8F8F8;
+    border-radius:  7px 7px 0 0;
+    padding: 1%;
+    margin-top: 1.5%;
+    
+}
+.transfer-cancellation{
+    background-color: white;
+    border-radius: 0 0 7px 7px;
+    padding: 2%;
+}
+
+.transfer-cancel-rs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+}
+
+.transfer-cancel-rs h3{
+   font-size: 95%;
+   font-weight: 700;
+}
+.transfer-cancel-rs p{
+    font-size: 75%;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: gray;
+    font-weight: 600;
+ }
+.transfer-cancel-rs-ico{
+    font-size: 250%;
+    padding: 2%;
+    background-color: skyblue;
+    border:1px solid #7241f8;
+    color: white;
+    border-radius: 50%;
+}
+.transfer-cancel-cross{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+}
+.transfer-cancel-cross-ico{
+    font-size: 250%;
+    padding: 19%;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}
+
+.transfer-cancel-cross h3{
+    font-size: 95%;
+    font-weight: 700;
+ }
+ .transfer-cancel-cross p{
+     font-size: 75%;
+     text-align: left;
+     padding: 0;
+     margin: 0;
+     color: gray;
+     font-weight: 600;
+  }
+  .transer-cancellation-arrow{
+    font-size: 200%;
+  }
+
+  /* ----------------------------------------------------------------------- */
+
+
+  .transfer-travellar{
+    background-color: white;
+    border-radius:0 0 7px 7px;
+    padding: 2% 8% 1.5% 8%;
+    
+  }
+  .transfer-travellar-title {
+    background-color: #F8F8F8;
+    border-radius: 7px 7px 0 0;
+    margin-top: 1%;
+    padding-top: 1%;
+  }
+  .transfer-travellar-title h3{
+    font-size: 140%;
+    color: gray;
+    font-weight: 500;
+    text-align: left;
+    margin: 0 0 2% 0;
+    
+  }
+  .transfer-travellar-drop label{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0.5% 3%;
+  }
+  .transfer-travellar-pick label{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0.5% 3%;
+  }
+  .transfer-travellar-pick input{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 5%;
+    margin: 0.5% 3%;
+    width: 80%;
+  }
+  .transfer-travellar-drop input{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 5%;
+    margin: 0.5% 3%;
+    width: 80%;
+  }
+  .transfer-travellar-name label{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0.5% 3%;
+  }
+  .transfer-travellar-name input{
+    border-radius: 5px;
+    width: 80%;
+    margin: 1% 1% 1% 6%;
+  }
+  .transfer-travellar-email label{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0.5% 3%;
+  }
+  .transfer-travellar-email input{
+    border-radius: 5px;
+    width: 80%;
+    margin: 1% 1% 1% 6%;
+  }
+  .transfer-travellar-mob label{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0.5% 3%;
+  }
+  .transfer-travellar-mob input{
+    border-radius: 5px;
+    width: 80%;
+    margin: 1% 1% 1% 6%;
+  }
+  .transfer-travellar-gender label{
+    text-align: left;
+    font-size: 80%;
+    font-weight: 600;
+    margin: 0.5% 3%;
+  }
+  .transfer-travellar-gender input{
+    border-radius: 5px;
+    width: 80%;
+    margin: 1% 1% 1% 6%;
+  }
+  .transfer-travellar-gender div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1% 1% 1% 6%;
+    gap: 10%;
+  }
+  .transfer-travellar-gender span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin: 1%;
+  }
+  .transfer-travellar-terms p{
+    
+    font-size: 90%;
+    font-weight: 600;
+    color: gray;
+    margin: 2% 3%;
+  }
+  .transfer-travellar-terms span{
+  
+    font-size: 90%;
+    font-weight: 600;
+    color: rgb(3, 181, 252);
+    margin: 0.5% 3%;
+  }
+.transfer-travellar-terms div{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ------------------------------------*------------------------------------- */
+
+.confirm-booking-title{
+  font-size: 150%;
+}
+.confirm-booking-modal-body{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contained-modal-title-vcenter{
+  text-align: center;
+}
+.confirm-booking-modal-body button{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    font-size: 110%;
+    padding: 1% 5%;
+    
+  
+}
+.confirm-booking-body1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.confirm-booking-body1 p{
+  color: gray;
+  font-size: 95%;
+  padding: 0;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+}
+.confirm-booking-body1 span{
+  font-size: 85%;
+  font-weight: 600;
+}
+.confirm-booking-body1 input{
+  border: none;
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.confirm-booking-arrow{
+  font-size: 150%;
+  margin-top: 2%;
+}
+.confirm-booking-body2 p{
+  color: gray;
+  font-size: 95%;
+  margin-bottom: 0;
+  font-weight: 600;  
+  text-align: center;
+}
+.confirm-booking-body2 span{
+  border: none;
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  font-size: 90%;
+  text-align: center;
+}
+.confirm-booking-body2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 0 1% 0;
+}
+.confirm-booking-body3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 0;
+}
+.confirm-booking-body3 p{
+  color: gray;
+  font-size: 95%;
+  margin-bottom: 0; 
+  font-weight: 600; 
+  text-align: center;
+}
+.confirm-booking-body3 input{
+  border: 2px dashed gray;
+  width: 25%;
+  border-radius: 5px;
+  width: 100%;
+}

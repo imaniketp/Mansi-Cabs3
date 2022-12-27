@@ -1,0 +1,108 @@
+.whySliderContainer{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.whySliderTitle h1{
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    margin-bottom: 2rem;
+    text-decoration: 2px underline #7142f8;
+    text-underline-offset: 8px ;
+}
+
+@media only screen and (max-width:770px){
+    .whySliderTitle h3{
+        font-weight: bolder;  
+        margin-bottom: 1rem;
+    }
+    .whySliderContainer{
+        
+        padding: 0;
+    }
+}
+
+.mainwhyslider .slick-slide{
+    padding: 0 1rem;
+}
+
+.outerwhySlider{
+    width: 80%;
+}
+
+@media only screen and (max-width:1024px){
+    .outerwhySlider{
+        width: 90%;
+    }
+}
+
+
+.mainwhyslider{
+    width: 90%;
+    
+}
+
+.whysliderControls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyslides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+.innerwhyslide{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.innerwhyslide p{
+   font-size: small;
+}
+
+.whysiderbtn{
+    font-size: 2rem;
+    color: black;
+}
+
+.whycontrolbtn1{
+    cursor: pointer;
+    
+}
+.whycontrolbtn2{
+    cursor: pointer;
+}
+
+.whyimg1{
+    max-width: 8rem;
+    margin-top: 1%;
+    margin-bottom: 1rem;
+}
+
+.whyimg2{
+    max-width: 10rem;
+    margin-bottom: 1rem;
+}
+.whyimg3{
+    max-width: 5.5rem;
+    margin-top: 2%;
+    margin-bottom: 1rem;
+
+}
+.whyimg4{
+    max-width: 5.5rem;
+    margin-top: 2%;
+    margin-bottom: 1rem;
+
+}

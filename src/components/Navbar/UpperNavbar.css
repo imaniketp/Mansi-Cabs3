@@ -1,0 +1,98 @@
+.upperNavContainer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.upperNavContainer h5{
+    color: white;
+    font-weight: bold;
+}
+.upperNavContainer a{
+    text-decoration: none;
+    color: white;
+}
+
+.upperNavRight{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+@media all and (max-width:530px){
+    .upperNavRight{
+        gap: 2px;
+    }
+    .upperNavContainer a{
+        font-size: 12px;
+    }
+}
+@media all and (max-width:340px){
+    .upperNavRight{
+        gap: 1px;
+    }
+    .upperNavContainer a{
+        font-size: 10px;
+    }
+    .upperNavContainer h5{
+        font-size: 15px;
+    }
+}
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+.fb{
+    color: white;
+    background-color: #3b5998;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: xx-large;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.twitter{
+    color: white;
+    background-color: #1DA1F2;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: xx-large;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.gmail{
+    color: white;
+    background-color: #D44638;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: xx-large;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+@media all and (max-width:450px){
+    .upperNavContainer{
+        padding: 0 0;
+    }
+    .socialIcons{
+        gap: 0;
+    }
+    .fb{
+        font-size: x-large;
+    }
+    .twitter{
+        font-size: x-large;
+    }
+    .gmail{
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,512 @@
+.serachCabContainer{
+  display: flex;
+  margin: 2rem;
+}
+
+.searchcableft1{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.searchcableft1 h5{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.searchcableft1 p{
+ font-size: 15px;
+  margin-bottom: 0;
+}
+
+.searchcableft2{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: sticky;
+  top: 500px;
+}
+.filtercheckicon{
+  margin-right: 0.5rem;
+  font-size: 16px;
+}
+
+.searchcableft2div1, .searchcableft2div2{
+  display: flex;
+  justify-content: space-between;
+}
+
+hr{
+  margin: 0;
+}
+
+.searchcableft2div1 h5,p{
+  margin-bottom: 5px;
+}
+
+.searchcableft2 input{
+  
+  font-size: 12px;
+}
+.searchcableft2 label{
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.cabsearchfiltercheck{
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.cabSearchRight{
+  width: 100%;
+}
+
+.cabSearchMain{
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabSearchUpper{
+   display: flex;
+  justify-content: space-between;
+}
+.cabSearchLower{
+   display: flex;
+  justify-content: space-between;
+}
+.cabSearchUpperLeft{
+  display: flex;
+}
+.cabSearchUpperLeft img{
+    width: 100px;
+    height: 60px;
+}
+.cabSearchUpperLeftdiv{
+  margin-left: 2rem;
+}
+.cabSearchUpperLeftdiv h4{
+  margin-bottom: 0;
+}
+.cabSearchUpperLeftdiv p{
+  margin-bottom: 0;
+}
+
+
+.cabSearchUpperLeft p{
+    font-weight:400;
+}
+.cabSearchUpperLeft span{
+    color: #7142f8;
+    font-weight: 500;
+}
+
+.star1{
+  color: #7142f8;
+}
+.star2{
+  color: #dbd2f7;
+}
+
+.ac{
+  display: flex;
+  gap: 1rem;
+  font-size: 12px;
+}
+
+.cabSearchbookbtn{
+  color: white;
+  background-color: #7142f8;
+  border: 0;
+  padding: 4px 6px;
+  font-size: 13px;
+}
+
+.cabSerachdiscount{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.cabSearchUpperright{
+  line-height: 2rem;
+}
+.cabSearchUpperright p{
+  text-decoration: line-through;
+}
+.cabSearchUpperright span{
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0s 4px;
+  height: 1rem;
+}
+
+.cabSearchviewbtn{
+  color: white;
+  background-color: black;
+  padding: 0 5px;
+  border: 0;
+  font-size: 12px;
+  border-radius: 2px;
+}
+.cabSearchviewbtn:hover{
+  background-color: black;
+}
+.cabSearchLowerright{
+  line-height: 2rem;
+}
+.cabSearchLowerright p{
+  text-decoration: line-through;
+}
+.cabSearchLowerright span{
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0s 4px;
+  height: 1rem;
+}
+
+.cabSearchLowerleft{
+  margin-left: 132px;
+}
+.cabSearchLowerleftdiv{
+  display: flex;
+  gap: 2rem;
+}
+.cabSearchLowerleftdiv p{
+  font-size: 13px;
+}
+#cabSearchLower{
+  display: none;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/* .maincabsrow{
+  display: flex;
+  justify-content: center;
+}
+
+.cabs0{
+  background-color: #EBF8F4;
+  padding: 5% 4%;
+}
+
+
+
+.cabs1{
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  padding: 5% 8%;
+  margin: 0 2% 9% 0;
+}
+.cabs1 h5{
+  font-weight: 700;
+  font-size: 99%;
+  padding-bottom: 7%;
+  margin-bottom: 10%;
+}
+.cabs1 p{
+  font-size: 80%;
+  padding: 0;
+  text-align: left;
+  display: flex;
+  justify-content:center; 
+  font-weight: 600; 
+  margin-bottom: 10%;
+}
+.cabs1 span {
+  font-size: 140%;
+  margin-right: 8%;
+}
+
+
+.cabs2{
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  padding: 5% 2%;
+  margin: 9% 2% 0 0;
+}
+.cabs2-filter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cabs2-filter p{
+font-size: 80%;
+}
+.cabs2-filter h5{
+  font-size: 90%;
+  font-weight: 700;
+}
+.cabs2-filter2 {
+  padding-bottom: 10%;
+}
+.cabs2-filter2 div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cabs2-filter2 div h6{
+  font-size: 84%;
+  font-weight: 600;
+}
+.cabs2-filter2 div p{
+  font-size: 65%;
+}
+.cabs2-filter2 input{
+  float: left;
+  margin-left: 10%;
+}
+.cabs2-filter2 label{
+  float: left;
+  margin-left: 5%;
+  font-size: 80%;
+  line-height: 100%;
+  font-weight: 600;
+}
+.cabs2-filter3 {
+  padding-bottom: 20%;
+}
+.cabs2-filter3 div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cabs2-filter3 div h6{
+  font-size: 84%;
+  font-weight: 600;
+}
+.cabs2-filter3 div p{
+  font-size: 65%;
+}
+.cabs2-filter3 input{
+  float: left;
+  margin-left: 10%;
+}
+.cabs2-filter3 label{
+  float: left;
+  margin-left: 5%;
+  font-size: 80%;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+
+
+
+
+.cabs-main1{
+ margin-bottom: 0.5%; 
+}
+.cabs-etios0{
+  background-color: white;
+  border-radius: 5px;
+  padding: 1% 2% 0 2%;
+  margin:0 0.5% 0.5% 0.5%;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.cabs-etios{
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  padding: 2% 5%;
+  margin:0 0.5% 0.5% 0.5%;
+}
+.cabs-etios1-img img{
+  width: 80%;
+  float: left;
+}
+.cabs-etios-dzire h4{
+  text-align: left;
+  font-weight: 600;
+  font-size: 100%;
+}
+.cabs-etios-dzire h2{
+  text-align: left;
+  font-weight: 600;
+  font-size: 120%;
+}
+.cabs-etios-dzire h6{
+  text-align: left;
+  font-size: 80%;
+  color: #7142f8;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cabs-etios-service p{
+  font-size: 95%;
+  text-align: right;
+  font-weight: 600;
+  
+}
+.cabs-etios-service{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.cabs-etios-service h6{
+  padding: 2% 0;
+  font-size: 70%;
+  margin:3% 34%;
+  font-weight: 600;
+  border-radius: 5px;
+  color: blue;
+  background-color: rgb(159, 204, 232);
+  text-align: center;
+}
+.cabs-etios-service span{
+  font-size: 140%;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.cabs-etios1{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  
+}
+.cabs-etios2-spec h5{
+  border-left: 8px solid skyblue;
+  border-radius: 5px;
+  text-align: left;
+  font-weight: 700;
+  float: left;
+  margin-bottom: 4%;
+}
+.cabs-etios2-spec2 p{
+  font-size: 90%;
+  padding: 0;
+  display: flex;
+  justify-content:center; 
+  font-weight: 600;
+  line-height: 100%; 
+  display: inline-block;
+  float: left;
+  white-space: nowrap;
+}
+.cabs-etios2-spec2 span {
+  font-size: 140%;
+  margin-right: 8%;
+}
+.cabs-etios2-spec3{
+  float: left;
+}
+.cabs-etios2-spec3 p{
+  font-size: 90%;
+  padding: 0;
+  text-align: left;
+  font-weight: 600;
+  line-height: 160%; 
+  white-space: nowrap;
+}
+
+
+.cabs-etios3{
+  float: right;
+}
+.cabs-etios3 p{
+  text-align: left;
+  font-size: 80%;
+  color: #1bc62a;
+  padding: 0;
+  margin-bottom: 0;
+
+}
+.cabs-etios3 div{
+  font-size: 120%;
+  text-align: left;
+
+  
+}
+.cabs-etios3 h5{
+  text-align: left;
+  font-size: 120%;
+   
+}
+.cabs-etios3 h6{
+  text-align: left;
+  font-size: 83%;
+  font-weight: 600; 
+}
+.cabs-etios3 span{
+  text-align: left;
+  font-size: 60%;
+  background-color: red;
+  border-radius: 5px;
+  padding: 1%;
+  color: white;
+  margin-left: 5%;
+
+}
+.cabs-etios3 h4{
+  text-align: left;
+  font-size: 150%;
+  font-weight: 600
+   
+}
+#dropdown-basic-button{
+  float: left;
+  color: white;
+  background-color: black;
+  font-size: 50%;
+  cursor: pointer;
+}
+.anya{
+  font-size: 50%;
+}
+.filterdropdown-1{
+  
+  display: none;
+}
+.filterdropdown-10{
+  width: 100%;
+  display: flex;
+  
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media all and (max-width:345px){
+  .filterdropdown-10{
+    flex-direction: column;
+  }
+}
+.filterdropdown{
+   display: none;
+  }
+@media all and (max-width:760px){
+   .filterdropdown-1{
+       float: left;
+       display: block;
+    }
+    .filterdropdown{
+        display: block;
+       }
+}
+
+@media all and (max-width:760px){
+    .cabs2{
+        display: none;
+       }
+} */
