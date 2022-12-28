@@ -1,14 +1,32 @@
 .upperNavContainer{
     background-color: black;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    padding-top: 10px;
+}
+.upperNavLeft{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .upperNavContainer h5{
+    margin-bottom: 0;
     color: white;
+    position: absolute;
     font-weight: bold;
+    transform: translateX(100%);
+    animation: scrolling 10s linear infinite;
+}
+@keyframes scrolling{
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
 }
 .upperNavContainer a{
     text-decoration: none;
@@ -23,6 +41,23 @@
     gap: 2rem;
 }
 @media all and (max-width:530px){
+    .upperNavContainer{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .upperNavContainer h5{
+        font-size: 15px;
+        transform: translateX(100%);
+    animation: scrolling 10s linear infinite;
+    }
+    @keyframes scrolling{
+        0%{
+            transform: translateX(50%);
+        }
+        100%{
+            transform: translateX(-150%);
+        }
+    }
     .upperNavRight{
         gap: 2px;
     }
@@ -31,11 +66,24 @@
     }
 }
 @media all and (max-width:340px){
+    .upperNavContainer h5{
+        font-size: 12px;
+        transform: translateX(100%);
+    animation: scrolling 10s linear infinite;
+    }
+    @keyframes scrolling{
+        0%{
+            transform: translateX(50%);
+        }
+        100%{
+            transform: translateX(-150%);
+        }
+    }
     .upperNavRight{
-        gap: 1px;
+        gap: 10px;
     }
     .upperNavContainer a{
-        font-size: 10px;
+        font-size: 12px;
     }
     .upperNavContainer h5{
         font-size: 15px;
@@ -80,9 +128,7 @@
 }
 
 @media all and (max-width:450px){
-    .upperNavContainer{
-        padding: 0 0;
-    }
+    
     .socialIcons{
         gap: 0;
     }
@@ -94,5 +140,30 @@
     }
     .gmail{
         font-size: x-large;
+    }
+}
+
+.mainwhatsap{
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    text-align: center;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #25d366;   
+}
+.mainwhatsap:hover{
+    color: #7142f8;
+}
+
+@media all and (max-width:700px){
+    .mainwhatsap{
+        width: 3rem;
+        height: 3rem;
+        padding: 8px; 
     }
 }

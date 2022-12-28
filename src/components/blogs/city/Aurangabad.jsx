@@ -3,6 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import { BiSearch } from "react-icons/bi";
 import Select from "react-select";
 import "./BlogCity.css";
+import ajanta from '../../../Assets/ajanta.jpg'
+import grish from '../../../Assets/grish.jpg'
+import daulatabad from '../../../Assets/daulatabad.jpg'
 
 const placeoptions = [
   { value: "mumbai", label: "Mumbai" },
@@ -10,12 +13,12 @@ const placeoptions = [
   { value: "pune", label: "Pune" },
 ];
 
-function Nashik() {
+function Aurangabad() {
   const [selectedOption, setSelectedOption] = useState(null);
 
   return (
     <div className="cityblogContainer">
-      <Container fluid className="blogSearch">
+      {/* <Container fluid className="blogSearch">
         <div>
           <Select
             className="placeserchbar"
@@ -52,7 +55,7 @@ function Nashik() {
             </Col>
           </Row>
         </div>
-      </Container>
+      </Container> */}
 
       <Container className="blogcitydata">
         <div className="blogcitydata1">
@@ -64,10 +67,10 @@ function Nashik() {
           <div>
             <h5>1) Ajanta Caves</h5>
             <Row className="cityblogrow">
-              <Col>
-                <img src="ajanta.jpg" alt="" />
+              <Col md={3}>
+                <img src={ajanta} alt="" />
               </Col>
-              <Col>
+              <Col md={9}>
                 <h6>
                   Enjoy The 99-Kilometer Ride From The City Center With MANSI
                   Cabs.
@@ -79,13 +82,7 @@ function Nashik() {
                   ones, of which five (caves 9, 10, 19, 26 and 29) are
                   chaityagrihas (sanctuary) and the rest, sangharamas or viharas
                   (monastery). The caves are connected with the river by
-                  rock-cut staircases. The excavation activity was carried out
-                  in two different phases separated by an interval of about four
-                  centuries. The first phase coincides with the rule of the
-                  Satavahana dynasty from about the 2nd century BCE to the 1st
-                  century BCE, while the second phase corresponds to the Basim
-                  branch of the Vakataka dynasty with their Asmaka and Rishika
-                  feudatories in the 5th to 6th centuries CE.
+                  rock-cut staircases.
                 </p>
               </Col>
             </Row>
@@ -94,10 +91,10 @@ function Nashik() {
           <div>
             <h5>2) Grishneshwar Temples</h5>
             <Row className="cityblogrow">
-              <Col>
-                <img src="grish.jpg" alt="" />
+              <Col md={3}>
+                <img src={grish} alt="" />
               </Col>
-              <Col>
+              <Col md={9}>
                 <h6>
                   Enjoy The 99-Kilometer Ride From The City Center With MANSI
                   Cabs.
@@ -108,13 +105,7 @@ function Nashik() {
                   rocks, is composed of a five-tier shikara. The temple was
                   re-constructed by Maloji Bhosale of Verul, (grandfather of
                   Chhatrapati Shivaji Maharaj) in the 16th century and later
-                  again by queen Ahilyabai Holkar in the 18th century. She is
-                  credited with rebuilding some of major Hindu temples such as
-                  the Kashi Vishvanath temple in Varanasi, a Vishnu temple in
-                  Gaya, and a much larger Shiva Jyotirlinga temple in Somnath
-                  Temple. This 240 ft x 185 ft temple is the smallest
-                  Jyotirlinga temple in India. Halfway up the temple,
-                  Dashavataras of Vishnu are carved in red stone.
+                  again by queen Ahilyabai Holkar in the 18th century.
                 </p>
               </Col>
             </Row>
@@ -123,10 +114,10 @@ function Nashik() {
           <div>
             <h5>3) Bibi ka Maqbara</h5>
             <Row className="cityblogrow">
-              <Col>
-                <img src="daulatabad.jpg" alt="" />
+              <Col md={3}>
+                <img src={daulatabad} alt="" />
               </Col>
-              <Col>
+              <Col md={9}>
                 <h6>
                   Enjoy The 99-Kilometer Ride From The City Center With MANSI
                   Cabs.
@@ -137,14 +128,7 @@ function Nashik() {
                   Mustafa, the cost of construction of the mausoleum was Rs.
                   668,203-7 (rupees six lakh, sixty-eight thousand, two hundred
                   three and seven annas) Aurangzeb allocated only Rs. 700,000
-                  for its construction. An inscription found on the main
-                  entrance door mentions that this mausoleum was designed and
-                  erected by Ata-ullah, an architect and Hanspat Rai, an
-                  engineer respectively. The marble for this mausoleum was
-                  brought from mines near Jaipur. According to Tavernier, around
-                  three hundred carts laden with marble, drawn by at least 12
-                  oxen, were seen by him during his journey from Surat to
-                  Golconda.
+                  for its construction. 
                 </p>
               </Col>
             </Row>
@@ -155,4 +139,4 @@ function Nashik() {
   );
 }
 
-export default Nashik;
+export default Aurangabad;

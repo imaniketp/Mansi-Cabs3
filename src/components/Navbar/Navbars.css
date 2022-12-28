@@ -72,14 +72,15 @@
   opacity: 0;
 }
 .offcanvas.offcanvas-start{
-  width: 17rem;
-  top: 113px;
-  background: rgba(113, 66, 248, 0.7);
+  width: 230px;
+  top: 116px;
+  background: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  padding-right: 0;
   border: 0;
-  color: white;
+  color: black;
 }
 
 
@@ -95,52 +96,26 @@
 } */
 
 
-@media all and (max-width:547px){
-  .offcanvas.offcanvas-start{
-    top: 121px;
-  }
-}
-@media all and (max-width:530px){
-  .offcanvas.offcanvas-start{
-    top: 113px !important;
-  }
-}
-@media all and (max-width:509px){
-  .offcanvas.offcanvas-start{
-    top: 121px !important;
-  }
-}
-@media all and (max-width:468px){
-  .offcanvas.offcanvas-start{
-    top: 139px !important;
-  }
-}
-@media all and (max-width:450px){
-  .offcanvas.offcanvas-start{
-    top: 122px !important;
-  }
-}
-@media all and (max-width:355px){
-  .offcanvas.offcanvas-start{
-    top: 138px !important;
-  }
-}
+
 
 
 .sidebarTitle{
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
   cursor: pointer;
+  gap: 5px;
   text-decoration: none;
   }
+  .sidebarTitle h3{
+    font-size: 19px;
+  }
 .sidebarTitle a{
-  color: white;
+  color: black;
   text-decoration: none;
   }
 
 .sidebarhomeicon{
-  font-size: 2rem;
+  font-size: 20px;
 }
 
 .sidebarContent{
@@ -152,25 +127,31 @@
 
 .sidebarContent a{
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: larger;
 }
 
 .sidebarDropbox{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   cursor: pointer;
 }
 .sidebardrop1, .sidebardrop2{
   margin-top: -1rem;
 }
+.sidebarContent a{
+  font-size: 17px;
+}
 .sidebardrop1 a, .sidebardrop2 a{
   display: flex;
   flex-direction: column;
-  font-size: small;
+  font-size: 14px;
 }
 
+.sidebarContent h5{
+  font-size: 17px;
+}
 .sidebar h5:hover{
   font-weight: bolder;
 }
@@ -262,7 +243,44 @@
   font-size: 1.5rem;
 }
 
-
+@media all and (max-width:547px){
+  .offcanvas.offcanvas-start{
+    top: 116px;
+  }
+}
+@media all and (max-width:530px){
+  .offcanvas.offcanvas-start{
+    top: 122px !important;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  .sidebarTitle a{
+    color: white;
+    }
+    .sidebarContent a{
+      color: white;   
+    }
+}
+@media all and (max-width:509px){
+  .offcanvas.offcanvas-start{
+    top: 121px !important;
+  }
+}
+@media all and (max-width:468px){
+  .offcanvas.offcanvas-start{
+    top: 122px !important;
+  }
+}
+@media all and (max-width:450px){
+  .offcanvas.offcanvas-start{
+    top: 132px !important;
+  }
+}
+@media all and (max-width:355px){
+  .offcanvas.offcanvas-start{
+    top: 132px !important;
+  }
+}
 
 
 .modal-header

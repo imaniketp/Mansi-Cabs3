@@ -19,11 +19,11 @@ function Home() {
     <Banner/>
     <Container fluid='md' className='homeContainer'>
         <Offers />
-        <Services/>
+        {/* <Services/> */}
         <MainServices />
-        <Banner2/>
         {/* <Cars /> */}
         <Services2 />
+        <Banner2/>
         <Testimonial />
         <Why />
         <PlacesSlider />

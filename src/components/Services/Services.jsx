@@ -5,7 +5,7 @@ import './Services.css'
 function Services() {
   return (
     <>
-      <Container className="aniketmain">
+      <div className="aniketmain">
         <h1>What Forms Mansi Split? </h1>
         <div className="aniket0">
           <div className="anikethide">
@@ -57,7 +57,7 @@ function Services() {
             <br /> Chauffeurs
           </p>
         </div>
-      </Container>
+      </div>
     </>
   );
 };

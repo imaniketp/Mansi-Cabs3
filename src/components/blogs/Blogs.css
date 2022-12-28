@@ -3,10 +3,10 @@
     background-color: #ecfffd;
 }
 
-.blogsrow1{
+/*.blogsrow1{
     display: flex;
     align-items: flex-end;
-    /* margin: 0;
+     margin: 0;
     padding: 0; /
 }
 .blogsrow1 img{
@@ -54,11 +54,11 @@
 .placeserchbar{
     width: 16rem;
 }
-
+*/
 .blogsrow2{
-    margin: 2% 3.5%;
+    margin: 1rem 0.5rem;
     display: flex;
-    / align-items: flex-start; */
+     align-items: flex-start; 
     justify-content: center;
 }
 
@@ -66,7 +66,6 @@
     border-radius: 5px;
     max-width: 23rem;
     padding: 5px;
-
 }
 .searchplacesCard img{
     width: 100%;
@@ -88,6 +87,11 @@
     color: #7142f8;
     font-weight: bolder;
 
+}
+.searchplacesCard a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #7142f8;
 }
 
 

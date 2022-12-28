@@ -12,7 +12,6 @@ import MainOfferPage from "./components/MainOfferPage/MainOfferPage";
 import Payment from "./components/payment/Payment";
 import FAQ from "./components/FAQ/FAQ";
 import UpperNavbar from "./components/Navbar/UpperNavbar";
-import Nashik from "./components/blogs/city/Nashik";
 import ContactUs from "./components/contactUs/ContactUs";
 import AboutUs from "./components/aboutUs/AboutUs";
 import CabsSearch from "./components/cabs/CabsSearch";
@@ -22,6 +21,7 @@ import ScrollToTop from "./ScrollToTop";
 import CabBooking from "./components/bookingPage/BookingPage";
 import CancelBooking from "./components/cancelPage/CancelPage";
 import MyProfile from "./myprofile/MyProfile";
+import Aurangabad from "./components/blogs/city/Aurangabad";
 
 function App() {
   return (
@@ -43,9 +43,9 @@ function App() {
         <Route path="mybooking" element={<CabBooking />} />
         <Route path="cancelbooking" element={<CancelBooking />} />
         <Route path="blogs" element={<Blogs />} />
-        <Route path="blogs/nashik" element={<Nashik />} />
+        <Route path="blogs/aurangabad" element={<Aurangabad />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

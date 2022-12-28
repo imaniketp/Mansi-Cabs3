@@ -16,6 +16,7 @@ import { FiMenu } from "react-icons/fi";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
 import validator from 'validator'
+import playstore from '../../Assets/playstore.jpg'
 
 
 function Navbars() {
@@ -132,7 +133,7 @@ function Navbars() {
           <div className="navbarIcons">
             <div className="playstore">
               <div className="innerplaystore">
-                <img className="playstoreimg" src="playstore.jpg" alt="" />
+                <img className="playstoreimg" src={playstore} alt="" />
               </div>
               <p>Download App</p>
             </div>
@@ -149,7 +150,7 @@ function Navbars() {
         <div className="sidebar">
           <div className="sidebarTitle">
             <FcHome className="sidebarhomeicon" />
-            <Link to="/myprofile" target='_blank'><h3>My Profile</h3></Link>
+            <Link to="/myprofile" target='_blank'> <h3>Guest</h3></Link>
           </div>
 
           <div className="sidebarContent">
@@ -177,7 +178,6 @@ function Navbars() {
           {showDrop2 &&
             <div className="sidebardrop2" id="sidebardrop2">
               <div><BsCardChecklist /><Link to="/mybooking">My Bookings</Link></div>
-              <div><MdOutlineCreditCard /><Link href="/upcomingbookings">Upcoming Bookings</Link></div>
               <div><MdOutlineCreditCardOff /><Link to="/cancelbooking">Cancel Booking</Link></div>
               
             </div>

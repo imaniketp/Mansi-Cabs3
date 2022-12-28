@@ -230,7 +230,7 @@ function Blogs() {
               <p>
               {item.blogData}
               </p>
-              <h6>Read More</h6>
+              <Link to='/blogs/aurangabad'>Read More</Link>
             </div>
           </Col>
            )) }

@@ -32,15 +32,16 @@
 
 
 .outerServ2Slider{
-    width: 70vw;
+    width: 90vw;
 }
 
 .mainServ2slider{
-    width: 100%;
+    width: 85%;
 }
 
 .mainServ2slider .slick-slide{
     margin: 2rem 0;
+    padding: 0 2rem;
 }
 
 .serv2slides{
