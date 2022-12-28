@@ -250,7 +250,7 @@
 }
 @media all and (max-width:530px){
   .offcanvas.offcanvas-start{
-    top: 122px !important;
+    top: 139px !important;
     background: rgba(0, 0, 0, 0.8);
     color: white;
   }
@@ -263,22 +263,22 @@
 }
 @media all and (max-width:509px){
   .offcanvas.offcanvas-start{
-    top: 121px !important;
+    top: 140px !important;
   }
 }
 @media all and (max-width:468px){
   .offcanvas.offcanvas-start{
-    top: 122px !important;
+    top: 139px !important;
   }
 }
 @media all and (max-width:450px){
   .offcanvas.offcanvas-start{
-    top: 132px !important;
+    top: 149px !important;
   }
 }
 @media all and (max-width:355px){
   .offcanvas.offcanvas-start{
-    top: 132px !important;
+    top: 150px !important;
   }
 }
 
