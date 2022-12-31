@@ -154,9 +154,27 @@
     color: white;
     border-radius: 50%;
     padding: 15px;
-    background-color: #25d366;   
+    background-color: #25d366;
+    z-index: 9999;
 }
 .mainwhatsap:hover{
+    color: #7142f8;
+}
+.maincall{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    text-align: center;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #25d366;
+    z-index: 9999;
+}
+.maincall:hover{
     color: #7142f8;
 }
 
@@ -165,5 +183,7 @@
         width: 3rem;
         height: 3rem;
         padding: 8px; 
+        bottom: 1rem;
+        right: 1rem;
     }
 }

@@ -1,59 +1,28 @@
 .placesContainer{
-    background-color: #f1f1f1;
     padding: 2rem ;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    
 }
 
-.placesCol{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin: 1rem 0;
-}
-
-.airportData .placesCol{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin: 0;
-    
-}
-
-.placesContainer h5{
-    font-weight: 500;
-    cursor: default;
-}
-.placesSlider{
-    background-color: #7142ff;
-}
-
-.airportData h5{
+.placesContainer h2{
     text-align: center;
 }
-.placesContainer li:hover{
-    color: #7142ff;
-    font-weight: bold;
+
+.placesRow{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
-.placesContainer li{
+
+.mainPlace{
+    border-left: 5px solid #7142f8 ;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.5rem;
     cursor: pointer;
-    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.placesul{
-    list-style-position: outside;
-    line-height: 2rem;
-}
 
-@media all and (max-width:770px){
-    .placesContainer h5{
-        font-size: medium;
-    }
-    .placesContainer li{
-        font-size: 12px;
-    }
-}
+.dropdown-toggle::after {
+    display: none !important; 
+  }

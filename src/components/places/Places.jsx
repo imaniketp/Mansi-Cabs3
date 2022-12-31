@@ -1,90 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Places.css";
+import { NavDropdown } from 'react-bootstrap';
 
 function Places() {
-  // const settings = {
-  //   className: "center",
-  //   infinite: true,
-  //   centerPadding: "30px",
-  //   slidesToShow: 5,
-  //   swipeToSlide: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 4,
-  //         swipeToSlide: true,
-  //         infinite: true,
-  //         dots: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         swipeToSlide: true,
-  //         initialSlide: 2
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         swipeToSlide: true,
-  //       }
-  //     }
-  //   ]
-  // }
-
+  const [show, setShow] = useState(false);
+const showDropdown = (e)=>{
+    setShow(!show);
+}
+const hideDropdown = e => {
+    setShow(false);
+}
   return (
     <Container fluid className="placesContainer">
+      <h2>Top Cities Where We Provide OutStation Cabs</h2>
       <Container>
-        <Row>
-          <Col md={3} className="placesCol">
-            <ul className="placesul">
-              <h5>CABS FROM NASHIK</h5>
-              <li>Nashik to Matheran Cabs</li>
-              <li>Nashik to Dhule Cabs</li>
-              <li>Nashik to Manmad Cabs</li>
-              <li>Nashik to Trimbakeshwar Cabs</li>
-              <li>Nashik to Kalyan</li>
-            </ul>
+        <Row className="placesRow">
+          <Col md={3} className="mainPlace">
+          <NavDropdown title="Cabs From Nashik" id="basic-nav-dropdown" alignRight
+          show={show}
+          onMouseEnter={showDropdown} 
+          onMouseLeave={hideDropdown}>
+                    <NavDropdown.Item href="#action/3.1">Nashik to Matehran</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">Nashik to Dhule</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">Nashik to Manmad</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">Nashik to Trimbakeshvar</NavDropdown.Item>
+                </NavDropdown>
           </Col>
-
-          <Col md={3} className="placesCol">
-            <ul className="placesul">
-              <h5>CABS FROM LONAVALA</h5>
-              <li>Lonavala to Hyderabad Cabs</li>
-              <li>Lonavala to Lavasa Cabs</li>
-              <li>Lonavala to Khopoli Cabs</li>
-              <li>Lonavala to Mahabaleshwar Cabs</li>
-            </ul>
-          </Col>
-
-          <Col md={3} className="placesCol">
-            <ul className="placesul">
-              <h5>CABS FROM SHIRDI</h5>
-              <li> Surat to Daman Cabs</li>
-              <li> Surat to Badlapur Cabs</li>
-              <li> Surat to Kodinar Cabs</li>
-              <li> Surat to Vansda Cabs</li>
-            </ul>
-          </Col>
-
-          <Col md={3} className="placesCol">
-            <ul className="placesul">
-              <h5>CABS FROM SURAT</h5>
-              <li> Surat to Daman Cabs</li>
-              <li> Surat to Badlapur Cabs</li>
-              <li> Surat to Kodinar Cabs</li>
-              <li> Surat to Vansda Cabs</li>
-            </ul>
-          </Col>
+          <Col md={3} className="mainPlace">Cabs From Mumbai</Col>
+          <Col md={3} className="mainPlace">Cabs From Pune</Col>
+          <Col md={3} className="mainPlace">Cabs From Nagpur</Col>
+          <Col md={3} className="mainPlace">Cabs From SambhajiNagar</Col>
         </Row>
       </Container>
 
-      <Container className="airportData">
+    </Container>
+  );
+}
+
+export default Places;
+{/* <Container className="airportData">
         <h5>POPULAR AIRPORTS CABS</h5>
         <Row>
           <Col md={3} className="placesCol">
@@ -122,9 +77,4 @@ function Places() {
             </ul>
           </Col>
         </Row>
-      </Container>
-    </Container>
-  );
-}
-
-export default Places;
+      </Container> */}

@@ -45,7 +45,7 @@ function App() {
         <Route path="blogs" element={<Blogs />} />
         <Route path="blogs/aurangabad" element={<Aurangabad />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

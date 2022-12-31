@@ -1,80 +1,88 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import logo from '../../Assets/logo.png'
+import gplay from '../../Assets/googlePlay.png'
 
 function Footer() {
   return (
     <Container fluid className="footerContainer">
       <Row className="footerRow">
-        
-          <Col md={2} >
-            <img className="footer1img" src="last.png" alt="" />
-          </Col>
-
-          <Col md={3} className="main-page">
-            <h4>Main Pages</h4>
+        <Col md={5} className='footerrow1col1'>
+          <img className='footerLogo' src={logo}  alt="" />
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+          <div className="footerouterplaystore">
+          <img className="footer1img" src="last.png" alt="" />
+          <div className="footerinnerplaystore">
+            <img className="footerplaystoreimg" src={gplay} alt="" />
             <div>
-              <Link to=''>Home</Link>
-              <Link to='/cabssearch'>Cabs</Link>
-              <Link to='/blogs'>Blogs</Link>
-              <Link to='/faq'>FAQs</Link>
+              <p>Get it on</p>
+              <h6>Google Play</h6>
             </div>
-          </Col>
-        
+          </div>
+          </div>
+        </Col>
 
-                  <Col md={3} className="useful-links">
-                    <h4>Useful Links</h4>
-                    <div>
-                        <Link to="/aboutus">About Us</Link>
-                        <Link to="/contactus">Contact Us</Link>
-                        <Link to="/tnc">Terms & Condition</Link>
-                        <Link to="/privacy-policy">Privacy Policy</Link>
-                        <Link to="/cancelation-policy">Cancellation Policy</Link>
-                        <Link to="/return-refund">Return and refund policy</Link>
-                    </div>
-                  </Col>
+        <Col md={2} className="main-page">
+          <h4>Main Pages</h4>
+          <div>
+            <Link to="">Home</Link>
+            <Link to="/cabssearch">Cabs</Link>
+            <Link to="/blogs">Blogs</Link>
+          </div>
+        </Col>
 
-                  {/* <Col md={2} className="service-hrs">
-                    <h4>Service Hours</h4>
-                    <div className="innerService">
-                        <p>Monday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24hrs</p>
-                        <p>Tuesday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24hrs</p>
-                        <p>Wednesday : 24hrs</p>
-                        <p>Thursday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24hrs</p>
-                        <p>Friday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24hrs</p>
-                        <p>Saturday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24hrs</p>
-                        <p>sunday :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24hrs</p>
-                    </div>
-                  </Col> */}
+        <Col md={2} className="useful-links">
+          <h4>Useful Links</h4>
+          <div>
+            <Link to="/aboutus">About Us</Link>
+            <Link to="/contactus">Contact Us</Link>
+            <Link to="/faq">FAQs</Link>
+          </div>
+        </Col>
 
         <Col md={3} className='footerCol3'>
           <div>
+            <h4>Address</h4>
+            <p>Amrutdham, Panchavati, Nashik, Maharashtra-422003</p>
+          </div>
+          <div>
             <img className="footer2img" src="footer2.png" alt="" />
           </div>
+        </Col>
+      </Row>
+      <hr />
+      <Row>
+        <Col md={6} className="footerrow2col1">
+          <div>
+            <Link to="/tnc">Terms & Condition</Link>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/cancelation-policy">Cancellation Policy</Link>
+            <Link to="/return-refund">Refund policy</Link>
+          </div>
+        </Col>
 
-          <Row className="footerSocialIcons">
-          
-          <Col>
-            <div className="footerinnerplaystore">
-              <img className="footerplaystoreimg" src="playstore.jpg" alt="" />
-            </div>
-          </Col>
-            <Col>
-            <FaFacebookF className='footerfb'/>
-            </Col>
-            <Col>
-            <FaTwitter className='footertwitter'/>
-            </Col>
-            <Col>
-            <FaInstagram className='footerinsta'/>
-            </Col>
-            <Col>
-            <TiSocialLinkedin className='footerlinked'/>
-            </Col>
-          </Row>
+        <Col md={6} className="footerrow2col2">
+          <div>
+            <FaFacebookF className="footerfb" />
+          </div>
+          <div>
+            <FaTwitter className="footertwitter" />
+          </div>
+          <div>
+            <FaInstagram className="footerinsta" />
+          </div>
+          <div>
+            <TiSocialLinkedin className="footerlinked" />
+          </div>
         </Col>
       </Row>
     </Container>
@@ -82,3 +90,26 @@ function Footer() {
 }
 
 export default Footer;
+
+{
+  /* <Row className="footerSocialIcons">
+
+<Col>
+  <div className="footerinnerplaystore">
+    <img className="footerplaystoreimg" src="playstore.jpg" alt="" />
+  </div>
+</Col>
+  <Col>
+  <FaFacebookF className='footerfb'/>
+  </Col>
+  <Col>
+  <FaTwitter className='footertwitter'/>
+  </Col>
+  <Col>
+  <FaInstagram className='footerinsta'/>
+  </Col>
+  <Col>
+  <TiSocialLinkedin className='footerlinked'/>
+  </Col>
+</Row> */
+}

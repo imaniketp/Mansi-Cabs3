@@ -1,6 +1,7 @@
 import React from 'react'
 import './UpperNavbar.css'
 import { FaFacebookF, FaTwitter, FaGooglePlusG, FaWhatsapp } from 'react-icons/fa'
+import { IoCall } from 'react-icons/io5'
 
 function UpperNavbar() {
   return (
@@ -17,6 +18,7 @@ function UpperNavbar() {
             
             </div>
             <div > <a href='https://wa.me/918484846395' ><FaWhatsapp className='mainwhatsap'/></a></div>
+            {/* <div > <a href='tel:+91 8484846395' ><IoCall className='maincall'/></a></div> */}
         </div>
     </div>
   )

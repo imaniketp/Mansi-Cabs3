@@ -3,8 +3,10 @@ import { Container, Row, Col} from "react-bootstrap";
 import "./Banner.css";
 import Select from "react-select";
 import { CgArrowsExchangeAlt } from "react-icons/cg";
-import { GiCircle } from "react-icons/gi";
+import { GiCircle, GiCommercialAirplane, GiRoad } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { BiTrip } from "react-icons/bi";
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 
 
 const options = [
@@ -199,22 +201,22 @@ const airport1 = () => {
                   color: onewayActive ? "white" : "black",
                   backgroundColor: onewayActive ? "#7142f8" : "white"
                 }}
-                >One Way</div>
+                ><GiRoad /> One Way</div>
                 <div className="mainradiobtn1" onClick={roundTrip}  style={{
                   color: roundActive ? "white" : "black",
                   backgroundColor: roundActive ? "#7142f8" : "white"
                 }}
-                >Round Way</div>
+                ><BiTrip /> Round Way</div>
                 <div className="mainradiobtn1" onClick={rental}  style={{
                   color: rentalActive ? "white" : "black",
                   backgroundColor: rentalActive ? "#7142f8" : "white"
                 }}
-                >Rental</div>
+                ><HiOutlineBuildingOffice2 /> Rental</div>
                 <div className="mainradiobtn1" onClick={airport}  style={{
                   color: airportActive ? "white" : "black",
                   backgroundColor: airportActive ? "#7142f8" : "white"
                 }}
-                >Airport</div>
+                ><GiCommercialAirplane /> Airport</div>
                 </div>
           </div>
           
@@ -412,7 +414,7 @@ const airport1 = () => {
           </Row>
             
           }
-        <div style={{width:"100%", display: "flex", alignItems:"center", justifyContent:"center" }}>
+        <div className="searchbtndiv">
             <Link to='/cabsSearch' className="searchbtn">SEARCH CABS</Link>
         </div>
         </Container>
