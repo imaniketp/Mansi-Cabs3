@@ -4,15 +4,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 
 .serviceSliderTitle h1{
     font-weight: 700;
-    text-decoration:2px underline #7142f8;
+    text-decoration: 2px underline #7142f8;
     text-underline-offset: 8px;
-    
+    margin-bottom: 0.5rem;
 }
 
 
@@ -23,6 +23,10 @@
 .outerServiceSlider{
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 @media only screen and (max-width:1024px){
@@ -81,15 +85,15 @@
    justify-content: center;
 }
 .innerServiceSlider2Col1 img{
-   width: 17rem;
-   margin: 20px 0 20px 20pxaqqqqqqq auto;
+   width: 20rem;
+   margin: 20px 0 20px 20px auto;
    border-radius: 8px;
 }
 
 .innerServiceSlider2Col2{
     
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }

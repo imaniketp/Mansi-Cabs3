@@ -9,10 +9,9 @@
     width: 100%;
 } */
 
-
- .offer__slider-section{
-    margin-top: 3rem;
-  }
+.offer__slider-section {
+  margin-top: 3rem;
+}
 /*
 .offers{
     position: absolute;
@@ -21,364 +20,208 @@
     width: 100%;
 } */
 
-.offers{
-    /* background: url('../../Assets/offersbg.jpg');
+.offers {
+  /* background: url('../../Assets/offersbg.jpg');
     background-position: 100%;
     background-size: cover;
     padding: 2rem 0; */
-    margin: 0 4rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  }
+  margin: 0 4rem;
+}
 
-.offerSliderContainer{
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2rem 0;
+.offerSliderContainer {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offerSliderTitle h1 {
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  text-decoration: 2px underline #7142f8;
+  text-align: center;
+  text-underline-offset: 0.5rem;
 }
 
 
-.offerSliderTitle h1{
-    font-weight: bolder;
-    letter-spacing: 1.5px;
-    text-decoration: underline #7142f8;
-    text-align: center;
-    text-underline-offset: 0.5rem;
-}
-
-.offerstamp{
-    position: absolute;
-    top: 175px;
-    right: 175px;
-    width: 65px;
-}
 
 .mainofferslider .slick-slide{
-    padding: 0 1rem;
-    margin: 2rem 0;
-}
-
-.outerofferSlider{
-    width: 90%;
-}
-
-@media only screen and (max-width:1024px){
-    .outerofferSlider{
-        width: 90%;
-    }
-}
-
-.mainofferslider{
-    width: 90%;
-}
-
-.offerslides{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 0 0 10px 10px;
-}
-
-.mainofferslider .slick-slide:hover{
-    transform: scale(1.2);
-    transition: all 0.5s;
-    overflow:visible;
+  padding: 0;
+  margin: 2rem 0;
 }
 
 
+.outerofferSlider {
+  width: 100%;
+}
 
 .offersliderControls{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainofferslider {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 20px;
+  background-color: white;
 }
 
-.innerofferslide11{
-    background-color: #f70c72;
-    text-align: left;
-    color: white;
+.offercard{
+  width: 250px !important;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  color: #000000;
 }
-.innerofferslide11 img{
+.offerimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.5s;
+  gap: 1.5rem;
+}
+.offerimg img{
+  width: 282px;
+}
+.offerimg h5{
+  font-size: 25px;
+  color: black;
+}
+
+.offercontent{
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.offercard:hover .offerimg{
+  transform: translateY(300px);
+  opacity: 0;
+}
+.offercard:hover .offercontent{
+  transform: translateY(-250px);
+  opacity: 1;
+}
+
+.offercontent h3{
+  font-size: 25px;
+  color: black;
+  z-index: 1;
+}
+.offercontent p{
+  font-size: 1em;
+  color: black;
+  font-weight:300;
+}
+.offercontent button{
+  border: 0.5px dashed;
+}
+.offercontent a{
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-top: 35px;
+  background: white;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@media all and (max-width: 700px) {
+  .offers {
+    margin: 0 1rem;
+  }
+  .mainofferslider {
+    padding: 0;
     width: 100%;
-    height: 118px;
+  }
+  .outerofferSlider {
+    width: 90%;
+  }
+  .offercard{
+    width: 230px !important;
+    height: 255px;
+  }
+  .offerimg img {
+    width: 227px;
+  }
+  .offerimg h5{
+  font-size: 20px;
+  color: black;
 }
-.innerofferslide11 p{
-    font-size: small;
-    margin-bottom: 0;
+  .offercontent a {
+    position: relative;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-top: 35px;
+    background: white;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
 }
-.innerofferslide12 p{
-    font-size: small;   
-    margin-bottom: 5px;
+.offercontent h3{
+  font-size: 20px;
 }
-.innerofferslide21 p{
-    font-size: small;
-    margin-bottom: 0;
+.offercontent p{
+  font-size: 14px;
 }
-.innerofferslide22 p{
-    font-size: small;  
-    margin-bottom: 5px; 
+.offercard:hover .offercontent{
+  transform: translateY(-220px);
+  opacity: 1;
 }
-.innerofferslide31 p{
-    font-size: small;
-    margin-bottom: 0;
 }
-.innerofferslide32 p{
-    font-size: small; 
-    margin-bottom: 5px;  
+@media all and (max-width: 300px) {
+  .offers {
+    margin: 0;
+  }
+  .mainofferslider {
+    padding: 0;
+    width: 100%;
+  }
+  .outerofferSlider {
+    width: 100%;
+  }
+  .offercard{
+    width: 200px !important;
+    height: 245px;
+  }
+  .offerimg img {
+    width: 200px;
+  }
+  .offercontent a {
+    position: relative;
+    display: inline-block;
+    padding: 2px 10px;
+    margin-top: 35px;
+    background: white;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
 }
-.innerofferslide12 p:nth-child(2){
-    font-size: small;
-    text-align: right;  
-    margin-bottom: 0;
+.offercontent h3{
+  font-size: 20px;
 }
-.innerofferslide22 p:nth-child(2){
-    font-size: small;
-    text-align: right;  
-    margin-bottom: 0;
+.offercontent p{
+  font-size: 14px;
 }
-.innerofferslide32 p:nth-child(2){
-    font-size: small;
-    text-align: right;  
-    margin-bottom: 0;
 }
-
-.innerofferslide12{
-    text-align: left;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 0 0 10px 10px;
-}
-
-.innerofferslide21{
-    background-color: #36B14A;
-    text-align: left;
-    padding: 1rem;
-    color: white;
-}
-
-.innerofferslide22{
-    text-align: left;
-    padding: 1rem;
-    background-color: white; 
-    border-radius: 0 0 10px 10px;
-}
-
-.innerofferslide31{
-    background-color: #C942F8;
-    text-align: left;
-    padding: 1rem;
-    color: white;
-}
-
-.innerofferslide32{
-    text-align: left;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 0 0 10px 10px;
-}
-
-
-.offercardfooter1, .offercardfooter2, .offercardfooter3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.offercardfooter1button{
-    width: 8rem;
-    background-color: #7142f8;
-    border-radius: 30px;
-    border: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 4px 10px;
-}
-.offercardfooter2button{
-    width: 8rem;
-    background-color: #36B14A;
-    border-radius: 30px;
-    border: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 4px 10px;
-}
-.offercardfooter3button{
-    width: 8rem;
-    background-color: #C942F8;
-    border-radius: 30px;
-    border: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 4px 10px;
-}
-
-@media all and (max-width:720px){
-    .offercardfooter1, .offercardfooter2, .offercardfooter3{
-        flex-direction: column;
-        align-items: center;
-    }
-    .offercardfooter1 button{
-        width: 100%;
-    }
-    .offercardfooter2 button{
-        width: 100%;
-        
-    }
-    .offercardfooter3 button{
-        width: 100%;
-    }
-    .offers{
-        bottom: -33%;
-    }
-    
-}
-@media all and (max-width:660px){
-    
-    /* .offers{
-        bottom: -43%;
-    } */
-    
-}
-@media all and (max-width:310px){
-    
-    /* .offers{
-        bottom: -53%;
-    } */
-    
-}
-
-
-
-@media all and (max-width:1024px){
-    .offerstamp{
-        position: absolute;
-        top: 40px;
-        right: 30px;
-        width: 90px;
-    }
-}
-@media all and (max-width:992px) and (min-width:720px){
-    .offerstamp{
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        width: 80px;
-    }
-}
-@media all and (max-width:720px){
-    
-    /* .offers{
-        position: absolute;
-        top: 52%;
-        z-index: 1;
-        width: 100%;
-    } */
-    .offerstamp{
-        position: absolute;
-        top: -112px;
-        right: 12px;
-        width: 65px;
-    }
-}
-@media all and (max-width:593px){
-    
-    /* .offers{
-        position: absolute;
-        top: 60%;
-        z-index: 1;
-        width: 100%;
-    }
-    */
-}
-
-@media all and (max-width:550px){
-
-    /* .offers{
-        position: absolute;
-        top: 70%;
-        z-index: 1;
-        width: 100%;
-    } */
-    .offerstamp{
-        position: absolute;
-        top: -150px;
-        right: 12px;
-        width: 60px;
-    }
-}
-@media all and (max-width:500px){
-    
-    /* .offers{
-        position: absolute;
-        top: 54%;
-        z-index: 1;
-        width: 100%;
-    } */
-    .offerstamp{
-        position: absolute;
-        top: -116px;
-        right: 8px;
-        width: 50px;
-    }
-}
-@media all and (max-width:288px){
-    
-    /* .offers{
-        position: absolute;
-        top: 68%;
-        z-index: 1;
-        width: 100%;
-    } */
-    .offerstamp{
-        position: absolute;
-        top: -152px;
-        right: 8px;
-        width: 42px;
-    }
-}
-@media all and (max-width:700px){
-    .offers{
-        padding: 1rem 0;
-        margin: 0 2rem;
-    }
-    .mainofferslider{
-        padding: 0 2rem;
-    }
-    .innerofferslide12 h6{
-        font-size: 15px;
-    }
-}
-@media all and (max-width:420px){
-    .offers{
-        
-        margin: 0;
-    }
-    .mainofferslider{
-        padding: 0;
-    }
-      .innerofferslide12 h6{
-        font-size: 12px;
-      }
-    }
-    
-    
-    @media all and (max-width:700px){
-        .offerSliderContainer{
-            margin: 0;
-        }
-        .offer{
-            padding: 0;
-        }
-        .offerSliderTitle h1{
-            margin-bottom: 0;
-        }
-    }
-    

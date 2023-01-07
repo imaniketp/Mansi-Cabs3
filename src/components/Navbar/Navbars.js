@@ -20,7 +20,7 @@ import playstore from '../../Assets/playstore.jpg'
 
 
 function Navbars() {
-  const [showDrop1, setShowDrop1] = useState(true);
+  const [showDrop1, setShowDrop1] = useState(false);
   const [showDrop2, setShowDrop2] = useState(false);
 
   const [showSidebar, setShowSidebar] = useState(false);
@@ -160,7 +160,7 @@ function Navbars() {
                 <BsChevronDown />
             </div>
           { showDrop1 === true &&
-            <div className="sidebardrop1" id="sidebardrop1">
+            <div className="sidebardrop1">
               <div><GiRoad /><a href="/oneway">One Way</a></div>
               <div><BiTrip /><a href="/roundtrip">Round Trip</a></div>
               <div><HiOutlineBuildingOffice2 /><a href="/rental">Local/Rental</a></div>

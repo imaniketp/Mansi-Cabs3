@@ -161,6 +161,10 @@
 }
 
 @media all and (max-width:700px){
+    .footerContainer{
+        padding: 2rem;
+        padding-bottom: 15px;
+    }
     .footerrow1col1 p {
         padding: 0.5rem;
     }
@@ -193,5 +197,36 @@
     }
     .footerrow2col2 {
         margin-top: 1rem;
+    }
+}
+
+@media all and (max-width:300px){
+    .footerContainer{
+        padding: 1rem;
+    }
+    .footerrow2col1 div{
+        gap: 0.5rem;
+    }
+    .footerrow2col1 a{
+        font-size: 12px;
+    }
+    .footerinnerplaystore{
+        width: 125px;
+        height: 40px;
+    }
+    .footerinnerplaystore h6{
+        font-size: 12px;
+    }
+    .footerplaystoreimg{
+        width: 1.5rem;
+    }
+    .footerinnerplaystore p{
+        font-size: 10px;
+    }
+    .footer1img{
+        width: 70px;
+    }
+    .footer2img{
+        width: 150px;
     }
 }

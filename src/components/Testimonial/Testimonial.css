@@ -1,9 +1,21 @@
 
-.testSliderContainer{
-
-    margin: 2rem 0;
+.maintestContainer{
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+.testSliderContainer{
+    border-radius: 15px;
+    width: 90%;
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('../../Assets/testimonalbg.jpg');
+    background-position: 100%;
+    background-size: cover;
+    
 }
 
 .testSliderTitle{
@@ -16,13 +28,22 @@
     margin-bottom: 0;
     font-weight: bold;
     letter-spacing: 1.5px;
-    text-decoration:2px underline #7142f8;
-    text-underline-offset:8px;
+    /* text-decoration:2px underline #7142f8;
+    text-underline-offset:8px; */
+    color: white;
+    text-shadow: 0px 0px 15px #fff;
+    animation: typing 3s infinite;
+    animation-timing-function: linear;
 }
-
-
-.maintestslider .slick-slide{
-    padding: 0 2rem;
+@keyframes typing{
+    0%, 100%{
+        text-shadow: 0px 0px 15px #fff,
+                     0px 0px 50px #fff,
+                     0px 0px 100px #fff;
+    }
+    50%{
+        text-shadow: 0px 0px 15px #fff;
+    }
 }
 
 .testslides{
@@ -35,24 +56,32 @@
 .innertestslide1{
     text-align: left;
     padding: 0 1rem;
-    height: 6rem;
 }
 
 .innertestslide1 p{
-    font-size:14px;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-shadow: 1px 1px #7142f8;
 }
 
 .innertestslide2{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     gap: 1rem;
     bottom: 0 !important;
 }
+.innertestslide2 h4{
+    color: white;
+    margin: 0;
+    text-shadow: 1px 1px #7142f8;
+}
 .innertestslide2 p{
     margin: 0;
-    font-size: 10px;
+    font-size: 13px;
+    text-shadow: 1px 1px #7142f8;
 }
 
 .testuserprofile{
@@ -62,29 +91,30 @@
 
 
 .outertestSlider{
-    width: 90%;
-    margin: 2rem 0;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 550px;
+    margin: 4rem 0 2rem 0;
+    color: white;
 }
 
-@media only screen and (max-width:1024px){
-    .outertestSlider{
-        width: 90%;
-    }
-}
 
 .maintestslider{
-    width: 80%; 
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px; 
+    padding: 1rem;
 }
+
 
 .testsliderControls{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4rem;
 }
 
 .testsiderbtn{
-    font-size: 2rem;
+    font-size: 25px;
     color: white;
 }
 
@@ -110,28 +140,46 @@
 
 }
 @media only screen and (max-width:600px){
-
-    .innertestslide1 p{
-        font-size:small;
+    .outertestSlider{
+        width: 300px;
+        margin: 2rem 1rem;
     }
+    .testslides{
+        display: flex !important;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .innertestslide1 p{
+        font-size:15px;
+    text-shadow: 0.5px 0.5px #7142f8;
 
-    .innertestslide2 p{
-        
+    }
+    .innertestslide2 p{    
         font-size: 10px;
     }
     
-    .testcontrolbtns p{
-        display: none;
+}
+@media only screen and (max-width:321px){
+    .outertestSlider{
+        width: 230px;
+        margin: 1rem;
     }
-
-    .testSliderTitle h3{
-        font-size: medium;
+    .testslides{
+        display: flex !important;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
     }
-    .maintestslider .slick-slide{
-        padding: 0;
+    .innertestslide1 p{
+        font-size:14px;
+    text-shadow: 0.5px 0.5px #7142f8;
+
     }
-
-
+    .innertestslide2 p{    
+        font-size: 10px;
+    }
+    
 }
 .slick-prev:before , .slick-next::before{
     

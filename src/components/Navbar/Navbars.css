@@ -73,7 +73,7 @@
 }
 .offcanvas.offcanvas-start{
   width: 230px;
-  top: 116px;
+  top: 133px;
   background: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
@@ -245,12 +245,12 @@
 
 @media all and (max-width:547px){
   .offcanvas.offcanvas-start{
-    top: 116px;
+    top: 134px;
   }
 }
 @media all and (max-width:530px){
   .offcanvas.offcanvas-start{
-    top: 139px !important;
+    top: 158px !important;
     background: rgba(0, 0, 0, 0.8);
     color: white;
   }
@@ -263,22 +263,22 @@
 }
 @media all and (max-width:509px){
   .offcanvas.offcanvas-start{
-    top: 140px !important;
+    top: 158px !important;
   }
 }
 @media all and (max-width:468px){
   .offcanvas.offcanvas-start{
-    top: 139px !important;
+    top: 158px !important;
   }
 }
 @media all and (max-width:450px){
   .offcanvas.offcanvas-start{
-    top: 149px !important;
+    top: 177px !important;
   }
 }
 @media all and (max-width:355px){
   .offcanvas.offcanvas-start{
-    top: 150px !important;
+    top: 177px !important;
   }
 }
 

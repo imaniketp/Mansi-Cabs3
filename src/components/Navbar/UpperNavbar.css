@@ -1,5 +1,5 @@
 .upperNavContainer{
-    background-color: black;
+    background-color: #25aae1;
     display: flex;
     align-items: center;
     padding-top: 10px;
@@ -12,24 +12,16 @@
     overflow: hidden;
 }
 
-.upperNavContainer h5{
-    margin-bottom: 0;
-    color: white;
-    position: absolute;
+.upperNavRight a{
+    font-size: 20px;
     font-weight: bold;
-    transform: translateX(100%);
-    animation: scrolling 10s linear infinite;
-}
-@keyframes scrolling{
-    0%{
-        transform: translateX(200%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-}
-.upperNavContainer a{
+    color: white;
     text-decoration: none;
+}
+
+.tagline{
+    font-size: 25px;
+    font-weight: 600;
     color: white;
 }
 
@@ -40,45 +32,49 @@
     justify-content: center;
     gap: 2rem;
 }
+.upperNavRight div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.uppernavwhats{
+    color: white;
+    background-color: #25d366;
+    border-radius: 50%;
+    padding: 0.3rem;
+    font-size: xx-large;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.uppernavCall{
+    color: white;
+    font-size: x-large;
+    margin: 0.5rem;
+    cursor: pointer;
+}
 @media all and (max-width:530px){
+    .tagline{
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
     .upperNavContainer{
         flex-direction: column;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
     }
-    .upperNavContainer h5{
-        font-size: 15px;
-        transform: translateX(100%);
-    animation: scrolling 10s linear infinite;
-    }
-    @keyframes scrolling{
-        0%{
-            transform: translateX(50%);
-        }
-        100%{
-            transform: translateX(-150%);
-        }
-    }
+    
     .upperNavRight{
         gap: 2px;
     }
     .upperNavContainer a{
-        font-size: 12px;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
 @media all and (max-width:340px){
-    .upperNavContainer h5{
-        font-size: 12px;
-        transform: translateX(100%);
-    animation: scrolling 10s linear infinite;
-    }
-    @keyframes scrolling{
-        0%{
-            transform: translateX(50%);
-        }
-        100%{
-            transform: translateX(-150%);
-        }
-    }
+    
     .upperNavRight{
         gap: 10px;
     }

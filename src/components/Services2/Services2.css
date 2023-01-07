@@ -21,7 +21,8 @@
 }
 .serv2SliderTitle h1{
     font-weight: 600;
-    /* letter-spacing: 1.5px; */
+    text-decoration: 2px underline #7142f8;
+    text-underline-offset: 8px;
 }
 .serv2SliderTitle h2{
     font-size: 1.5rem;
@@ -32,12 +33,15 @@
 
 
 .outerServ2Slider{
-    width: 90vw;
+    width: 100%;
 }
 
 .mainServ2slider{
-    width: 85%;
+    width: 91%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-top: 3rem;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .mainServ2slider .slick-slide{
@@ -121,5 +125,14 @@
     }
     .serv2slides p{
         font-size: 8px;
+    }
+    .mainServ2slider{
+        padding-top: 0;
+        
+    }
+    .activeSlide{
+        opacity: 1;
+        transform: scale(1.5);
+        transition: all 1s;
     }
 }

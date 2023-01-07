@@ -27,9 +27,11 @@ function MainServices() {
   const serviceslider = useRef(null);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 6000,
+    autoplaySpeed: 6000,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
@@ -69,8 +71,8 @@ function MainServices() {
                       Chauffeurs Are Not Only Courteous But Are Also Expert
                       Travel Companions That Will Make Your Road Travel
                       Memorable. Affordable Luxury, As We'd Like To Call it.</span>
-                      <h6>Read more.</h6>
                     </p>
+                      <h6>Read more.</h6>
                     
 
                     <div className="servicecol2outerDiv">
@@ -118,9 +120,8 @@ function MainServices() {
                       Chauffeurs Are Not Only Courteous But Are Also Expert
                       Travel Companions That Will Make Your Road Travel
                       Memorable. Affordable Luxury, As We'd Like To Call it.</span>
-                      <h6>Read more.</h6>
-
                     </p>
+                      <h6>Read more.</h6>
                     <div className="servicecol2outerDiv">
                         <div  className="servicecol2innerdiv">
                           <div className="servicecol2imgdiv">
@@ -166,9 +167,8 @@ function MainServices() {
                      Chauffeurs Are Not Only Courteous But Are Also Expert
                       Travel Companions That Will Make Your Road Travel
                       Memorable. Affordable Luxury, As We'd Like To Call it.</span> 
-                      <h6>Read more.</h6>
-
                     </p>
+                      <h6>Read more.</h6>
 
                     <div className="servicecol2outerDiv">
                         <div  className="servicecol2innerdiv">
@@ -215,9 +215,9 @@ function MainServices() {
                      Chauffeurs Are Not Only Courteous But Are Also Expert
                       Travel Companions That Will Make Your Road Travel
                       Memorable. Affordable Luxury, As We'd Like To Call it.</span>
-                      <h6>Read more.</h6>
 
                     </p>
+                      <h6>Read more.</h6>
 
                     <div className="servicecol2outerDiv">
                         <div  className="servicecol2innerdiv">

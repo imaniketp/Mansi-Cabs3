@@ -198,8 +198,8 @@ del{
 
 .search4rtcol h4 {
   font-size:  xx-large;
-  color:rgb(113, 66, 248);
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #7142f8, 0 0 50px #7142f8;
+  color:#000000;
+  font-weight: 600;
 }
 
 

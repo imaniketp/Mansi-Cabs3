@@ -2,35 +2,75 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Places.css";
 import { NavDropdown } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 function Places() {
-  const [show, setShow] = useState(false);
-const showDropdown = (e)=>{
-    setShow(!show);
-}
-const hideDropdown = e => {
-    setShow(false);
-}
+  const [show1, setShow1] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+  const [show5, setShow5] = useState(false);
+
   return (
     <Container fluid className="placesContainer">
       <h2>Top Cities Where We Provide OutStation Cabs</h2>
       <Container>
         <Row className="placesRow">
-          <Col md={3} className="mainPlace">
-          <NavDropdown title="Cabs From Nashik" id="basic-nav-dropdown" alignRight
-          show={show}
-          onMouseEnter={showDropdown} 
-          onMouseLeave={hideDropdown}>
-                    <NavDropdown.Item href="#action/3.1">Nashik to Matehran</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Nashik to Dhule</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Nashik to Manmad</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.4">Nashik to Trimbakeshvar</NavDropdown.Item>
+          <Col md={3} className="mainPlace" onMouseLeave={()=>setShow1(false)}>
+          <NavDropdown title="Cabs From Nashik" id="basic-nav-dropdown"
+          show={show1}
+          onMouseEnter={()=>setShow1(true)} 
+          >
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Matehran</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Dhule</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Manmad</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Trimbakeshvar</Link></NavDropdown.Item>
                 </NavDropdown>
           </Col>
-          <Col md={3} className="mainPlace">Cabs From Mumbai</Col>
-          <Col md={3} className="mainPlace">Cabs From Pune</Col>
-          <Col md={3} className="mainPlace">Cabs From Nagpur</Col>
-          <Col md={3} className="mainPlace">Cabs From SambhajiNagar</Col>
+          <Col md={3} className="mainPlace"  onMouseLeave={()=>setShow2(false)}>
+          <NavDropdown title="Cabs From Mumbai" id="basic-nav-dropdown"
+          show={show2}
+          onMouseEnter={()=>setShow2(true)} 
+          >
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Matehran</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Dhule</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Manmad</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Trimbakeshvar</Link></NavDropdown.Item>
+                </NavDropdown>
+          </Col>
+          <Col md={3} className="mainPlace"  onMouseLeave={()=>setShow3(false)}>
+          <NavDropdown title="Cabs From Pune" id="basic-nav-dropdown"
+          show={show3}
+          onMouseEnter={()=>setShow3(true)} 
+          >
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Matehran</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Dhule</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Manmad</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Trimbakeshvar</Link></NavDropdown.Item>
+                </NavDropdown>
+          </Col>
+          <Col md={3} className="mainPlace"  onMouseLeave={()=>setShow4(false)}>
+          <NavDropdown title="Cabs From Nagpur" id="basic-nav-dropdown"
+          show={show4}
+          onMouseEnter={()=>setShow4(true)}
+          >
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Matehran</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Dhule</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Manmad</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Trimbakeshvar</Link></NavDropdown.Item>
+                </NavDropdown>
+          </Col>
+          <Col md={3} className="mainPlace"  onMouseLeave={()=>setShow5(false)}>
+          <NavDropdown title="Cabs From SambhajiNagar" id="basic-nav-dropdown"
+          show={show5}
+          onMouseEnter={()=>setShow5(true)} 
+          >
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Matehran</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Dhule</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Manmad</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Trimbakeshvar</Link></NavDropdown.Item>
+                </NavDropdown>
+          </Col>
         </Row>
       </Container>
 

@@ -13,7 +13,7 @@ const searchCab = [
   {
     carType: "SEDAN",
     carImg: "etios.png",
-    carName: "Indica, Swift, Alto Or Equivalent Diesel",
+    carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
     save: "900",
@@ -21,8 +21,8 @@ const searchCab = [
   },
   {
     carType: "SUV",
-    carImg: "innova.png",
-    carName: "Ertiga, Innova, Fortuner Or Equivalent Diesel",
+    carImg: "etios.png",
+    carName: "Ertiga, Innova, Fortuner",
     passno: "7",
     disprice: "10000",
     save: "1500",
@@ -31,7 +31,7 @@ const searchCab = [
   {
     carType: "SEDAN",
     carImg: "etios.png",
-    carName: "Indica, Swift, Alto Or Equivalent Diesel",
+    carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "6000",
     save: "1001",
@@ -39,8 +39,17 @@ const searchCab = [
   },
   {
     carType: "SUV",
-    carImg: "innova.png",
-    carName: "Ertiga, Innova, Fortuner Or Equivalent Diesel",
+    carImg: "etios.png",
+    carName: "Ertiga, Innova, Fortuner",
+    passno: "7",
+    disprice: "5000",
+    save: "501",
+    price: "4499",
+  },
+  {
+    carType: "SUV",
+    carImg: "etios.png",
+    carName: "Ertiga, Innova, Fortuner",
     passno: "7",
     disprice: "5000",
     save: "501",
@@ -49,16 +58,7 @@ const searchCab = [
   {
     carType: "SUV",
     carImg: "innova.png",
-    carName: "Ertiga, Innova, Fortuner Or Equivalent Diesel",
-    passno: "7",
-    disprice: "5000",
-    save: "501",
-    price: "4499",
-  },
-  {
-    carType: "SUV",
-    carImg: "innova.png",
-    carName: "Ertiga, Innova, Fortuner Or Equivalent Diesel",
+    carName: "Ertiga, Innova, Fortuner",
     passno: "7",
     disprice: "5000",
     save: "501",
@@ -175,7 +175,6 @@ function CabsSearch() {
           <div key={index} className="search1row">
             <div className="search1row1">
               <div className="search1ndcol">
-                <img src={item.carImg} alt="" />
                 <p>{item.carType}</p>
                 <div>
                   <AiFillStar className="star"/>
@@ -184,6 +183,7 @@ function CabsSearch() {
                   <AiFillStar className="star"/>
                   <AiFillStar className="star1"/>
                 </div>
+                <img src={item.carImg} alt="" />
               </div>
               <div md={4} className="search2ndcol">
                 <h5>{item.carName}</h5>
@@ -213,41 +213,8 @@ function CabsSearch() {
                 <li>Free cancellation within 0.1 sec</li>
                 <li>24/7 customer helpline</li>
                 </div>
-                <div>
-                  <h6>
-                    <FcApproval /> Inclusions
-                  </h6>
-                  <p>Extra fare ₹13.00/km</p>
-                  <p>Driver Allowance</p>
-                </div>
-                <div>
-                  <h6>
-                    <FcCancel /> Exclusions
-                  </h6>
-                  <p>Parking Charges</p>
-                  <p>Pay 25% Advance</p>
-                  <p>Toll Charges</p>
-                </div>
               </div>
             )}
-
-            <div className="search7rdcol">
-              <div>
-                <h6>
-                  <FcApproval /> Inclusions
-                </h6>
-                <p>Extra fare ₹13.00/km</p>
-                <p>Driver Allowance</p>
-              </div>
-              <div>
-                <h6>
-                  <FcCancel /> Exclusions
-                </h6>
-                <p>Parking Charges</p>
-                <p>Pay 25% Advance</p>
-                <p>Toll Charges</p>
-              </div>
-            </div>
 
             <div className="search4rtcol">
               <div className="search4rtcolinner">

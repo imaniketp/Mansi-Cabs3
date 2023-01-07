@@ -44,7 +44,7 @@ export default function Services2() {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       lazyLoad: true,
       centerMode: true,
@@ -85,7 +85,7 @@ export default function Services2() {
       <div className="outerServ2Slider">
         <div className="serv2SliderTitle">
          <h1> All inclusive tours</h1>
-           <h2>Bags bharo Cabs Karo!</h2>
+           {/* <h2>Bags bharo Cabs Karo!</h2> */}
         </div>
 
         <div className="Serv2sliderControls">
