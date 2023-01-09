@@ -175,6 +175,7 @@ function CabsSearch() {
           <div key={index} className="search1row">
             <div className="search1row1">
               <div className="search1ndcol">
+                <div style={{marginBottom: "13px"}}>
                 <p>{item.carType}</p>
                 <div>
                   <AiFillStar className="star"/>
@@ -182,6 +183,7 @@ function CabsSearch() {
                   <AiFillStar className="star"/>
                   <AiFillStar className="star"/>
                   <AiFillStar className="star1"/>
+                </div>
                 </div>
                 <img src={item.carImg} alt="" />
               </div>

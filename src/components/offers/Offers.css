@@ -37,11 +37,10 @@
 }
 
 .offerSliderTitle h1 {
-  font-weight: bolder;
+  font-weight: 700;
   letter-spacing: 1.5px;
-  text-decoration: 2px underline #7142f8;
   text-align: center;
-  text-underline-offset: 0.5rem;
+  font-family: serif;
 }
 
 

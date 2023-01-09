@@ -8,11 +8,9 @@
 }
 
 .whySliderTitle h1{
-    font-weight: 600;
-    /* letter-spacing: 1px; */
     margin-bottom: 2rem;
-    text-decoration: 2px underline #7142f8;
-    text-underline-offset: 8px ;
+    font-weight: 700;
+    font-family: serif;
 }
 
 @media only screen and (max-width:770px){

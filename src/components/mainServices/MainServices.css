@@ -10,8 +10,7 @@
 
 .serviceSliderTitle h1{
     font-weight: 700;
-    text-decoration: 2px underline #7142f8;
-    text-underline-offset: 8px;
+    font-family: serif;
     margin-bottom: 0.5rem;
 }
 

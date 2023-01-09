@@ -48,9 +48,9 @@ function PlacesSlider() {
       beforeChange: (current, next) => setActiveIndex(next),
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1025,
           settings: {
-            slidesToShow: 5,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: true,

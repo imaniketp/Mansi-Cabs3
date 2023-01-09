@@ -20,9 +20,8 @@
     transition: all 1s;
 }
 .serv2SliderTitle h1{
-    font-weight: 600;
-    text-decoration: 2px underline #7142f8;
-    text-underline-offset: 8px;
+    font-weight: 700;
+    font-family: serif;
 }
 .serv2SliderTitle h2{
     font-size: 1.5rem;
