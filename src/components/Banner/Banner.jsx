@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Banner.css";
 import Select from "react-select";
 import { CgArrowsExchangeAlt } from "react-icons/cg";
-import { GiCircle, GiCommercialAirplane, GiRoad } from "react-icons/gi";
+import { GiCommercialAirplane, GiRoad } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { BiTrip } from "react-icons/bi";
 import { BsCircleFill } from "react-icons/bs";
@@ -28,15 +28,7 @@ const addCity = [
   { value: "Indore", label: "Indore" },
   { value: "Ujjain", label: "Ujjain" },
 ];
-const time = [
-  { value: "12:00pm", label: "12:00PM" },
-  { value: "01:00pm", label: "01:00PM" },
-  { value: "02:00pm", label: "02:00PM" },
-];
-const airportOptions = [
-  { value: "fromAirport", label: "From Airport" },
-  { value: "toAirport", label: "To Airport" },
-];
+
 const airports = [
   {
     value: "mumbaiairport",
@@ -68,9 +60,7 @@ const packages = [
 function Banner() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedAddCity, setSelectedAddCity] = useState(null);
-  const [selectedTime, setSelectedTime] = useState(null);
   const [selectedPackage, setSelectedPackage] = useState(null);
-  const [selectedAirport, setSelectedAirport] = useState(null);
   const [selectedAirportList, setSelectedAirportList] = useState(null);
 
   const [value, setValue] = useState(1);
@@ -167,81 +157,15 @@ function Banner() {
     setairportReturn(true);
   };
 
-  const dates = new Date();
   const [startDate, setStartDate] = useState(new Date())
   
 
   return (
     <section className="p-0 hero__slider-section" id="chilla">
-      {/* <div className="banner1Img">
-        <img src="main bg.jpg" alt="" />
-      </div> */}
 
       <div className="hero__form">
         <Container className="bannermain">
-          {/* <Row className="radiobtn" >
-            <Col className="mainradiobtn">
-              <div onClick={oneWayTrip}>
-                <GiCircle 
-                style={{
-                  color: onewayActive ? "#7142f8" : "black",
-                  border: onewayActive ? "3px solid" : "1px",
-                  borderRadius: onewayActive ? "50%" : "0"
-                }}
-                />
-                <p
-                style={{
-                  fontWeight: onewayActive ? "bolder" : "normal"
-                }}
-                >One Way Trip</p>
-              </div>
-            </Col>
-
-            <Col className="mainradiobtn">
-              <div onClick={roundTrip}>
-                <GiCircle 
-                style={{
-                  color: roundActive ? "#7142f8" : "black",
-                  border: roundActive ? "3px solid" : "1px",
-                  borderRadius: roundActive ? "50%" : "0"
-                }} />
-                <p
-                style={{
-                  fontWeight: roundActive ? "bolder" : "normal"
-                }}>Round Trip</p>
-              </div>
-            </Col>
-
-            <Col className="mainradiobtn">
-              <div onClick={rental}>
-                <GiCircle 
-                style={{
-                  color: rentalActive ? "#7142f8" : "black",
-                  border: rentalActive ? "3px solid" : "1px",
-                  borderRadius: rentalActive ? "50%" : "0"
-                }} />
-                <p
-                style={{
-                  fontWeight: rentalActive ? "bolder" : "normal"
-                }}>Rental</p>
-              </div>
-            </Col>
-
-            <Col className="mainradiobtn">
-              <div onClick={airport}>
-                <GiCircle  
-                style={{
-                  color: airportActive ? "#7142f8" : "black",
-                  border: airportActive ? "3px solid" : "1px",
-                  borderRadius: airportActive ? "50%" : "0"
-                }}/>
-                <p
-                style={{
-                  fontWeight: airportActive ? "bolder" : "normal"
-                }}>Airport</p>
-              </div>
-            </Col>
-          </Row> */}
+          
 
           <div className="radiobtn">
             <div className="radiobtninner">
@@ -335,7 +259,7 @@ function Banner() {
             </Col>
           </Row>
 
-          {value == 1 && (
+          {value === 1 && (
             <Row className="radioInput">
               <Col md={3} className="radioInputCol">
                 <label htmlFor="">From</label>
@@ -371,7 +295,7 @@ function Banner() {
               </Col>
             </Row>
           )}
-          {value == 2 && (
+          {value === 2 && (
             <>
               <Row className="radioInput">
                 <Col md={2} className="radioInputCol">
@@ -433,7 +357,7 @@ function Banner() {
             </>
           )}
 
-          {value == 3 && (
+          {value === 3 && (
             <Row className="radioInput">
               <Col md={4} className="radioInputCol">
                 <label htmlFor="">From</label>
@@ -466,7 +390,7 @@ function Banner() {
             </Row>
           )}
 
-          {value == 4 && (
+          {value === 4 && (
             <div className="airportOptions">
               <div onClick={airportpickup}>
                 <BsCircleFill
@@ -496,15 +420,6 @@ function Banner() {
           )}
           {value === 4 && airportValue === 1 && (
             <Row className="radioInput">
-              {/* <Col md={2} className="radioInputCol">
-                    <label htmlFor="">Trip</label>
-                    <Select
-                      defaultValue={selectedAirport}
-                      onChange={setSelectedAirport}
-                      options={airportOptions}
-                      placeholder="Select Trip"
-                    />
-                  </Col> */}
               <Col md={4} className="radioInputCol">
                 <label htmlFor="">Select Airport</label>
                 <Select
@@ -569,15 +484,6 @@ function Banner() {
 
           {value === 4 && airportValue === 3 && (
             <Row className="radioInput">
-              {/* <Col md={2} className="radioInputCol">
-                    <label htmlFor="">Trip</label>
-                    <Select
-                      defaultValue={selectedAirport}
-                      onChange={setSelectedAirport}
-                      options={airportOptions}
-                      placeholder="Select Trip"
-                    />
-                  </Col> */}
               <Col md={4} className="radioInputCol">
                 <label htmlFor="">Select Airport</label>
                 <Select

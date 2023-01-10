@@ -1,9 +1,9 @@
 .placesContainer{
     width: 90%;
     padding: 2rem;
-    background-color: #f2f7ff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 15px;
+    /* background-color: #f2f7ff; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    /* border-radius: 15px; */
     margin-bottom: 4rem;
 }
 
@@ -28,7 +28,7 @@
 .place1{
     width: 20%;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 17px;
 }
   .placedata{
     width: 80%;
@@ -41,68 +41,78 @@
     margin: 0;
     padding: 0;
     margin-top: 3px;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
   }
 .placeflex{
     display: flex;
     margin: 1rem 0;
 }
 
-@media all and (max-width:700px){
+@media all and (max-width:1025px){
   .place1{
-    font-size: 14px ;
-    width: 30%;
-    font-weight: 500;
+    font-size: 16px ;
+    width: 25%;
+    font-weight: 600;
   }
   .placedata{
-    width: 70%;
+    width: 75%;
  
+  }
+}
+@media all and (max-width:769px){
+  .place1{
+    font-size: 15px ;
+    width: 25%;
+    font-weight: 600;
+  }
+  .placedata{
+    width: 75%;
+  }
+  .placesContainer{
+    width: 100%;
+    padding: 2rem 0;    
+  }
+  .placedata p{ 
+    margin-top: 1px;
+    font-size: 14px;
+    font-weight: 500;
   }
 }
 @media all and (max-width:400px){
-  .place1{
-    font-size:15px ;
-    width: 30%;
-    font-weight: 500;
-  }
-  .placedata{
-    width: 70%;
- 
-  }
   .palceshead{
     padding: 0;
+}
+  .place1{
+    font-size: 14px ;
+    width: 22%;
+    font-weight: 600;
   }
-  .placesContainer{
-    width: 90%;
-    padding: 1rem;
-    background-color: #f2f7ff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 15px;
-    margin-bottom: 4rem;
+  .placedata{
+    width: 78%;
   }
+  .placedata p{ 
+    margin-top: 1px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
 }
 
 @media all and (max-width:321px){
+
   .place1{
-    font-size: 12px;
-    width: 30%;
-    font-weight: 500;
+    font-size: 14px ;
+    width: 25%;
+    font-weight: 600;
   }
   .placedata{
     width: 75%;
   }
   .placedata p{ 
-    font-size: 10px;
+    margin-top: 1px;
+    font-size: 12px;
+    font-weight: 500;
   }
-  .palceshead{
-    padding: 0;
-  }
-  .placesContainer{
-    width: 90%;
-    padding: 1rem;
-    background-color: #f2f7ff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 15px;
-    margin-bottom: 4rem;
-  }
+  
 }

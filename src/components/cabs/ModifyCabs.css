@@ -45,6 +45,13 @@
        
   }
 }
+  @media all and (max-width:400px){
+    .modifybtn{
+      width: 50%;
+      font-size: 12px;
+      bottom: 38px;
+  }
+}
 
 .css-13cymwt-control{   
   font-size: 15px;

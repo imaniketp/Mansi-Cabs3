@@ -63,7 +63,7 @@ function PlacesSlider() {
   const settings = {
     dots: false,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 10000,
     responsive: [

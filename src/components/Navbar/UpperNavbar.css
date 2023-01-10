@@ -13,7 +13,7 @@
 }
 
 .upperNavRight a{
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -26,7 +26,7 @@
 }
 
 .upperNavRight{
-    width: 30%;
+    width: 32%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,13 +50,13 @@
 }
 .uppernavCall{
     color: white;
-    font-size: large;
+    font-size: x-large;
     margin: 0.5rem;
     cursor: pointer;
 }
 @media all and (max-width:1024px){
     .upperNavRight a{
-        font-size: 15px;
+        font-size: 17px;
         font-weight: bold;
         color: white;
         text-decoration: none;
@@ -76,7 +76,7 @@
         cursor: pointer;
     }
     .upperNavRight{
-        width: 36%;
+        width: 40%;
         margin-right: 0;
     }
     .upperNavLeft{
@@ -127,10 +127,24 @@
         gap: 10px;
     }
     .upperNavContainer a{
-        font-size: 12px;
+        font-size: 15px;
     }
     .upperNavContainer h5{
         font-size: 15px;
+    }
+}
+@media all and (max-width:321px){
+    .upperNavLeft{
+        width: 100%;
+    }
+    .upperNavRight{
+        width: 100%;
+        gap: 0.5rem;
+        
+    }
+    .upperNavContainer a{
+        font-size: 13px;
+        font-weight: bold;
     }
 }
 .socialIcons{
@@ -139,37 +153,6 @@
     gap: 1rem;
 }
 
-
-
-.fb{
-    color: white;
-    background-color: #3b5998;
-    border-radius: 50%;
-    padding: 0.3rem;
-    font-size: xx-large;
-    margin: 0.5rem;
-    cursor: pointer;
-}
-
-.twitter{
-    color: white;
-    background-color: #1DA1F2;
-    border-radius: 50%;
-    padding: 0.3rem;
-    font-size: xx-large;
-    margin: 0.5rem;
-    cursor: pointer;
-}
-
-.gmail{
-    color: white;
-    background-color: #D44638;
-    border-radius: 50%;
-    padding: 0.3rem;
-    font-size: xx-large;
-    margin: 0.5rem;
-    cursor: pointer;
-}
 
 @media all and (max-width:450px){
     
@@ -187,6 +170,29 @@
     }
 }
 
+
+.circle1, .circle2{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #25d366;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    animation: anime 2s linear infinite;
+}
+
+@keyframes anime{
+    0%{
+        transform: scale(1);
+        background-color: rgba(179, 154, 255, 1);
+    }
+    100%{
+        transform: scale(2);
+        background-color: rgba(179, 154, 255, 0);
+    }
+}
+
 .maincontact{
     width: 3rem;
     height: 3rem;
@@ -197,8 +203,8 @@
     font-size: 2rem;
     color: white;
     border-radius: 50%;
-    padding: 10px;
-    background-color: #25d366;
+    padding: 2px;
+    background-color: #7142f8;
     z-index: 9999;
     cursor: pointer;
 }
@@ -239,34 +245,22 @@
     color: #7142f8;
 }
 
+
 @media all and (max-width:700px){
-    .maincontact{
+    .circle1, .circle2{
         width: 2.5rem;
         height: 2.5rem;
-        padding: 8px; 
+        border-radius: 50%;
+        background-color: #25d366;
+        position: fixed;
         bottom: 2rem;
         right: 1rem;
+        animation: anime 2s linear infinite;
     }
-    .mainwhatsap{
-        width: 2.5rem;
-        height: 2.5rem;
-        padding: 8px; 
-        bottom: 5rem;
-        right: 1rem;
-    }
-    .maincall{
-        width: 2.5rem;
-        height: 2.5rem;
-        padding: 8px; 
-        bottom: 8rem;
-        right: 1rem;
-    }
-}
-@media all and (max-width:700px){
     .maincontact{
         width: 2.5rem;
         height: 2.5rem;
-        padding: 8px; 
+        padding: 2px; 
         bottom: 2rem;
         right: 1rem;
     }
