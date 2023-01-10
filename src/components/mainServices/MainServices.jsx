@@ -30,10 +30,11 @@ function MainServices() {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 6000,
+    speed: 5000,
+    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    
   };
   return (
     <div className="serviceSliderContainer">
