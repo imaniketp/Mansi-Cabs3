@@ -35,6 +35,7 @@ function App() {
   return (
     <BrowserRouter>
     <ScrollToTop  />
+      <CustomerCare />
       <UpperNavbar />
       <Navbars />
       <Routes>
@@ -57,7 +58,6 @@ function App() {
         <Route path="blogs" element={<Blogs />} />
         <Route path="blogs/aurangabad" element={<Aurangabad />} />
       </Routes>
-      <CustomerCare />
       <Footer />
     </BrowserRouter>
   );

@@ -108,7 +108,7 @@
     }
     .activeSlide{
         opacity: 1;
-        transform: scale(1.1);
+        transform: scale(1.5);
     }
     .serv2slides img{
         width: 2rem;
@@ -125,9 +125,5 @@
         padding-top: 0;
         
     }
-    .activeSlide{
-        opacity: 1;
-        transform: scale(1.5);
-        transition: all 1s;
-    }
+    
 }

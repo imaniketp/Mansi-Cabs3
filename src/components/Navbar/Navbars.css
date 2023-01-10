@@ -67,11 +67,12 @@
 }
 .offcanvas-backdrop.show {
   opacity: 0;
+  width: 97vw;
 }
 .offcanvas.offcanvas-start{
   width: 230px;
   top: 125px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -225,25 +226,40 @@
   font-size: 1.5rem;
 }
 
+@media all and (max-width:1401px){
+  .offcanvas.offcanvas-start{
+    top: 145px;
+  }
+}
 @media all and (max-width:1132px){
   .offcanvas.offcanvas-start{
-    top: 146px;
+    top: 145px;
   }
 }
-@media all and (max-width:824px){
+@media all and (max-width:1025px){
   .offcanvas.offcanvas-start{
-    top: 175px;
+    top: 123px;
   }
 }
-@media all and (max-width:547px){
+@media all and (max-width:974px){
   .offcanvas.offcanvas-start{
-    top: 175px;
+    top: 137px;
+  }
+}
+@media all and (max-width:769px){
+  .offcanvas.offcanvas-start{
+    top: 123px;
+  }
+}
+@media all and (max-width:670px){
+  .offcanvas.offcanvas-start{
+    top: 125px;
   }
 }
 @media all and (max-width:530px){
   .offcanvas.offcanvas-start{
-    top: 150px !important;
-    background: rgba(0, 0, 0, 0.8);
+    top: 145px !important;
+    background: rgba(255, 0, 0, 0.8);
     color: white;
   }
   .sidebarTitle a{
@@ -253,20 +269,26 @@
       color: white;   
     }
 }
-@media all and (max-width:509px){
-  .offcanvas.offcanvas-start{
-    top: 150px !important;
-  }
-}
 
-@media all and (max-width:450px){
-  .offcanvas.offcanvas-start{
-    top: 169px !important;
-  }
-}
+
 @media all and (max-width:441px){
   .offcanvas.offcanvas-start{
-    top: 157px !important;
+    top: 162px !important;
+  }
+}
+@media all and (max-width:341px){
+  .offcanvas.offcanvas-start{
+    top: 173px !important;
+  }
+}
+@media all and (max-width:321px){
+  .offcanvas.offcanvas-start{
+    top: 162px !important;
+  }
+}
+@media all and (max-width:309px){
+  .offcanvas.offcanvas-start{
+    top: 167px !important;
   }
 }
 
