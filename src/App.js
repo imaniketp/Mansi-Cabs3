@@ -29,6 +29,7 @@ import OurServices from "./components/mainServices/OurServices";
 import OurServices2 from "./components/mainServices/OurServices2";
 import OurServices3 from "./components/mainServices/OurServices3";
 import OurServices4 from "./components/mainServices/OurServices4";
+import CustomerCare from "./components/Navbar/CustomerCare";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <Route path="blogs" element={<Blogs />} />
         <Route path="blogs/aurangabad" element={<Aurangabad />} />
       </Routes>
+      <CustomerCare />
       <Footer />
     </BrowserRouter>
   );
