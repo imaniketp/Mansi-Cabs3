@@ -293,7 +293,6 @@
     border: 0;
     border-bottom: 1px solid black;
     padding: 0.5rem 0;
-    margin-bottom: 0.5rem;
 }
 .radioInputCol label{
     font-size: large;
@@ -362,6 +361,9 @@
     display: block !important;
 }
 
+.react-datepicker__input-container {
+    font-size: 13px;
+}
 
 /* .addCity .css-13cymwt-control{
     overflow-y: scroll;
@@ -392,7 +394,7 @@
         font-size: 13px;
     }
     .radioInputCol input{
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
     }
     .react-datepicker__day, .react-datepicker__time-name {

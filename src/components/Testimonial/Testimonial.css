@@ -69,6 +69,7 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    align-items: center;
     gap: 1rem;
     bottom: 0 !important;
 }
@@ -77,14 +78,11 @@
     margin: 0;
     text-shadow: 1px 1px #7142f8;
 }
-.innertestslide2 p{
-    margin: 0;
-    font-size: 13px;
-    text-shadow: 1px 1px #7142f8;
-}
+
 
 .testuserprofile{
-    font-size: 1rem;
+    width: 30px;
+    border-radius: 50%;
 }
 
 
@@ -154,14 +152,11 @@
     text-shadow: 0.5px 0.5px #7142f8;
 
     }
-    .innertestslide2 p{    
-        font-size: 10px;
-    }
-    
+
 }
 @media only screen and (max-width:321px){
     .outertestSlider{
-        width: 230px;
+        width: 210px;
         margin: 1rem;
     }
     .testslides{
@@ -175,8 +170,8 @@
     text-shadow: 0.5px 0.5px #7142f8;
 
     }
-    .innertestslide2 p{    
-        font-size: 10px;
+    .innertestslide2 h4{
+        font-size: 16px;
     }
     
 }

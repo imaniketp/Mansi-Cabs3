@@ -89,10 +89,6 @@
 }
 
 @media all and (max-width:700px){
-    .serv2SliderTitle h1{
-        font-size: 20px;
-        
-    }
     
     .serv2SliderTitle h2{
         font-size: 12px;

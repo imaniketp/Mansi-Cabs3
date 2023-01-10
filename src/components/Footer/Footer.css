@@ -1,7 +1,6 @@
 .footerContainer{
-    background-color: #f2f7ff;
-    padding: 3rem;
-    padding-bottom: 15px;
+    background-color: #ffffff;
+    padding: 2rem 3rem;
     color: black;
 }
 
@@ -124,14 +123,6 @@
     cursor: pointer;
 }
 
-.footertwitter{
-    color: white;
-    background-color: #1DA1F2;
-    border-radius: 50%;
-    padding: 0.3rem;
-    font-size: xx-large;
-    cursor: pointer;
-}
 
 .footerinsta{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
@@ -141,12 +132,12 @@
     color: white;
     cursor: pointer;
 }
-.footerlinked{
-    background-color: #0077b5;
+.footeryt{
+    fill: #ff0000;
     border-radius: 50%;
     padding: 0.2rem;
     font-size: xx-large;
-    color: white;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -154,10 +145,27 @@
     display: flex;
     gap: 1rem;
     font-size: 15px;
+    justify-content: center;
 }
 .footerrow2col2{
     display: flex;
     gap: 2rem;
+    justify-content: center;
+}
+
+.footerBottom{
+    width: 100%;
+    background-color: #25aae1;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerBottom a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
 }
 
 @media all and (max-width:700px){
@@ -198,9 +206,13 @@
     .footerrow2col2 {
         margin-top: 1rem;
     }
+    .footerBottom{
+        padding: 1rem;
+        flex-direction: column;
+    }
 }
 
-@media all and (max-width:300px){
+@media all and (max-width:321px){
     .footerContainer{
         padding: 1rem;
     }

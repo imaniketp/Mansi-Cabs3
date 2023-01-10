@@ -22,7 +22,7 @@ function Home() {
         {/* <Services/> */}
         <MainServices />
         {/* <Cars /> */}
-        <Services2 />
+        {/* <Services2 /> */}
         <Banner2/>
         <Testimonial />
         <Why />

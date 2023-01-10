@@ -5,7 +5,7 @@
     padding-top: 10px;
 }
 .upperNavLeft{
-    width: 100%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .upperNavRight a{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -26,33 +26,77 @@
 }
 
 .upperNavRight{
+    width: 30%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+    margin-right: 2rem;
 }
 .upperNavRight div{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
 }
 
 .uppernavwhats{
     color: white;
     background-color: #25d366;
     border-radius: 50%;
-    padding: 0.3rem;
-    font-size: xx-large;
-    margin: 0.5rem;
+    padding: 0.2rem;
+    font-size: x-large;
     cursor: pointer;
 }
 .uppernavCall{
     color: white;
-    font-size: x-large;
+    font-size: large;
     margin: 0.5rem;
     cursor: pointer;
+}
+@media all and (max-width:1024px){
+    .upperNavRight a{
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    .uppernavwhats{
+        color: white;
+        background-color: #25d366;
+        border-radius: 50%;
+        padding: 0.2rem;
+        font-size: x-large;
+        cursor: pointer;
+    }
+    .uppernavCall{
+        color: white;
+        font-size: large;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+    .upperNavRight{
+        width: 36%;
+        margin-right: 0;
+    }
+    .upperNavLeft{
+        width: 64%;
+    }
+}
+@media all and (max-width:768px){
+    .upperNavRight a{
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    .upperNavLeft{
+        width: 55%;
+    }
+    .upperNavRight{
+        width: 45%;
+        gap: 0;
+    }
 }
 @media all and (max-width:530px){
     .tagline{
@@ -65,15 +109,19 @@
         padding-top: 0.5rem;
     }
     
+    .upperNavLeft{
+        width: 100%;
+    }
     .upperNavRight{
-        gap: 2px;
+        width: 100%;
+        gap: 1rem;
     }
     .upperNavContainer a{
         font-size: 18px;
         font-weight: bold;
     }
 }
-@media all and (max-width:340px){
+@media all and (max-width:400px){
     
     .upperNavRight{
         gap: 10px;
@@ -139,9 +187,9 @@
     }
 }
 
-.mainwhatsap{
-    width: 4rem;
-    height: 4rem;
+.maincontact{
+    width: 3rem;
+    height: 3rem;
     position: fixed;
     text-align: center;
     bottom: 2rem;
@@ -149,9 +197,25 @@
     font-size: 2rem;
     color: white;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
     background-color: #25d366;
     z-index: 9999;
+    cursor: pointer;
+}
+.mainwhatsap{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    text-align: center;
+    bottom: 6rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #25d366;
+    z-index: 9999;
+    cursor: pointer;
 }
 .mainwhatsap:hover{
     color: #7142f8;
@@ -161,25 +225,63 @@
     height: 3rem;
     position: fixed;
     text-align: center;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: 10rem;
+    right: 2rem;
     font-size: 2rem;
     color: white;
     border-radius: 50%;
-    padding: 15px;
+    padding: 12px;
     background-color: #25d366;
     z-index: 9999;
+    cursor: pointer;
 }
 .maincall:hover{
     color: #7142f8;
 }
 
 @media all and (max-width:700px){
-    .mainwhatsap{
-        width: 3rem;
-        height: 3rem;
+    .maincontact{
+        width: 2.5rem;
+        height: 2.5rem;
         padding: 8px; 
-        bottom: 1rem;
+        bottom: 2rem;
+        right: 1rem;
+    }
+    .mainwhatsap{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px; 
+        bottom: 5rem;
+        right: 1rem;
+    }
+    .maincall{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px; 
+        bottom: 8rem;
+        right: 1rem;
+    }
+}
+@media all and (max-width:700px){
+    .maincontact{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px; 
+        bottom: 2rem;
+        right: 1rem;
+    }
+    .mainwhatsap{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px; 
+        bottom: 5rem;
+        right: 1rem;
+    }
+    .maincall{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px; 
+        bottom: 8rem;
         right: 1rem;
     }
 }

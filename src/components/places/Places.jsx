@@ -1,21 +1,71 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Container} from "react-bootstrap";
 import "./Places.css";
-import { NavDropdown } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+
 
 function Places() {
-  const [show1, setShow1] = useState(false);
-  const [show2, setShow2] = useState(false);
-  const [show3, setShow3] = useState(false);
-  const [show4, setShow4] = useState(false);
-  const [show5, setShow5] = useState(false);
+
 
   return (
+    <>
+    <h1 className="placesheading">Top Cities Where We Provide OutStation Cabs</h1>
     <Container fluid className="placesContainer">
-      <h2>Top Cities Where We Provide OutStation Cabs</h2>
-      <Container>
-        <Row className="placesRow">
+      <Container className="palceshead">
+        <div className="placeflex">
+          <div className="place1">Cabs for Nashik :</div>
+
+          <div className="placedata">
+            <p>Nashik to Matehran &nbsp; | &nbsp; </p>
+            <p>Nashik to Dhule &nbsp; | &nbsp; </p>
+            <p>Nashik to Manmad &nbsp; | &nbsp; </p>
+            <p>Nashik to Trimbakeshvar &nbsp; | &nbsp; </p>
+            <p>Nashik to Shirdi &nbsp; | &nbsp; </p>
+            <p>Nashik to dubai &nbsp; | &nbsp; </p>
+            <p>Nashik to dubai &nbsp; </p>
+          </div>
+        </div>
+        <div className="placeflex">
+          <div className="place1">Cabs for Pune :</div>
+
+          <div className="placedata">
+            <p>Pune to Matehran &nbsp; | &nbsp; </p>
+            <p>Pune to Dhule &nbsp; | &nbsp; </p>
+            <p>Pune to Manmad &nbsp; | &nbsp; </p>
+            <p>Pune to Trimbakeshvar &nbsp; | &nbsp; </p>
+            <p>Pune to Shirdi &nbsp; | &nbsp; </p>
+            <p>Pune to dubai &nbsp; | &nbsp; </p>
+            <p>Pune to dubai &nbsp; | &nbsp; </p>
+          </div>
+        </div>
+        <div className="placeflex">
+          <div className="place1">Cabs for Mumbai :</div>
+
+          <div className="placedata">
+            <p>Mumbai to Matehran &nbsp; | &nbsp; </p>
+            <p>Mumbai to Dhule &nbsp; | &nbsp; </p>
+            <p>Mumbai to Manmad &nbsp; | &nbsp; </p>
+            <p>Mumbai to Trimbakeshvar &nbsp; | &nbsp; </p>
+            <p>Mumbai to Shirdi &nbsp; | &nbsp; </p>
+            <p>Mumbai to dubai &nbsp; | &nbsp; </p>
+            <p>Mumbai to dubai &nbsp; | &nbsp; </p>
+          </div>
+        </div>
+        <div className="placeflex">
+          <div className="place1">Cabs for Nagpur :</div>
+
+          <div className="placedata">
+            <p>Nagpur to Matehran &nbsp; | &nbsp; </p>
+            <p>Nagpur to Dhule &nbsp; | &nbsp; </p>
+            <p>Nagpur to Manmad &nbsp; | &nbsp; </p>
+            <p>Nagpur to Trimbakeshvar &nbsp; | &nbsp; </p>
+            <p>Nagpur to Shirdi &nbsp; | &nbsp; </p>
+            <p>Nagpur to dubai &nbsp; | &nbsp; </p>
+            <p>Nagpur to dubai &nbsp; | &nbsp; </p>
+          </div>
+        </div>
+       
+
+         {/* <Row className="placesRow">
           <Col md={3} className="mainPlace" onMouseLeave={()=>setShow1(false)}>
           <NavDropdown title="Cabs From Nashik" id="basic-nav-dropdown"
           show={show1}
@@ -71,50 +121,11 @@ function Places() {
                     <NavDropdown.Item ><Link to="/CabsSearch">Nashik to Trimbakeshvar</Link></NavDropdown.Item>
                 </NavDropdown>
           </Col>
-        </Row>
+        </Row>   */}
       </Container>
-
     </Container>
+    </>
   );
 }
 
 export default Places;
-{/* <Container className="airportData">
-        <h5>POPULAR AIRPORTS CABS</h5>
-        <Row>
-          <Col md={3} className="placesCol">
-            <ul className='placesul'>
-              <li>Mumbai Airport Taxi</li>
-              <li>Ahemdabad Airport Taxi</li>
-              <li>Amritsar Airport Taxi</li>
-              <li>Bangalore Airport Taxi</li>
-            </ul>
-          </Col>
-
-          <Col md={3} className="placesCol">
-            <ul className='placesul'>
-              <li>Kolkata Airport Taxi</li>
-              <li>Cochin Airport Taxi</li>
-              <li>Delhi Airport Taxi</li>
-              <li>Hyderabad Airport Taxi</li>
-            </ul>
-          </Col>
-
-          <Col md={3} className="placesCol">
-            <ul className='placesul'>
-              <li>Chandigarh Airport Taxi</li>
-              <li>Chennai Airport Taxi</li>
-              <li>Jaipur Airport Taxi</li>
-              <li>Varanasi Airport Taxi</li>
-            </ul>
-          </Col>
-
-          <Col md={3} className="placesCol">
-            <ul className='placesul'>
-              <li>Udaipur Airport Taxi</li>
-              <li>Vishakhapatnam Airport Taxi</li>
-              <li>Pune Airport Taxi</li>
-            </ul>
-          </Col>
-        </Row>
-      </Container> */}

@@ -1,10 +1,11 @@
 import React from "react";
 import "./Offers.css";
 import Slider from "react-slick";
-import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
+
 import { useRef } from "react";
+import offerImg from "../../Assets/mainOfferImg.jpeg";
 import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
+
 
 function Offers() {
   const offerslider = useRef(null);
@@ -20,17 +21,17 @@ function Offers() {
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
         },
       },
       {
-        breakpoint: 750,
+        breakpoint: 769,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -67,7 +68,7 @@ function Offers() {
                 
                   <div className="offercard">
                     <div className="offerimg">
-                      <img src="offer1img.png" alt="" />
+                      <img src={offerImg} alt="" />
                       <h5>One Way Offer</h5>
                     </div>
                     <div className="offercontent">
@@ -80,7 +81,7 @@ function Offers() {
                 
                   <div className="offercard">
                     <div className="offerimg">
-                      <img src="offer1img.png" alt="" />
+                      <img src={offerImg} alt="" />
                       <h5>One Way Offer</h5>
                     </div>
                     <div className="offercontent">
@@ -93,7 +94,7 @@ function Offers() {
                 
                   <div className="offercard">
                     <div className="offerimg">
-                      <img src="offer1img.png" alt="" />
+                      <img src={offerImg} alt="" />
                       <h5>One Way Offer</h5>
                     </div>
                     <div className="offercontent">
@@ -106,7 +107,7 @@ function Offers() {
 
                   <div className="offercard">
                     <div className="offerimg">
-                      <img src="offer1img.png" alt="" />
+                      <img src={offerImg} alt="" />
                       <h5>One Way Offer</h5>
                     </div>
                     <div className="offercontent">
@@ -119,7 +120,7 @@ function Offers() {
 
                   <div className="offercard">
                     <div className="offerimg">
-                      <img src="offer1img.png" alt="" />
+                      <img src={offerImg} alt="" />
                       <h5>One Way Offer</h5>
                     </div>
                     <div className="offercontent">
@@ -132,7 +133,7 @@ function Offers() {
 
                   <div className="offercard">
                     <div className="offerimg">
-                      <img src="offer1img.png" alt="" />
+                      <img src={offerImg} alt="" />
                       <h5>One Way Offer</h5>
                     </div>
                     <div className="offercontent">

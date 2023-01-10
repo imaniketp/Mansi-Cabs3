@@ -369,26 +369,12 @@ function Banner() {
                   dateFormat="MMMM d, yyyy h:mm aa"
                 />
               </Col>
-              {/* <Col md={2} className="radioInputCol">
-                  <label htmlFor="">Pick Up</label>
-                  <input type='date' />
-              </Col>
-              <Col md={3} className="radioInputCol">
-                  <label htmlFor="">Pick At</label>
-                  <Select
-                  // menuPlacement="top"
-                  defaultValue={selectedTime}
-                  onChange={setSelectedTime}
-                  options={time}
-                  placeholder='Select Time' 
-                  />
-              </Col> */}
             </Row>
           )}
           {value == 2 && (
             <>
               <Row className="radioInput">
-                <Col md={3} className="radioInputCol">
+                <Col md={2} className="radioInputCol">
                   <label htmlFor="">From</label>
                   <Select
                     defaultValue={selectedOption}
@@ -402,7 +388,7 @@ function Banner() {
                     <CgArrowsExchangeAlt />
                   </div>
                 </Col>
-                <Col md={3} className="radioInputCol">
+                <Col md={2} className="radioInputCol">
                   <label htmlFor="">To</label>
                   <Select
                     defaultValue={selectedOption}
@@ -420,7 +406,9 @@ function Banner() {
                     placeholder="Select City"
                   />
                 </Col>
-                <Col md={3} className="radioInputCol">
+                <Col md={5}>
+                  <Row>
+                <Col md={6} className="radioInputCol">
                   <label>Date & Time</label>
                 <DatePicker
                   selected={startDate}
@@ -428,6 +416,17 @@ function Banner() {
                   showTimeSelect
                   dateFormat="MMMM d, yyyy h:mm aa"
                 />
+                </Col>
+                <Col md={6} className="radioInputCol">
+                  <label>Return Date</label>
+                <DatePicker
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  showTimeSelect
+                  dateFormat="MMMM d, yyyy h:mm aa"
+                />
+                </Col>
+                </Row>
                 </Col>
               </Row>
   

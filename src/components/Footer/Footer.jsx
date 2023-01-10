@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaYoutube,
 } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { Link } from "react-router-dom";
@@ -14,6 +15,7 @@ import gplay from '../../Assets/googlePlay.png'
 
 function Footer() {
   return (
+  <>
     <Container fluid className="footerContainer">
       <Row className="footerRow">
         <Col md={5} className='footerrow1col1'>
@@ -59,8 +61,9 @@ function Footer() {
           </div>
         </Col>
       </Row>
-      <hr />
-      <Row>
+      
+    </Container>
+    <div className="footerBottom">
         <Col md={6} className="footerrow2col1">
           <div>
             <Link to="/tnc">Terms & Condition</Link>
@@ -75,17 +78,14 @@ function Footer() {
             <FaFacebookF className="footerfb" />
           </div>
           <div>
-            <FaTwitter className="footertwitter" />
-          </div>
-          <div>
             <FaInstagram className="footerinsta" />
           </div>
           <div>
-            <TiSocialLinkedin className="footerlinked" />
+            <FaYoutube className="footeryt" />
           </div>
         </Col>
-      </Row>
-    </Container>
+    </div>
+    </>
   );
 }
 

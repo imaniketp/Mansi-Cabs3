@@ -1,44 +1,108 @@
 .placesContainer{
-    padding: 2rem ;
+    width: 90%;
+    padding: 2rem;
+    background-color: #f2f7ff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+    margin-bottom: 4rem;
 }
 
-.placesContainer h2{
+.placesheading{
     text-align: center;
+    font-weight: 700;
+    font-family: serif;
+    margin-bottom: 10px;
     
 }
-
-.placesRow{
-    margin: 3rem 0;
+.placedata{
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+   align-items: center;
+  
+  
+}
+.palceshead{
+    padding: 0 2rem;
 }
 
-.mainPlace{
-    border-left: 5px solid #7142f8 ;
-    border-radius: 10px;
-    font-weight: 500;
-    padding: 0.5rem;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color: white;
+.place1{
+    width: 20%;
+    font-weight: 700;
+    font-size: 15px;
 }
-
-.dropdown-item a{
-    text-decoration: none;
-    color: black;
-}
-.dropdown-item a:hover{
-    color: white;
-}
-
-
-.dropdown-toggle::after {
-    display: none !important; 
+  .placedata{
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    
   }
+  .placedata p{ 
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    font-size: 13px;
+  }
+.placeflex{
+    display: flex;
+    margin: 1rem 0;
+}
 
 @media all and (max-width:700px){
-    .placesContainer{
-        padding: 0;
-    }
+  .place1{
+    font-size: 14px ;
+    width: 30%;
+    font-weight: 500;
+  }
+  .placedata{
+    width: 70%;
+ 
+  }
+}
+@media all and (max-width:400px){
+  .place1{
+    font-size:15px ;
+    width: 30%;
+    font-weight: 500;
+  }
+  .placedata{
+    width: 70%;
+ 
+  }
+  .palceshead{
+    padding: 0;
+  }
+  .placesContainer{
+    width: 90%;
+    padding: 1rem;
+    background-color: #f2f7ff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+    margin-bottom: 4rem;
+  }
+}
+
+@media all and (max-width:321px){
+  .place1{
+    font-size: 12px;
+    width: 30%;
+    font-weight: 500;
+  }
+  .placedata{
+    width: 75%;
+  }
+  .placedata p{ 
+    font-size: 10px;
+  }
+  .palceshead{
+    padding: 0;
+  }
+  .placesContainer{
+    width: 90%;
+    padding: 1rem;
+    background-color: #f2f7ff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 15px;
+    margin-bottom: 4rem;
+  }
 }

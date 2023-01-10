@@ -58,9 +58,6 @@
   margin-top: 0.5rem;
 }
 
-/* .navbarbtns{
-  
-} */
 
 .sidebarIcon{
   font-size: 2rem;
@@ -73,7 +70,7 @@
 }
 .offcanvas.offcanvas-start{
   width: 230px;
-  top: 133px;
+  top: 125px;
   background: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
@@ -82,21 +79,6 @@
   border: 0;
   color: black;
 }
-
-
-/* .sidebar{
-  width: 17rem;
-  position: absolute;
-  z-index: 11;
-  top: 0;
-  padding: 2rem;
-  min-height: 100%;
-  
-  top: 132px;
-} */
-
-
-
 
 
 .sidebarTitle{
@@ -243,14 +225,24 @@
   font-size: 1.5rem;
 }
 
+@media all and (max-width:1132px){
+  .offcanvas.offcanvas-start{
+    top: 146px;
+  }
+}
+@media all and (max-width:824px){
+  .offcanvas.offcanvas-start{
+    top: 175px;
+  }
+}
 @media all and (max-width:547px){
   .offcanvas.offcanvas-start{
-    top: 134px;
+    top: 175px;
   }
 }
 @media all and (max-width:530px){
   .offcanvas.offcanvas-start{
-    top: 158px !important;
+    top: 150px !important;
     background: rgba(0, 0, 0, 0.8);
     color: white;
   }
@@ -263,24 +255,21 @@
 }
 @media all and (max-width:509px){
   .offcanvas.offcanvas-start{
-    top: 158px !important;
+    top: 150px !important;
   }
 }
-@media all and (max-width:468px){
-  .offcanvas.offcanvas-start{
-    top: 158px !important;
-  }
-}
+
 @media all and (max-width:450px){
   .offcanvas.offcanvas-start{
-    top: 177px !important;
+    top: 169px !important;
   }
 }
-@media all and (max-width:355px){
+@media all and (max-width:441px){
   .offcanvas.offcanvas-start{
-    top: 177px !important;
+    top: 157px !important;
   }
 }
+
 
 
 .modal-header

@@ -207,7 +207,12 @@
     
    
 }
-
+.pranay{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10rem;
+}
 .servicesmallimages{
     border-radius: 50%;
     width: 40px;
@@ -215,4 +220,8 @@
 }
 .servicesmallimages img{
     width: 2rem;
+}
+.servicemore{
+    color: #7142f8;
+    font-weight: 600;
 }

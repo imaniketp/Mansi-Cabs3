@@ -19,14 +19,18 @@ function Transfer() {
   const [showpay, setShowpay] = useState(false);
   const [showCabDetails, setShowCabDetails] = useState(false);
   const [showView, setShowView] = useState(false);
-  const [modalShow, setModalShow] = useState(false);
+  const [modalShow1, setModalShow1] = useState(false);
+  const [modalShow2, setModalShow2] = useState(false);
+  const [modalShow3, setModalShow3] = useState(false);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
+    autoplay:true,
+    autoplaySpeed:2000,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll:1,
   };
 
   const handleShowview = () => {
@@ -119,175 +123,47 @@ function Transfer() {
 
                 <Row className="transferSpec">
                   <h5> Spacious Car</h5>
-                  <Col>
-                    <Row>
-                      <Col md={3} className="transferSpeccol1">
-                        <p>
-                          <span>
-                            <AiFillCheckCircle />
-                          </span>
-                          Extra Km fare
-                        </p>
-                      </Col>
-                      <Col md={8} className="transferSpeccol1">
-                        <p>₹15.0/km after 167 kms</p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col md={3} className="transferSpeccol1">
-                        <p>
-                          <span>
-                            <AiFillCheckCircle />
-                          </span>
-                          Fuel Type
-                        </p>
-                      </Col>
-                      <Col md={8} className="transferSpeccol1">
-                        <p>
-                          <FaGasPump /> CNG/Diesel
-                        </p>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col md={3} className="transferSpeccol1">
-                        <p>
-                          <span>
-                            <AiFillCheckCircle />
-                          </span>
-                          Cancellation
-                        </p>
-                      </Col>
-                      <Col md={8} className="transferSpeccol1">
-                        <p>Free within 30 mins of booking</p>
-                      </Col>
-                    </Row>
-                    <Col className="transfer-viewd">
-                      <button onClick={handleShowview}>
-                        VIEW DETAILS
-                        <span>
-                          <AiOutlineDown />
-                        </span>
-                      </button>
-                    </Col>
-                    {showView && (
-                      <div>
-                        <div
-                          className="transfer-inclusion0"
-                          id="transfer-block"
-                        >
-                          <div className="transfer-inclusion">
-                            <h5>
-                              <FcCheckmark className="transfer-inclusion-mark" />
-                              Inclusions
-                              <span>(Included In The Price) </span>
-                            </h5>
-                            <div className="inclusion-data">
-                              <li>Toll Charges</li>
-                              <li>Driver Allowance</li>
-                              <li>State Tax</li>
-                            </div>
-                          </div>
 
-                          <div className="transfer-exclusion">
-                            <h5>
-                              <RxCross2 className="transfer-exclusion-mark" />
-                              Exclusions <span>(Extra Charges)</span>
-                            </h5>
-                            <div className="exclusion-data">
-                              <li>
-                                Waiting Charges (After 45 mins, ₹ 100.0/hr)
-                              </li>
-                              <li>Fare beyond 166 Kms (₹ 20/Km)</li>
-                            </div>
+                  <Col className="transfer-viewd">
+                    <button onClick={handleShowview}>
+                      VIEW DETAILS
+                      <span>
+                        <AiOutlineDown />
+                      </span>
+                    </button>
+                  </Col>
+                  {showView && (
+                    <div>
+                      <div className="transfer-inclusion0" id="transfer-block">
+                        <div className="transfer-inclusion">
+                          <h5>
+                            <FcCheckmark className="transfer-inclusion-mark" />
+                            Inclusions
+                            <span>(Included In The Price) </span>
+                          </h5>
+                          <div className="inclusion-data">
+                            <li>Toll Charges</li>
+                            <li>Driver Allowance</li>
+                            <li>State Tax</li>
+                          </div>
+                        </div>
+
+                        <div className="transfer-exclusion">
+                          <h5>
+                            <RxCross2 className="transfer-exclusion-mark" />
+                            Exclusions <span>(Extra Charges)</span>
+                          </h5>
+                          <div className="exclusion-data">
+                            <li>Waiting Charges (After 45 mins, ₹ 100.0/hr)</li>
+                            <li>Fare beyond 166 Kms (₹ 20/Km)</li>
                           </div>
                         </div>
                       </div>
-                    )}
-                  </Col>
+                    </div>
+                  )}
                 </Row>
               </Row>
             </Row>
-
-            <Row className="transfer-cancellation-title0">
-              <div className="transfer-cancellation-title">
-                <p>Driver and Cab Details</p>
-                <AiOutlineDown
-                  className="transfer-cancellation-title-icon"
-                  onClick={cabDetails}
-                />
-              </div>
-              {showCabDetails && (
-                <div className="cabDetailsinner">
-                  <div className="cabDetailsinnerTitle">
-                    <h5>
-                      Cab driver details will be shared up to 30 mins prior to
-                      departure.
-                    </h5>
-                  </div>
-                  <div className="cabDetailsinnerdiv">
-                    <img
-                      src="innovainte1.jpg"
-                      alt=""
-                      onClick={() => setModalShow(true)}
-                    />
-                    <img
-                      src="innovainte2.jpg"
-                      alt=""
-                      onClick={() => setModalShow(true)}
-                    />
-                    <img
-                      src="innovainte3.jpg"
-                      alt=""
-                      onClick={() => setModalShow(true)}
-                    />
-                  </div>
-                </div>
-              )}
-            </Row>
-
-            <Modal
-              size="lg"
-              aria-labelledby="contained-modal-title-vcenter"
-              centered
-              show={modalShow}
-              onHide={() => setModalShow(false)}
-            >
-              <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
-                  Car Images
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div>
-                  <Slider {...settings}>
-                    <div className="carImages">
-                    <img src="innovainte1.jpg" alt="" />
-                    <h6>Car Images</h6>
-                    </div>
-                    <div className="carImages">
-                    <img src="innovainte2.jpg" alt="" />
-                    <h6>Interior View</h6>
-                    </div>
-                    <div className="carImages">
-                    <img src="innovainte3.jpg" alt="" />
-                    <h6>Exterior View</h6>
-                    </div>
-                    <div className="carImages">
-                    <img src="innovainte1.jpg" alt="" />
-                    <h6>Car Images</h6>
-                    </div>
-                    <div className="carImages">
-                    <img src="innovainte2.jpg" alt="" />
-                    <h6>Interior View</h6>
-                    </div>
-                    <div className="carImages">
-                    <img src="innovainte3.jpg" alt="" />
-                    <h6>Exterior View</h6>
-                    </div>
-                  </Slider>
-                </div>
-              </Modal.Body>
-            </Modal>
 
             <Row className="transfer-travellar-title">
               <h3>Travellar Details</h3>
@@ -351,6 +227,198 @@ function Transfer() {
                 </div>
               </Row>
             </Row>
+
+            <Row className="transfer-cancellation-title0">
+              <div className="transfer-cancellation-title">
+                <p>Driver and Cab Details</p>
+                <AiOutlineDown
+                  className="transfer-cancellation-title-icon"
+                  
+                />
+              </div>
+            
+                <div className="cabDetailsinner">
+                  <div className="cabDetailsinnerTitle">
+                    <h5>
+                      Cab driver details will be shared up to 30 mins prior to
+                      departure.
+                    </h5>
+                  </div>
+                </div>
+            
+            </Row>
+
+            <Row className="transfer-cancellation-title0">
+              <div className="transfer-cancellation-title">
+                <p>Cab Images</p>
+                <AiOutlineDown
+                  className="transfer-cancellation-title-icon"
+                  onClick={cabDetails}
+                />
+              </div>
+              {showCabDetails && (
+                <div className="cabDetailsinner">
+                 
+                  <div className="cabDetailsinnerdiv">
+                    <div className="cabImages">
+                    <img
+                      src="ferraribody.jpg"
+                      alt=""
+                      onClick={() => setModalShow1(true)}
+                      />
+                      <p>Car Image</p>
+                    </div>
+                    <div className="cabImages">
+                    <img
+                      src="ferrariint.jpg"
+                      alt=""
+                      onClick={() => setModalShow2(true)}
+                      />
+                      <p>Car Interior</p>
+                    </div>
+                    <div className="cabImages">
+                    <img
+                      src="farrariseats.jpg"
+                      alt=""
+                      onClick={() => setModalShow3(true)}
+                      />
+                       <p>Car Exterior</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              )}
+            </Row>
+
+            <Modal
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+              show={modalShow1}
+              onHide={() => setModalShow1(false)}
+            >
+              <Modal.Header closeButton className="cabmodulehead">
+                <Modal.Title id="contained-modal-title-vcenter" className="cabmoduleheadtitle">
+                  Car Images
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <div>
+                  <Slider {...settings}>
+                    <div className="carImages">
+                      <img src="innovainte1.jpg" alt="" />
+                      <h6>Image 1</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte1.jpg" alt="" />
+                      <h6>Image 2</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte1.jpg" alt="" />
+                      <h6>Image 3</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte1.jpg" alt="" />
+                      <h6>Image 4</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte1.jpg" alt="" />
+                      <h6>Image 5</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte1.jpg" alt="" />
+                      <h6>Image 6</h6>
+                    </div>
+                  </Slider>
+                </div>
+              </Modal.Body>
+            </Modal>
+            <Modal
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+              show={modalShow2}
+              onHide={() => setModalShow2(false)}
+            >
+              <Modal.Header closeButton className="cabmodulehead">
+                <Modal.Title   className="cabmoduleheadtitle">
+                Interior Images
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <div>
+                  <Slider {...settings}>
+                    <div className="carImages">
+                      <img src="innovainte2.jpg" alt="" />
+                      <h6>Image 1</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte2.jpg" alt="" />
+                      <h6>Image 2</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte2.jpg" alt="" />
+                      <h6>Image 3</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte2.jpg" alt="" />
+                      <h6>Image 4</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte2.jpg" alt="" />
+                      <h6>Image 5</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte2.jpg" alt="" />
+                      <h6>Image 6</h6>
+                    </div>
+                  </Slider>
+                </div>
+              </Modal.Body>
+            </Modal>
+            <Modal
+              size="lg"
+              aria-labelledby="contained-modal-title-vcenter"
+              centered
+              show={modalShow3}
+              onHide={() => setModalShow3(false)}
+            >
+              <Modal.Header closeButton className="cabmodulehead">
+                <Modal.Title id="contained-modal-title-vcenter" className="cabmoduleheadtitle">
+                Exterior Images
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <div>
+                  <Slider {...settings}>
+                    <div className="carImages">
+                      <img src="innovainte3.jpg" alt="" />
+                      <h6>Image 1</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte3.jpg" alt="" />
+                      <h6>Image 2</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte3.jpg" alt="" />
+                      <h6>Image 3</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte3.jpg" alt="" />
+                      <h6>Image 4</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte3.jpg" alt="" />
+                      <h6>Image 5</h6>
+                    </div>
+                    <div className="carImages">
+                      <img src="innovainte3.jpg" alt="" />
+                      <h6>Image 6</h6>
+                    </div>
+                  </Slider>
+                </div>
+              </Modal.Body>
+            </Modal>
           </Col>
 
           <Col md={4} className="transfermain">

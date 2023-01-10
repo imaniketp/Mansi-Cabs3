@@ -25,6 +25,10 @@ import CabBooking from "./components/bookingPage/BookingPage";
 import CancelBooking from "./components/cancelPage/CancelPage";
 import MyProfile from "./myprofile/MyProfile";
 import Aurangabad from "./components/blogs/city/Aurangabad";
+import OurServices from "./components/mainServices/OurServices";
+import OurServices2 from "./components/mainServices/OurServices2";
+import OurServices3 from "./components/mainServices/OurServices3";
+import OurServices4 from "./components/mainServices/OurServices4";
 
 function App() {
   return (
@@ -35,6 +39,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="myprofile" element={<MyProfile />} />
+        <Route path="roundtrip" element={<OurServices />} />
+        <Route path="oneway" element={<OurServices2 />} />
+        <Route path="localrental" element={<OurServices3 />} />
+        <Route path="airport" element={<OurServices4 />} />
         <Route path="offers" element={<MainOfferPage />} />
         <Route path="payment" element={<Payment />} />
         <Route path="faq" element={<FAQ />} />

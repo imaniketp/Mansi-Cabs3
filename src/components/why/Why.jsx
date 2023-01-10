@@ -100,7 +100,7 @@ function Why() {
 
     <div  className="whySliderContainer">
         <div className="whySliderTitle">
-          <h1>WHY CHOOSE US</h1>
+          <h1>Why Choose Us</h1>
         </div>
         
       <div className="outerwhySlider">

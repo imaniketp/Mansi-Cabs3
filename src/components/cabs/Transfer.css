@@ -81,7 +81,7 @@
   font-size: 15px;
   color: #7142f8;
 }
-/* ----------------------------------------------*-----------------------------------*--------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
 
 
 .transfer-sel1{
@@ -165,7 +165,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  margin-bottom: 2%;
 }
 .transfer-viewd button{
     border: none;
@@ -253,7 +252,7 @@
   font-weight: 600;
   margin-bottom: 0;
   padding: 0;
-  color: gray;
+  color: black;
 }
 
 .transfer-cancellation-title{
@@ -282,6 +281,7 @@
   background-color: white;
   box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
   padding: 1rem;
+  border-radius: 0 0 7px 7px;
 }
 .cabDetailsinnerTitle h5{
   font-size: 15px;
@@ -297,6 +297,8 @@
   height: 8rem;
   border-radius: 10px;
 }
+
+
 
 /* ----------------------------------------------------------------------- */
 
@@ -563,4 +565,21 @@
     font-size: 13px;
   }
 }
+.cabImages p{
+  font-weight: 600;
+  
+}
+.carImages h6{
+  font-size: small;
+  margin-top: 10px;
+}
+.cabmodulehead{
+ padding: 1px 20px 1px 20px;
+ font-size: 10px;
+ 
+}
+.cabmoduleheadtitle{
+  font-size: 20px;
+  color:black;
 
+}
