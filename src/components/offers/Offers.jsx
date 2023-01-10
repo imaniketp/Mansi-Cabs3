@@ -75,7 +75,7 @@ function Offers() {
                       <h3>One Way Offer</h3>
                       <p>Diwali Bumper Offer get 20% off</p>
                       <button>Coupen Code: MAN121</button>
-                      <a href="/offers">View More</a>
+                      <Link to="/offers">View More</Link>
                     </div>
                   </div>
                 
@@ -88,7 +88,7 @@ function Offers() {
                       <h3>One Way Offer</h3>
                       <p>Diwali Bumper Offer get 20% off</p>
                       <button>Coupen Code: MAN121</button>
-                      <a href="/offers">View More</a>
+                      <Link to="/offers">View More</Link>
                     </div>
                   </div>
                 
@@ -101,7 +101,7 @@ function Offers() {
                       <h3>One Way Offer</h3>
                       <p>Diwali Bumper Offer get 20% off</p>
                       <button>Coupen Code: MAN121</button>
-                      <a href="/offers">View More</a>
+                      <Link to="/offers">View More</Link>
                     </div>
                   </div>
 
@@ -114,7 +114,7 @@ function Offers() {
                       <h3>One Way Offer</h3>
                       <p>Diwali Bumper Offer get 20% off</p>
                       <button>Coupen Code: MAN121</button>
-                      <a href="/offers">View More</a>
+                      <Link to="/offers">View More</Link>
                     </div>
                   </div>
 
@@ -127,7 +127,7 @@ function Offers() {
                       <h3>One Way Offer</h3>
                       <p>Diwali Bumper Offer get 20% off</p>
                       <button>Coupen Code: MAN121</button>
-                      <a href="/offers">View More</a>
+                      <Link to="/offers">View More</Link>
                     </div>
                   </div>
 
@@ -140,7 +140,7 @@ function Offers() {
                       <h3>One Way Offer</h3>
                       <p>Diwali Bumper Offer get 20% off</p>
                       <button>Coupen Code: MAN121</button>
-                      <a href="/offers">View More</a>
+                      <Link to="/offers">View More</Link>
                     </div>
                   </div>
 
