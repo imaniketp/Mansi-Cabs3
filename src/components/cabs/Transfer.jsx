@@ -262,7 +262,7 @@ function Transfer() {
                   <div className="cabDetailsinnerdiv">
                     <div className="cabImages">
                     <img
-                      src="ferraribody.jpg"
+                      src="ferraribody.jpeg"
                       alt=""
                       onClick={() => setModalShow1(true)}
                       />
@@ -270,7 +270,7 @@ function Transfer() {
                     </div>
                     <div className="cabImages">
                     <img
-                      src="ferrariint.jpg"
+                      src="ferrariint.jpeg"
                       alt=""
                       onClick={() => setModalShow2(true)}
                       />
@@ -278,7 +278,7 @@ function Transfer() {
                     </div>
                     <div className="cabImages">
                     <img
-                      src="farrariseats.jpg"
+                      src="ferrariseats.jpeg"
                       alt=""
                       onClick={() => setModalShow3(true)}
                       />
