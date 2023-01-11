@@ -618,6 +618,26 @@
   font-weight: 600;
 }
 
+@media all and (max-width:1025px){
+  .lowerInnerpayment input{
+    margin-right: 5px;
+  }
+  .lowerInnerpayment label{
+    font-size: 15px;
+  }
+  .lowerInnerpayment {
+    margin: 0.5rem 1rem;
+}
+.confirm-booking-body3Outer {
+    margin-left: 1rem;
+}
+.confirm-booking-body3 input {
+    width: 150px; 
+}
+.transfer-travellar {
+    padding: 10px;
+}
+}
 @media all and (max-width:700px){
   .transfer-inclusion0{
     flex-direction: column;

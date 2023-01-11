@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Col, Container, Nav, NavDropdown, Row } from "react-bootstrap";
 import { AiFillCheckCircle, AiFillStar } from "react-icons/ai";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
@@ -8,12 +7,11 @@ import { Link } from "react-router-dom";
 import "./CabsSearch.css";
 import ModifyCabs from "./ModifyCabs";
 import {
-  FcApproval,
-  FcCancel,
   FcClearFilters,
-  FcMoneyTransfer,
 } from "react-icons/fc";
 import { FaGasPump } from "react-icons/fa";
+import { TbGasStation, TbRoad } from "react-icons/tb";
+import { TiCancel } from "react-icons/ti";
 
 const searchCab = [
   {
@@ -28,7 +26,7 @@ const searchCab = [
   {
     carType: "SUV",
     carImg: "etios.png",
-    carName: "Ertiga, Innova, Fortuner",
+    carName: "Ertiga, Innova, XUV",
     passno: "7",
     disprice: "10000",
     save: "1500",
@@ -46,7 +44,7 @@ const searchCab = [
   {
     carType: "SUV",
     carImg: "etios.png",
-    carName: "Ertiga, Innova, Fortuner",
+    carName: "Ertiga, Innova",
     passno: "7",
     disprice: "5000",
     save: "501",
@@ -55,7 +53,7 @@ const searchCab = [
   {
     carType: "SUV",
     carImg: "etios.png",
-    carName: "Ertiga, Innova, Fortuner",
+    carName: "Ertiga, Innova",
     passno: "7",
     disprice: "5000",
     save: "501",
@@ -64,7 +62,7 @@ const searchCab = [
   {
     carType: "SUV",
     carImg: "innova.png",
-    carName: "Ertiga, Innova, Fortuner",
+    carName: "Ertiga, Innova",
     passno: "7",
     disprice: "5000",
     save: "501",
@@ -196,7 +194,7 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                       <span>
-                        <AiFillCheckCircle />
+                        <TbRoad />
                       </span>
                       Extra Km fare
                     </p>
@@ -205,20 +203,23 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                     <span>
-                          <AiFillCheckCircle />
+                    <TbGasStation />
                         </span>
                         Fuel Type
                     </p>
-                    <p className="cabs-etios2-spec3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FaGasPump /> CNG/Diesel</p>
+                    <p className="cabs-etios2-spec3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNG/Diesel</p>
                   </div>
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                     <span>
-                          <AiFillCheckCircle />
+                          <TiCancel />
                         </span>
                         Cancellation
                     </p>
                     <p className="cabs-etios2-spec3">&nbsp;&nbsp;Free within 30 mins of booking</p>
+                  </div>
+                  <div className="cabSearchBox">
+                      <h5>Double Guarantee Confirmed cab arrival or 2X refund</h5>
                   </div>
                   
                 </div>
