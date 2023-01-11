@@ -1,22 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
-import { AiFillCheckCircle, AiFillStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
 import { FaSuitcase } from "react-icons/fa";
 import { BiRightArrowAlt } from "react-icons/bi";
-import { FaGasPump } from "react-icons/fa";
 import { FcCheckmark } from "react-icons/fc";
 import { RxCross2 } from "react-icons/rx";
-import { BiRupee } from "react-icons/bi";
 import { AiOutlineDown } from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import Slider from "react-slick";
 import "./Transfer.css";
 
 function Transfer() {
-  const [showpay, setShowpay] = useState(false);
   const [showCabDetails, setShowCabDetails] = useState(false);
   const [showView, setShowView] = useState(false);
   const [modalShow1, setModalShow1] = useState(false);
@@ -41,16 +38,11 @@ function Transfer() {
     setShowCabDetails(!showCabDetails);
   };
 
-  const handleClosepay = () => setShowpay(false);
-  const handleShowpay = () => setShowpay(true);
   return (
     <Container fluid className="transfer0">
       <Container fluid="md">
         <Row>
           <Col md={8}>
-            {/* <Row className="transfer-details-title1">
-              <h2>Transfer Details</h2>
-            </Row> */}
             <Row className="transfer-sel1">
               <Row className="transfer-details">
                 <Col className="transfer-details-img" md={3}>
@@ -122,7 +114,6 @@ function Transfer() {
                 </Row>
 
                 <Row className="transferSpec">
-                  <h5> Spacious Car</h5>
 
                   <Col className="transfer-viewd">
                     <button onClick={handleShowview}>
@@ -169,54 +160,46 @@ function Transfer() {
               <h3>Travellar Details</h3>
             </Row>
             <Row className="transfer-travellar">
-              <Row className="transfer-travellar-pick">
-                <label htmlFor="pick">Exact Pickup Address</label>
-                <input
-                  type="text"
-                  name="pick"
-                  placeholder="Enter exact Pick-up address/Location"
-                />
-              </Row>
-              <Row className="transfer-travellar-drop">
-                <label htmlFor="pick">Exact Drop Address</label>
-                <input
-                  type="text"
-                  name="pick"
-                  placeholder="Enter exact Drop-up address/Location"
-                />
+              <Row>
+                <Col md={6}>
+                    <div className="inputBox">
+                      <input type='text' required/>
+                      <span>Full Name</span>
+                    </div>
+                </Col>
+                <Col md={6}>
+                <div className="inputBox">
+                      <input type='text' required/>
+                      <span>Email</span>
+                    </div>
+                </Col>
               </Row>
               <Row>
-                <Col>
-                  <Row className="transfer-travellar-name">
-                    <label htmlFor="pick">Full Name</label>
-                    <input type="text" name="pick" />
-                  </Row>
-                  <Row className="transfer-travellar-email">
-                    <label htmlFor="pick">Email</label>
-                    <input type="email" name="pick" />
-                  </Row>
-                </Col>
-
-                <Col>
-                  <Row className="transfer-travellar-gender">
-                    <label htmlFor="pick">Gender</label>
-                    <div>
-                      <span>
-                        <input type="radio" name="pick" value="male" />
-                        Male
-                      </span>
-                      <span>
-                        <input type="radio" name="pick" value="female" />
-                        Female
-                      </span>
+                <Col md={6}>
+                    <div className="inputBox">
+                      <input type='text' required/>
+                      <span>Mobile</span>
                     </div>
-                  </Row>
-                  <Row className="transfer-travellar-mob">
-                    <label htmlFor="pick">Mobile no.</label>
-                    <input type="tel" name="pick" placeholder="+91" />
-                  </Row>
+                </Col>
+                <Col md={6}>
+                  <h5>Gender</h5>
+                  <div className="radio-group">
+
+                    <label className="radioLabel">
+                      <input type="radio" value='male' name="gender"/>
+                      Male
+                      <span></span>
+                    </label>
+                    <label className="radioLabel">
+                      <input type="radio" value='female' name="gender"/>
+                      Female
+                      <span></span>
+                    </label>
+                  </div>
                 </Col>
               </Row>
+              
+              
               <Row className="transfer-travellar-terms">
                 <div>
                   <input name="terms" type="checkbox" />
@@ -230,7 +213,7 @@ function Transfer() {
 
             <Row className="transfer-cancellation-title0">
               <div className="transfer-cancellation-title">
-                <p>Driver and Cab Details</p>
+                <p>Driver Details</p>
                 <AiOutlineDown
                   className="transfer-cancellation-title-icon"
                   
@@ -422,128 +405,44 @@ function Transfer() {
           </Col>
 
           <Col md={4} className="transfermain">
-            <Row className="transfer5">
-              <h3>
-                <span>
-                  <BiRupee />
-                </span>
-                Pricing Details
-              </h3>
-            </Row>
-
-            <Row className="transfer2">
-              <Row className="transfer-price">
-                <Col md={8}>
-                  <p>Base Fare</p>
-                </Col>
-                <Col md={4}>
-                  <p>₹ 1967</p>
-                </Col>
-              </Row>
-              <Row className="transfer-price">
-                <Col md={8}>
-                  <p>Driver Allowance</p>
-                </Col>
-                <Col md={4}>
-                  <p>₹ 360</p>
-                </Col>
-              </Row>
-
-              <Row className="transfer-price">
-                <Col md={8}>
-                  <p>Tax</p>
-                </Col>
-                <Col md={4}>
-                  <p>₹ 116</p>
-                </Col>
-              </Row>
-              <hr />
-              <Row className="transfer-price">
-                <Col md={8}>
-                  <p>Total</p>
-                </Col>
-                <Col md={4}>
-                  <p>₹ 7603/-</p>
-                </Col>
-              </Row>
-            </Row>
-
-            <Row className="transfer5">
-              <h3>
-                <span>
-                  <BiRupee />
-                </span>
-                Pay Now
-              </h3>
-            </Row>
-            <Row className="transfer2">
-              <Row className="transfer-price">
-                <Col md={8}>
-                  <p>
-                    <input type="radio" />
-                    Pay Full Amount
-                  </p>
-                </Col>
-                <Col md={4}>
-                  <p>₹ 2269</p>
-                </Col>
-              </Row>
-
-              <Row className="transfer-price">
-                <Col md={8}>
-                  <p>
-                    <input type="radio" />
-                    Pay rest to driver
-                  </p>
-                </Col>
-                <Col md={4}>
-                  <p>₹ 547</p>
-                </Col>
-              </Row>
-
-              <Row className="transfer-price">
-                <button onClick={handleShowpay}>Continue to Pay</button>
-                <Modal
-                  show={showpay}
-                  onHide={handleClosepay}
-                  size="md"
-                  aria-labelledby="contained-modal-title-vcenter"
-                  centered
-                >
-                  <Modal.Header closeButton>
-                    <h1 className="confirm-booking-title"> Confirm Booking</h1>
-                  </Modal.Header>
-                  <Modal.Body className="confirm-booking-modal-body">
-                    <div className="confirm-booking-body1">
-                      <div>
-                        <p>Pickup Location</p>
-                        <input type="text" placeholder="Nashik" readOnly />
-                      </div>
-
-                      <div className="confirm-booking-arrow">
-                        <BiRightArrowAlt />
-                      </div>
-
-                      <div>
-                        <p>Drop Location</p>
-                        <input type="text" placeholder="Mumbai" readOnly />
-                      </div>
-                    </div>
-
-                    <div className="confirm-booking-body2">
-                      <p>Pickup Date & Time :</p>
-                      <span>26 November 2022.Wednesday, 08:00 AM</span>
-                    </div>
-
+          <div className='lowerPayemnt'>
+                <div className='mainInnerpayment'>
+                    <span>₹</span><p>Pricing Details</p>
+                </div>
+                <div className='lowerInnerpayment'>
+                  <div>
+                    <input type="radio" name="payment" id='fullpayment' value='fullpayment'/>
+                    <label htmlFor="fullpayment">Pay Full Amount</label>
+                  </div>
+                  <div>
+                    <p>₹ 2269</p>
+                  </div>
+                </div>
+                <div className='lowerInnerpayment'>
+                  <div>
+                    <input type="radio" name="payment" id='partpayment' value='partpayment'/>
+                    <label htmlFor="partpayment">Pay Part Amount</label>
+                  </div>
+                  <div>
+                    <p>₹ 569</p>
+                  </div>
+                </div>
+                <div className="confirm-booking-body3Outer">
+                    <label htmlFor="coupon">Enter Coupon code</label>
                     <div className="confirm-booking-body3">
-                      <p>Apply code</p>
-                      <input type="text" />
+                      <input type="text" name="coupon" placeholder="MAN2023"/>
+                      <p>Apply Code</p>
                     </div>
-                    <button>Proceed to Pay</button>
-                  </Modal.Body>
-                </Modal>
-              </Row>
-            </Row>
+                </div>
+                <hr className="pricehr"/>
+                <div className='lowerInnerpayment'>
+                    <h2>Total</h2>
+                    <h5>₹ 569</h5>
+                </div>
+                <button>Continue to Pay</button>
+
+            </div>
+
           </Col>
         </Row>
       </Container>

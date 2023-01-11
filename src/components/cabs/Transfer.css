@@ -56,7 +56,7 @@
 .transfer-price input{
     margin-right: 10%;
 }
-.transfer-price button{
+.transfer2 button{
     width: 153px;
     height: 35px;
     margin: auto;
@@ -322,7 +322,9 @@
   border-radius:0 0 7px 7px;
   padding: 10px 10px 0 3rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  
+}
+.transfer-travellar .row{
+    margin: 1rem 0;
 }
 .transfer-travellar-title {
   background-color: #F8F8F8;
@@ -333,130 +335,181 @@
 }
 .transfer-travellar-title h3{
   font-size: 140%;
-  color: gray;
-  font-weight: 500;
+  color: black;
+  font-weight: 600;
   text-align: left;
   margin: 0 0 2% 0;
     
 }
 
+.inputBox{
+  position: relative;
+  width: 100%;
+}
+.inputBox input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0. 0.4);
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  transition: 1s;
+}
+.inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: rgba(0, 0, 0. 0.6);
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+  color: #7142f8;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  font-weight: 600;
+  padding: 0 10px;
+  background: white;
+  border-left: 1px solid #7142f8;
+  border-right: 1px solid #7142f8;
+  letter-spacing: 0.2em;
+}
 
-.transfer-travellar-drop label{
-  text-align: left;
-    font-size: 80%;
-    font-weight: 600;
-    margin: 5px 12px;
-  }
-  .transfer-travellar-pick label{
-    text-align: left;
-    font-size: 80%;
-    font-weight: 600;
-    margin: 5px 12px;
-  }
-  .transfer-travellar-pick input{
-    text-align: left;
-    font-size: 80%;
-    font-weight: 500;
-    border: none;
-    border-bottom: 1px solid black;
-    margin: 0.5% 3%;
-    width: 320px;
-  }
-  .transfer-travellar-drop input{
-    text-align: left;
-    font-size: 80%;
-    font-weight: 500;
-    border: none;
-    border-bottom: 1px solid black;
-    margin: 0.5% 3%;
-    width: 320px;
-  }
-  .transfer-travellar-name label{
-    text-align: left;
-    font-size: 80%;
-    font-weight: 600;
-    margin: 0.5% 3%;
-  }
-  .transfer-travellar-name input{
-    width: 80%;
-    margin: 1% 1% 1% 6%;
-    border: none;
-    border-bottom: 1px solid black;
-    
-  }
-  .transfer-travellar-email label{
-    text-align: left;
-    font-size: 80%;
-    font-weight: 600;
-    margin: 0.5% 3%;
-  }
-  .transfer-travellar-email input{
-    width: 80%;
-    margin: 1% 1% 1% 6%;
-    border: none;
-    border-bottom: 1px solid black;
-    
-  }
-  .transfer-travellar-mob label{
-    text-align: left;
-    font-size: 80%;
-    font-weight: 600;
-    margin: 0.5% 3%;
-  }
-  .transfer-travellar-mob input{
-    width: 80%;
-    margin: 1% 1% 1% 6%;
-    border: none;
-    border-bottom: 1px solid black;
-    
+.inputBox input:valid,
+.inputBox input:focus{
+  border: 2px solid #7142f8;
+}
 
-  }
-  .transfer-travellar-gender label{
-    text-align: left;
-    font-size: 80%;
-    font-weight: 600;
-    margin: 0.5% 3%;
-  }
-  .transfer-travellar-gender input{
-    width: 80%;
-    margin: 1% 1% 1% 6%;
-    border: none;
-    border-bottom: 1px solid black;
-  }
-  .transfer-travellar-gender div{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin: 1% 1% 1% 6%;
-    gap: 10%;
-  }
-  .transfer-travellar-gender span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    margin: 1%;
-  }
-  .transfer-travellar-terms{
-    
-    font-size: 15px;
-    font-weight: 600;
-    color: gray;
-    margin: 20px 0;
-  }
-  .transfer-travellar-terms span{
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(3, 181, 252);
-  }
-  .transfer-travellar-terms div{
-    display: flex;
-    gap: 1rem;
-  }
-  
+.radioLabel{
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  margin-right: 10px;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.radioLabel input[type='radio']{
+  display: none;
+}
+
+.radioLabel span{
+  height: 15px;
+  width: 16px;
+  border-radius: 50%;
+  border: 3px solid #7142f8;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 3px
+}
+
+.radioLabel span:after{
+  content: "";
+  height: 5px;
+  width: 6px;
+  background: #7142f8;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  border-radius: 50%;
+  transition: 300ms ease-in-out 0s;
+}
+
+.radioLabel input[type='radio']:checked ~ span:after{
+  transform: translate(-50%,-50%) scale(1);
+}
+
   
   /* ------------------------------------*------------------------------------- */
-  
+  .lowerPayemnt{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    width: 100%;
+}
+
+.mainInnerpayment{
+    background-color: #f2f7ff;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.mainInnerpayment p{
+    margin-bottom: 0;
+    color: #636161;
+    font-size: 20px;
+    font-weight: 600;
+}
+.mainInnerpayment span{
+    font-size: 30px;
+    color: #636161;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.lowerInnerpayment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 2rem;
+}
+.lowerInnerpayment input{
+    margin-right: 1rem;
+}
+.lowerInnerpayment label{
+    font-weight: 600;
+}
+.lowerInnerpayment p{
+  font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.lowerInnerpayment h2{
+  font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+.lowerInnerpayment h5{
+  font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+.pricehr{
+  width: 90%;
+  align-self: center;
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+.lowerPayemnt button{
+  align-self: center;
+  width: 200px;
+  border: 0;
+  background-color: #7142f8;
+  margin: 1rem 0;
+  padding: 5px 0;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+}
+
+
   .confirm-booking-title{
     font-size: 150%;
   }
@@ -526,24 +579,43 @@
   align-items: center;
   margin: 4% 0 1% 0;
 }
+.transfer-price-total {
+  padding: 0 3rem;
+}
+.transfer-price-total p{
+  font-size: 20px;
+}
 .confirm-booking-body3{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 4% 0;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.confirm-booking-body3Outer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+  margin: 1rem 0;
+  margin-left: 3rem;
+}
+.confirm-booking-body3Outer label{
+  font-size: 15px;
+  font-weight: 600;
 }
 .confirm-booking-body3 p{
-  color: gray;
-  font-size: 95%;
+  color: #7142f8;
+  font-size: 15px;
   margin-bottom: 0; 
   font-weight: 600; 
-  text-align: center;
 }
 .confirm-booking-body3 input{
   border: 2px dashed gray;
-  width: 25%;
+  width: 200px;
   border-radius: 5px;
-  width: 100%;
+  text-align: center;
+  font-weight: 600;
 }
 
 @media all and (max-width:700px){
