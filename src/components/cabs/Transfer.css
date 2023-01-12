@@ -296,7 +296,7 @@
 @media all and (max-width:768px){
   .cabDetailsinnerdiv{
     flex-direction: column;
-    gap: 3rem;
+    gap: 0;
   }
 }
 
