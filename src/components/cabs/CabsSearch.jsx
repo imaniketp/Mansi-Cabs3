@@ -177,7 +177,7 @@ function CabsSearch() {
                         <IoMdCheckmarkCircleOutline /> AC
                       </p>
                       <p>
-                        <MdLuggage /> Luggage Bags
+                        <MdLuggage /> Luggage
                       </p>
                       <p>
                         <MdAirlineSeatReclineExtra /> Passenger {item.passno}
