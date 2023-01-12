@@ -169,7 +169,7 @@ function CabsSearch() {
             <div key={index} className="search1row">
               <div className="search1row1">
                 <div className="search1ndcol">
-                  <div style={{ marginBottom: "13px" }}>
+                  <div>
                     <p>{item.carType}</p>
                     <h5>{item.carName}</h5>
                     <div className="ac">
@@ -202,7 +202,7 @@ function CabsSearch() {
                         </span>
                         Fuel Type
                     </p>
-                    <p className="cabs-etios2-spec3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNG/Diesel</p>
+                    <p className="cabs-etios2-spec3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNG/Diesel</p>
                   </div>
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
@@ -211,7 +211,7 @@ function CabsSearch() {
                         </span>
                         Cancellation
                     </p>
-                    <p className="cabs-etios2-spec3">&nbsp;&nbsp;Free within 30 mins of booking</p>
+                    <p className="cabs-etios2-spec3">&nbsp;&nbsp;Free within 30 mins</p>
                   </div>
                   <div className="cabSearchBox">
                       <h5>Double Guarantee Confirmed cab arrival or 2X refund</h5>
