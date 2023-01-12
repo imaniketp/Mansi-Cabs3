@@ -306,6 +306,14 @@ del{
 }
 
 @media all and (max-width:426px){
+  .cabSearchBox {
+    margin-top: 1rem;
+    
+  }
+  .cabSearchBox h5{
+    width: 285px;
+    
+  }
   .filterDropdown {
     display: flex;
     align-items: center;
@@ -387,3 +395,15 @@ del{
 }
 
 }
+
+  @media all and (max-width:376px){
+    .cabSearchBox h5{
+      width: 235px;
+    }
+  }
+
+  @media all and (max-width:321px){
+    .cabSearchBox h5{
+      width: 178px;
+    }
+  }

@@ -28,6 +28,14 @@ function Transfer() {
     autoplaySpeed:2000,
     slidesToShow: 3,
     slidesToScroll:1,
+    responsive:[
+      {
+        breakpoint: 321,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
   };
 
   const handleShowview = () => {
@@ -78,38 +86,34 @@ function Transfer() {
               <Row className="transfer-spacious">
                 <Row className="transfer-details4">
                   <Col md={3}>
-                    <Row>
-                      <p>
-                        <HiLocationMarker className="locationpick" /> Pickup
-                        Location
-                      </p>
-                    </Row>
-                    <Row>
+                    <div className="transfer-details-data">
+                      <div>
+                        <HiLocationMarker className="trlocationpick" /> 
+                        <p>Pickup Location</p>
+                      </div>
+                    
                       <input type="text" placeholder="Nashik" readOnly />
-                    </Row>
+                    </div>
                   </Col>
                   <Col md={1} className="transfer-details4-arow">
                     <BiRightArrowAlt />
                   </Col>
                   <Col md={3}>
-                    <Row>
-                      <p>
-                        <HiLocationMarker className="locationdrop" /> Drop
-                        Location
-                      </p>
-                    </Row>
-                    <Row>
+                    <div className="transfer-details-data">
+                      <div>
+                        <HiLocationMarker className="trlocationdrop" /> 
+                        <p>Drop Location</p>
+                      </div>
                       <input type="text" placeholder="Mumbai" readOnly />
-                    </Row>
+                    </div>
                   </Col>
 
                   <Col md={5}>
-                    <Row>
+                    <div className="transfer-details-data-time">
                       <p>Pickup Date & Time</p>
-                    </Row>
-                    <Row>
+                    
                       <span>26 Nov 2022, 08:00 AM</span>
-                    </Row>
+                    </div>
                   </Col>
                 </Row>
 
@@ -173,8 +177,7 @@ function Transfer() {
                       <span>Email</span>
                     </div>
                 </Col>
-              </Row>
-              <Row>
+             
                 <Col md={6}>
                     <div className="inputBox">
                       <input type='text' required/>
@@ -182,6 +185,7 @@ function Transfer() {
                     </div>
                 </Col>
                 <Col md={6}>
+                <div className="inputBoxGender">
                   <h5>Gender</h5>
                   <div className="radio-group">
 
@@ -195,6 +199,7 @@ function Transfer() {
                       Female
                       <span></span>
                     </label>
+                  </div>
                   </div>
                 </Col>
               </Row>
@@ -214,10 +219,6 @@ function Transfer() {
             <Row className="transfer-cancellation-title0">
               <div className="transfer-cancellation-title">
                 <p>Driver Details</p>
-                <AiOutlineDown
-                  className="transfer-cancellation-title-icon"
-                  
-                />
               </div>
             
                 <div className="cabDetailsinner">
@@ -437,7 +438,7 @@ function Transfer() {
                 <hr className="pricehr"/>
                 <div className='lowerInnerpayment'>
                     <h2>Total</h2>
-                    <h5>₹ 569</h5>
+                    <h5>₹ 2269</h5>
                 </div>
                 <button>Continue to Pay</button>
 
