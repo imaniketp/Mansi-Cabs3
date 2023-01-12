@@ -180,7 +180,7 @@ function Transfer() {
              
                 <Col md={6}>
                     <div className="inputBox">
-                      <input type='text' required/>
+                      <input type='number' required/>
                       <span>Mobile</span>
                     </div>
                 </Col>
