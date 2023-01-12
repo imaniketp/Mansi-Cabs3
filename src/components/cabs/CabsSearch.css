@@ -92,13 +92,16 @@
 .ac p{
   font-size: small;
   font-weight: 600;
-  color: #7142f8;
+  color: black;
 }
 .ac{
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
   gap: 5px;
+}
+
+.search1ndcol div:first-child{
+  margin-bottom: 13px;
 }
 
 .search1ndcol h5{
@@ -229,11 +232,9 @@ del{
   margin-bottom: 2px;
 
 }
-.cabs-etios2-spec2 span {
-  font-size: large;
-  font-weight: 100;
-  margin-right: 5px;
-  color: #7142f8;
+.cabs-etios2-spec2 span img{
+  width: 20px;
+  margin-right: 10px;
 }
 .cabs-etios2-spec3{
   float: left;
@@ -266,6 +267,9 @@ del{
 
 .cabSearchBox{
  margin-top: 1.5rem;
+ border: 2px solid #72c368;
+ border-radius: 5px;
+ padding: 3px 0;
 }
 
 
@@ -306,8 +310,11 @@ del{
 }
 
 @media all and (max-width:426px){
+  .search1ndcol div:first-child{
+    margin-bottom: 0;
+  }
   .cabSearchBox {
-    margin-top: 1rem;
+    margin-top: 0;
     
   }
   .cabSearchBox h5{
@@ -335,7 +342,7 @@ del{
     font-size: 13px;
   }
   .search1ndcol h5 {
-    font-size: 10px;
+    font-size: 14px;
   }
   .search1row1 {
     flex-direction: column;
@@ -350,13 +357,13 @@ del{
   width: 4rem;
 }
 .search1ndcol p {
-  font-size: 14px;
+  font-size: 20px;
 }
 .search2ndcol h5 {
   font-size: 10px;
 }
 .ac p{
-  font-size: 8px;
+  font-size: 12px;
 }
 .search4rtcol h4 {
   font-size: 19px;
@@ -373,21 +380,19 @@ del{
   width: 20%;
   flex-direction: column;
   gap: 0;
+  margin-top: 1rem;
 }
 .search4rtcol button {
-  height: 15px;
-  width: 60px;
-  margin-bottom: 2px;
-  font-size: 7px;
-}
-.search4rtcolinner{
-  gap: 0;
+  height: 24px;
+  width: 80px;
+  margin-top: 13px;
+  font-size: 12px;
 }
 .cabs-etios2-spec3 {
-  font-size: 7px;
+  font-size: 10px;
 }
 .cabs-etios2-spec2 {
-  font-size: 7px;
+  font-size: 12px;
 }
 .seperate {
   gap: 10px;

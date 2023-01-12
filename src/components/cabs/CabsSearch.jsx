@@ -133,17 +133,14 @@ function CabsSearch() {
                   <label htmlFor="4p">Sedan</label>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.1">
-                  {" "}
                   <input type="checkbox" name="7p" />
                   <label htmlFor="7p">Hatchback</label>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.1">
-                  {" "}
                   <input type="checkbox" name="7p" />
                   <label htmlFor="7p">SUV</label>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.1">
-                  {" "}
                   <input type="checkbox" name="7p" />
                   <label htmlFor="7p">Traveller</label>
                 </NavDropdown.Item>
@@ -157,12 +154,10 @@ function CabsSearch() {
                 menuVariant="light"
               >
                 <NavDropdown.Item href="#action/3.1">
-                  {" "}
                   <input type="checkbox" name="7p" />
                   <label htmlFor="7p">4 Passenger seat</label>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.1">
-                  {" "}
                   <input type="checkbox" name="7p" />
                   <label htmlFor="7p">4 Passenger seat</label>
                 </NavDropdown.Item>
@@ -194,7 +189,7 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                       <span>
-                        <TbRoad />
+                        <img src="exkm.jpeg" alt="" />
                       </span>
                       Extra Km fare
                     </p>
@@ -203,7 +198,7 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                     <span>
-                    <TbGasStation />
+                        <img src="fueltype.jpeg" alt="" />
                         </span>
                         Fuel Type
                     </p>
@@ -212,7 +207,7 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                     <span>
-                          <TiCancel />
+                        <img src="cancelimg.jpeg" alt="" />
                         </span>
                         Cancellation
                     </p>
