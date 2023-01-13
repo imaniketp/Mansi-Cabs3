@@ -59,7 +59,7 @@ function Transfer() {
                 <Col md={9}>
                   <Row className="transfer-details3">
                     <Col>
-                      <h3>Indica, Swift, Alto, Ford Figo or equivalent CNG</h3>
+                      <h3>Indica, Swift, Alto</h3>
                       <div className="transferAc">
                         <div>
                           <MdAirlineSeatReclineExtra />7 seats

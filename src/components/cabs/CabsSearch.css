@@ -98,6 +98,7 @@
   display: flex;
   align-items: flex-start;
   gap: 5px;
+  flex-direction: column;
 }
 
 .search1ndcol div:first-child{
@@ -267,8 +268,8 @@ del{
 
 .cabSearchBox{
  margin-top: 1.5rem;
- border: 2px solid #72c368;
- border-radius: 5px;
+ /* border: 2px solid #72c368;
+ border-radius: 5px; */
  padding: 3px 0;
 }
 
