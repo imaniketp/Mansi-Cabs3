@@ -127,6 +127,7 @@ function CabsSearch() {
                 id="nav-dropdown-dark-example"
                 title="Car Model"
                 menuVariant="light"
+                className="filterDropMain"
               >
                 <NavDropdown.Item href="#action/3.1">
                   <input type="checkbox" name="4p" />
@@ -152,6 +153,7 @@ function CabsSearch() {
                 id="nav-dropdown-dark-example"
                 title="Passenger"
                 menuVariant="light"
+                className="filterDropMain"
               >
                 <NavDropdown.Item href="#action/3.1">
                   <input type="checkbox" name="7p" />

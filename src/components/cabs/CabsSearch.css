@@ -217,7 +217,7 @@ del{
 .filterDropdown{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   display: none;
 }
 
@@ -293,12 +293,19 @@ del{
   }
 }
 
+.filterDropMain{
+  background-color: #000000;
+  margin-top: 1rem;
+  width: 150px;
+  text-align: center;
+}
 
 @media all and (max-width:769px){
   .filterDropdown {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1rem;
   }
   .searchfilter{
     display: none;
@@ -337,9 +344,9 @@ del{
   font-size:15px;
 }
   .dropdown-toggle {
-    color: #7142f8;
-    font-weight: 500;
-    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
   }
   .search1ndcol h5 {
     font-size: 14px;
@@ -428,11 +435,6 @@ del{
   .search1ndcol p{
     font-size:15px;
   }
-    .dropdown-toggle {
-      color: #7142f8;
-      font-weight: 500;
-      font-size: 13px;
-    }
     .search1ndcol h5 {
       font-size: 14px;
     }
