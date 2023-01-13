@@ -150,16 +150,16 @@ function CabsSearch() {
             <Nav>
               <NavDropdown
                 id="nav-dropdown-dark-example"
-                title="Passenger Capacity"
+                title="Passenger"
                 menuVariant="light"
               >
                 <NavDropdown.Item href="#action/3.1">
                   <input type="checkbox" name="7p" />
-                  <label htmlFor="7p">4 Passenger seat</label>
+                  <label htmlFor="7p">4 Seater</label>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.1">
                   <input type="checkbox" name="7p" />
-                  <label htmlFor="7p">4 Passenger seat</label>
+                  <label htmlFor="7p">7 Seater</label>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
