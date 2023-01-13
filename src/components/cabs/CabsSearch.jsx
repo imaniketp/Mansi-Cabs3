@@ -9,9 +9,7 @@ import ModifyCabs from "./ModifyCabs";
 import {
   FcClearFilters,
 } from "react-icons/fc";
-import { FaGasPump } from "react-icons/fa";
-import { TbGasStation, TbRoad } from "react-icons/tb";
-import { TiCancel } from "react-icons/ti";
+
 
 const searchCab = [
   {
