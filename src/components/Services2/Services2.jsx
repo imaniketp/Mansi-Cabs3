@@ -60,7 +60,6 @@ export default function Services2() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -85,13 +84,9 @@ export default function Services2() {
       <div className="outerServ2Slider">
         <div className="serv2SliderTitle">
          <h1> All inclusive tours</h1>
-           {/* <h2>Bags bharo Cabs Karo!</h2> */}
         </div>
 
         <div className="Serv2sliderControls">
-          {/* <div onClick={() => slider?.current?.slickPrev()}>
-            <TfiAngleLeft className="serv2siderbtn" />
-          </div> */}
           <div className="mainServ2slider">
             <Slider {...settings} ref={slider}>
 
@@ -108,65 +103,8 @@ export default function Services2() {
                   </div>
               </div>
             ))}
-              {/* <div className="serv2slides">
-                <div className="innerserv2slide">
-                  <img src="flags.png" alt="" />
-                  <h6>Tour Managers</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor
-                  </p>
-                </div>
-              </div>
-
-              <div className="serv2slides">
-                <div className="innerserv2slide">
-                  <img src="research.png" alt="" />
-                  <h6>Best Value Itinerary</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor
-                  </p>
-                </div>
-              </div>
-
-              <div className="serv2slides">
-                <div className="innerserv2slide">
-                  <img src="fried-rice.png" alt="" />
-                  <h6>All Meals</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor
-                  </p>
-                </div>
-              </div>
-
-              <div className="serv2slides">
-                <div className="innerserv2slide">
-                  <img src="touring.png" alt="" />
-                  <h6>On-Tour Transport</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor
-                  </p>
-                </div>
-              </div>
-
-              <div className="serv2slides">
-                <div className="innerserv2slide">
-                  <img src="fly.png" alt="" />
-                  <h6>To and from airfare</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor
-                  </p>
-                </div>
-              </div> */}
             </Slider>
           </div>
-          {/* <div onClick={() => slider?.current?.slickNext()}>
-            <TfiAngleRight className="serv2siderbtn" />
-          </div> */}
         </div>
         
       </div>

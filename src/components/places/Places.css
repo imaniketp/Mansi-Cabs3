@@ -1,17 +1,14 @@
 .placesContainer{
     width: 90%;
     padding: 2rem;
-    /* background-color: #f2f7ff; */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-    /* border-radius: 15px; */
-    margin-bottom: 4rem;
+    margin: 1rem 0;
 }
 
 .placesheading{
     text-align: center;
     font-weight: 700;
     font-family: serif;
-    margin-bottom: 10px;
+    margin-top: 3rem;
     
 }
 .placedata{
@@ -79,7 +76,7 @@
     font-weight: 500;
   }
 }
-@media all and (max-width:400px){
+@media all and (max-width:426px){
   .palceshead{
     padding: 0;
 }
