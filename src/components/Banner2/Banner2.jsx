@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Row ,Col} from 'react-bootstrap'
+import { Row ,Col} from 'react-bootstrap'
 import './Banner2.css'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';

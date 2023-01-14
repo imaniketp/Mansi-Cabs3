@@ -1,6 +1,6 @@
 import React from "react";
-import { Col, Container, Nav, NavDropdown, Row } from "react-bootstrap";
-import { AiFillCheckCircle, AiFillStar } from "react-icons/ai";
+import { Container, Nav, NavDropdown } from "react-bootstrap";
+import { AiFillStar } from "react-icons/ai";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdAirlineSeatReclineExtra, MdLuggage } from "react-icons/md";
 import { Link } from "react-router-dom";

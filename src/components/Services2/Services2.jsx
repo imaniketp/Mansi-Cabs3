@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Slider from "react-slick";
 import "./Services2.css";
-// import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import { useRef } from "react";
 
 
@@ -91,7 +90,7 @@ export default function Services2() {
             <Slider {...settings} ref={slider}>
 
             {serv2.map((item,index) => (
-              <div key={index} className={index == activeIndex ? "slide activeSlide" : "slide"}>
+              <div key={index} className={index === activeIndex ? "slide activeSlide" : "slide"}>
                   <div className="serv2slides">
                     <div className="innerserv2slide">
                       <img src={item.serv2Img} alt="" />

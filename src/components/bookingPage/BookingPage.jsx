@@ -1,5 +1,4 @@
 import { Container, Row, Col, Modal } from "react-bootstrap";
-import { CiUser } from "react-icons/ci";
 import { BiRightArrowAlt } from "react-icons/bi";
 import React, { useState } from "react";
 import {ImLocation2} from 'react-icons/im';

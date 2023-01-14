@@ -3,7 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import {TfiAngleLeft, TfiAngleRight} from 'react-icons/tfi'
 import { useRef } from "react";
-import { FaUserCircle } from 'react-icons/fa';
 import userProfile from '../../Assets/user.jpg'
 
 export default function Carousal2(){

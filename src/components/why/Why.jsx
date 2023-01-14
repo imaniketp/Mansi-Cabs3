@@ -1,8 +1,5 @@
 import React from 'react'
 import './Why.css'
-// import {Col, Container, Row} from 'react-bootstrap'
-// import trustbg from '../../Assets/trust-removebg-preview.png'
-import {TfiAngleLeft, TfiAngleRight} from 'react-icons/tfi'
 import { useRef } from "react";
 import Slider from "react-slick";
 import trust from "../../Assets/trust-removebg-preview.png";

@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-import { Container, Row, Col,Badge } from "react-bootstrap";
-import {  CiUser } from "react-icons/ci";
+import { Container, Row, Col } from "react-bootstrap";
 import { BiRightArrowAlt} from 'react-icons/bi';
 import {ImLocation2} from 'react-icons/im';
 import "./CancelPage.css";
 const CancelBooking = () => {
   const [Cancelvalue, setCancelvalue] = useState(false);
-  const [showCancelModal, setShowCancelModal] = useState(false);
-
-  
-  const showcancelmodal = () => setShowCancelModal(true);
-  const hidecancelmodal = () => setShowCancelModal(false); 
   
   function showCancel(){
     setCancelvalue(!Cancelvalue)

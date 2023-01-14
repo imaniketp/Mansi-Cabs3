@@ -3,11 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { TiSocialLinkedin } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from '../../Assets/logo.png'
@@ -91,25 +88,3 @@ function Footer() {
 
 export default Footer;
 
-{
-  /* <Row className="footerSocialIcons">
-
-<Col>
-  <div className="footerinnerplaystore">
-    <img className="footerplaystoreimg" src="playstore.jpg" alt="" />
-  </div>
-</Col>
-  <Col>
-  <FaFacebookF className='footerfb'/>
-  </Col>
-  <Col>
-  <FaTwitter className='footertwitter'/>
-  </Col>
-  <Col>
-  <FaInstagram className='footerinsta'/>
-  </Col>
-  <Col>
-  <TiSocialLinkedin className='footerlinked'/>
-  </Col>
-</Row> */
-}

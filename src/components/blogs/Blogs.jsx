@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Blogs.css";
-import Select from "react-select";
-import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { TfiControlForward } from "react-icons/tfi";
@@ -85,7 +83,6 @@ const settings = {
 };
 
 function Blogs() {
-  const [selectedOption, setSelectedOption] = useState(null);
 
   return (
       <Container fluid='md'>

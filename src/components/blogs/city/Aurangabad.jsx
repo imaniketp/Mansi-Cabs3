@@ -1,61 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { BiSearch } from "react-icons/bi";
-import Select from "react-select";
 import "./BlogCity.css";
 import ajanta from '../../../Assets/ajanta.jpg'
 import grish from '../../../Assets/grish.jpg'
 import daulatabad from '../../../Assets/daulatabad.jpg'
 
-const placeoptions = [
-  { value: "mumbai", label: "Mumbai" },
-  { value: "nashik", label: "Nashik" },
-  { value: "pune", label: "Pune" },
-];
 
 function Aurangabad() {
-  const [selectedOption, setSelectedOption] = useState(null);
 
   return (
     <div className="cityblogContainer">
-      {/* <Container fluid className="blogSearch">
-        <div>
-          <Select
-            className="placeserchbar"
-            defaultValue={selectedOption}
-            onChange={setSelectedOption}
-            options={placeoptions}
-            components={{
-              DropdownIndicator: () => null,
-              IndicatorSeparator: () => null,
-            }}
-            placeholder={<BiSearch />}
-          />
-        </div>
-
-        <div>
-          <h5>Popular Search</h5>
-        </div>
-
-        <div>
-          <Row>
-            <Col md={4} className="blogserchimg">
-              <img src="Nashik 1.png" alt="" />
-              <p>Best Places to visit in Nashik</p>
-            </Col>
-
-            <Col md={4} className="blogserchimg">
-              <img src="Nashik 3.png" alt="" />
-              <p>Best Places to visit in Pune</p>
-            </Col>
-
-            <Col md={4} className="blogserchimg">
-              <img src="Nashik 2.png" alt="" />
-              <p>Best Places to visit in Aurangabad</p>
-            </Col>
-          </Row>
-        </div>
-      </Container> */}
 
       <Container className="blogcitydata">
         <div className="blogcitydata1">
@@ -65,7 +19,7 @@ function Aurangabad() {
 
         <div className="blogcitydata2">
           <div>
-            <h5>1) Ajanta Caves</h5>
+            <h5>1<span>&#41;</span> Ajanta Caves</h5>
             <Row className="cityblogrow">
               <Col md={3}>
                 <img src={ajanta} alt="" />
@@ -89,7 +43,7 @@ function Aurangabad() {
           </div>
 
           <div>
-            <h5>2) Grishneshwar Temples</h5>
+            <h5>2<span>&#41;</span> Grishneshwar Temples</h5>
             <Row className="cityblogrow">
               <Col md={3}>
                 <img src={grish} alt="" />
@@ -112,7 +66,7 @@ function Aurangabad() {
           </div>
 
           <div>
-            <h5>3) Bibi ka Maqbara</h5>
+            <h5>3<span>&#41;</span> Bibi ka Maqbara</h5>
             <Row className="cityblogrow">
               <Col md={3}>
                 <img src={daulatabad} alt="" />

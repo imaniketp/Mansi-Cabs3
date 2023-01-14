@@ -105,7 +105,7 @@ const Cabspage = () => {
         </div>
       </div>
 
-      {value == 1 && (
+      {value === 1 && (
         <>
           <Row className="cabspage-1" id="cabpageShow-1">
             <Col md={4} className="cabspage-11">
@@ -150,7 +150,7 @@ const Cabspage = () => {
         </>
       )}
 
-      {value == 2 && (
+      {value === 2 && (
         <>
           <Row className="cabspage-1" id="cabpageShow-1">
             <Col md={4} className="cabspage-11">
@@ -194,7 +194,7 @@ const Cabspage = () => {
         </>
       )}
 
-      {value == 3 && (
+      {value === 3 && (
         <>
           <Row className="cabspage-1" id="cabpageShow-1">
             <Col md={4} className="cabspage-11">

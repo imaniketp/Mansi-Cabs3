@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './CustomerCare.css'
 import{IoCall} from 'react-icons/io5'
-import { MdAddIcCall } from 'react-icons/md'
 import { FaWhatsapp } from 'react-icons/fa'
 
 
