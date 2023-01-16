@@ -11,7 +11,6 @@ import Navbars from "./components/Navbar/Navbars";
 import Footer from "./components/Footer/Footer";
 import Blogs from "./components/blogs/Blogs";
 import MainOfferPage from "./components/MainOfferPage/MainOfferPage";
-import Payment from "./components/payment/Payment";
 import FAQ from "./components/FAQ/FAQ";
 import UpperNavbar from "./components/Navbar/UpperNavbar";
 import ContactUs from "./components/contactUs/ContactUs";
@@ -45,7 +44,6 @@ function App() {
         <Route path="localrental" element={<OurServices3 />} />
         <Route path="airport" element={<OurServices4 />} />
         <Route path="offers" element={<MainOfferPage />} />
-        <Route path="payment" element={<Payment />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="contactus" element={<ContactUs />} />
         <Route path="aboutUs" element={<AboutUs />} />
