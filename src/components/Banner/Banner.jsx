@@ -485,21 +485,21 @@ function Banner() {
           {value === 4 && airportValue === 3 && (
             <Row className="radioInput">
               <Col md={4} className="radioInputCol">
-                <label htmlFor="">Select Airport</label>
-                <Select
-                  defaultValue={selectedAirportList}
-                  onChange={setSelectedAirportList}
-                  options={airports}
-                  placeholder="Select Airport"
-                />
-              </Col>
-              <Col md={4} className="radioInputCol">
                 <label htmlFor="">City</label>
                 <Select
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
                   placeholder="Select City"
+                />
+              </Col>
+              <Col md={4} className="radioInputCol">
+                <label htmlFor="">Select Airport</label>
+                <Select
+                  defaultValue={selectedAirportList}
+                  onChange={setSelectedAirportList}
+                  options={airports}
+                  placeholder="Select Airport"
                 />
               </Col>
               <Col md={4} className="radioInputCol">

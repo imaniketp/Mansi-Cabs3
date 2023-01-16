@@ -5,16 +5,14 @@ import { AiFillStar } from "react-icons/ai";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
 import { FaSuitcase } from "react-icons/fa";
-import { BiRightArrowAlt } from "react-icons/bi";
 import { FcCheckmark } from "react-icons/fc";
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineDown } from "react-icons/ai";
-import { HiLocationMarker } from "react-icons/hi";
 import Slider from "react-slick";
 import "./Transfer.css";
+import ModifyCabs from "./ModifyCabs";
 
 function Transfer() {
-  const [showCabDetails, setShowCabDetails] = useState(false);
   const [showView, setShowView] = useState(false);
   const [modalShow1, setModalShow1] = useState(false);
   const [modalShow2, setModalShow2] = useState(false);
@@ -23,9 +21,9 @@ function Transfer() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
     autoplay:true,
-    autoplaySpeed:2000,
+    autoplaySpeed:1000,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll:1,
     responsive:[
@@ -42,11 +40,10 @@ function Transfer() {
     setShowView(!showView);
   };
 
-  const cabDetails = () => {
-    setShowCabDetails(!showCabDetails);
-  };
 
   return (
+    <>
+    <ModifyCabs />
     <Container fluid className="transfer0">
       <Container fluid="md">
         <Row>
@@ -84,7 +81,7 @@ function Transfer() {
                 </Col>
               </Row>
               <Row className="transfer-spacious">
-                <Row className="transfer-details4">
+                {/* <Row className="transfer-details4">
                   <Col md={3}>
                     <div className="transfer-details-data">
                       <div>
@@ -115,7 +112,7 @@ function Transfer() {
                       <span>26 Nov 2022, 08:00 AM</span>
                     </div>
                   </Col>
-                </Row>
+                </Row> */}
 
                 <Row className="transferSpec">
 
@@ -235,12 +232,7 @@ function Transfer() {
             <Row className="transfer-cancellation-title0">
               <div className="transfer-cancellation-title">
                 <p>Cab Images</p>
-                <AiOutlineDown
-                  className="transfer-cancellation-title-icon"
-                  onClick={cabDetails}
-                />
               </div>
-              {showCabDetails && (
                 <div className="cabDetailsinner">
                  
                   <div className="cabDetailsinnerdiv">
@@ -271,7 +263,6 @@ function Transfer() {
                     
                   </div>
                 </div>
-              )}
             </Row>
 
             <Modal
@@ -448,6 +439,7 @@ function Transfer() {
         </Row>
       </Container>
     </Container>
+    </>
   );
 }
 

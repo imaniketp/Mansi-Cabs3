@@ -166,6 +166,7 @@ function CabsSearch() {
           </div>
 
           {searchCab.map((item, index) => (
+          <Link to="/transfer-details">
             <div key={index} className="search1row">
               <div className="search1row1">
                 <div className="search1ndcol">
@@ -238,11 +239,10 @@ function CabsSearch() {
 
                   <h4>₹{item.price}</h4>
                 </div>
-                <Link to="/transfer-details">
                   <button>Book Now</button>
-                </Link>
               </div>
             </div>
+                </Link>
           ))}
         </div>
       </Container>

@@ -4,6 +4,9 @@
   justify-content: center;
   background-color: #ecfffd;
 }
+.searchmain a{
+  text-decoration: none;
+}
 .searchfilter{
   width: 20rem;
   background-color: white;

@@ -38,6 +38,48 @@
     color: white;
     padding: 0.2rem 0;
   }
+  
+  .css-13cymwt-control{   
+    font-size: 15px;
+  }
+  .cabSearch2{
+    display: none;
+  }
+  .cabSearch2Inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 1rem;
+  }
+  .cabSearch2Inner label{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .cabSearch2Inner .css-13cymwt-control{
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid black !important;
+    padding: 0;
+    background-color: white !important;
+    font-size: 12px !important;
+    margin: 0 3px;
+}
+.cabSearch2Inner .react-datepicker__input-container {
+  font-size: 13px;
+  margin: 0 3px;
+}
+.cabSearch2Inner .react-datepicker-wrapper {
+  display: flex;
+  padding: 0;
+  border: 0;
+  width: 192px;
+}
+.cabSearch2Inner .react-datepicker__input-container input{
+  width: 190px;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 9px 0px;
+}
+
 
   @media all and (max-width:768px){
     .modifybtn{
@@ -45,14 +87,16 @@
        
   }
 }
-  @media all and (max-width:400px){
+  @media all and (max-width:426px){
     .modifybtn{
       width: 50%;
       font-size: 12px;
       bottom: 38px;
   }
-}
-
-.css-13cymwt-control{   
-  font-size: 15px;
+  .cabserchtop{
+    display: none;
+  }
+  .cabSearch2{
+    display: contents;
+  }
 }

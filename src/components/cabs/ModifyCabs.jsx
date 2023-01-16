@@ -11,6 +11,17 @@ import DatePicker from "react-datepicker";
 
 
 
+const tripType = [
+    {id: 1, value: "oneway", label: "One Way" },
+    {id: 2, value: "roundtrip", label: "Round Trip" },
+    {id: 3, value: "rental", label: "Rental" },
+    {id: 4, value: "airport", label: "Airport" },
+  ];
+const airportType = [
+    {id: 1, value: "airportpickup", label: "Airport Pickup" },
+    {id: 2, value: "airportdrop", label: "Airport Drop" },
+    {id: 3, value: "airportreturn", label: "Airport Return" },
+  ];
 const options = [
     { value: "selectCity", label: "Select City" },
     { value: "mumbai", label: "Mumbai" },
@@ -53,6 +64,8 @@ function ModifyCabs() {
   const [selectedAddCity, setSelectedAddCity] = useState(null);
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [selectedAirportList, setSelectedAirportList] = useState(null);
+  const [selectedTripType, setSelectedTripType] = useState(tripType[0]);
+  const [selectedAirportType, setSelectedAirportType] = useState(airportType[0]);
   
   const [value, setValue] = useState(1);
 
@@ -151,6 +164,7 @@ const airportreturn = () => {
 const [startDate, setStartDate] = useState(new Date())
 
   return (
+    <>
     <div className="cabserchtop">
     <Container className="cabsbannermain">
 
@@ -472,21 +486,21 @@ const [startDate, setStartDate] = useState(new Date())
           {value === 4 && airportValue === 3 && (
             <Row className="radioInput">
               <Col md={4} className="radioInputCol">
-                <label htmlFor="">Select Airport</label>
-                <Select
-                  defaultValue={selectedAirportList}
-                  onChange={setSelectedAirportList}
-                  options={airports}
-                  placeholder="Select Airport"
-                />
-              </Col>
-              <Col md={4} className="radioInputCol">
                 <label htmlFor="">City</label>
                 <Select
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
                   options={options}
                   placeholder="Select City"
+                />
+              </Col>
+              <Col md={4} className="radioInputCol">
+                <label htmlFor="">Select Airport</label>
+                <Select
+                  defaultValue={selectedAirportList}
+                  onChange={setSelectedAirportList}
+                  options={airports}
+                  placeholder="Select Airport"
                 />
               </Col>
               <Col md={4} className="radioInputCol">
@@ -504,6 +518,265 @@ const [startDate, setStartDate] = useState(new Date())
             <button className="modifybtn">Modify Details</button>
         
     </div>
+    <div className='cabSearch2'>
+            <div className='cabSearch2Inner'>
+              <div className="radioInputCol2">
+                <label htmlFor="">Trip Type</label>
+                <Select
+                  defaultValue={selectedTripType}
+                  onChange={setSelectedTripType}
+                  options={tripType}
+                />
+              </div>
+              {
+                selectedTripType.id === 1 &&
+                <>
+                    <div className="radioInputCol2">
+                      <label htmlFor="">From</label>
+                      <Select
+                        defaultValue={selectedOption}
+                        onChange={setSelectedOption}
+                        options={options}
+                        placeholder="Select City"
+                      />
+                    </div>
+
+                    <div className="radioInputCol2">
+                      <label htmlFor="">To</label>
+                      <Select
+                        defaultValue={selectedOption}
+                        onChange={setSelectedOption}
+                        options={options}
+                        placeholder="Select City"
+                      />
+                    </div>
+
+                    <div className="radioInputCol2">
+                      <label>Date & Time</label>
+                      <DatePicker
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
+                        showTimeSelect
+                        dateFormat="MMMM d, yyyy h:mm aa"
+                      />
+                    </div>
+                </>
+              }
+              {
+                selectedTripType.id === 2 &&
+                <>
+                    <div  className="radioInputCol2">
+                      <label htmlFor="">From</label>
+                      <Select
+                        defaultValue={selectedOption}
+                        onChange={setSelectedOption}
+                        options={options}
+                        placeholder="Select City"
+                      />
+                    </div>
+
+                    <div className="radioInputCol2">
+                      <label htmlFor="">To</label>
+                      <Select
+                        defaultValue={selectedOption}
+                        onChange={setSelectedOption}
+                        options={options}
+                        placeholder="Select City"
+                      />
+                    </div>
+
+                    <div className="radioInputCol2">
+                      <label htmlFor="">Add City</label>
+                      <Select
+                        defaultValue={selectedAddCity}
+                        onChange={setSelectedAddCity}
+                        options={addCity}
+                        placeholder="Select City"
+                      />
+                    </div>
+
+                    <div className="radioInputCol2">
+                      <label>Date & Time</label>
+                      <DatePicker
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
+                        showTimeSelect
+                        dateFormat="MMMM d, yyyy h:mm aa"
+                      />
+                    </div>
+
+                    <div className="radioInputCol2">
+                      <label>Return</label>
+                      <DatePicker
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
+                        showTimeSelect
+                        dateFormat="MMMM d, yyyy h:mm aa"
+                      />
+                    </div>
+                </>
+              }
+              {
+                selectedTripType.id === 3 &&
+                <>
+                    <div  className="radioInputCol2">
+                      <label htmlFor="">From</label>
+                      <Select
+                        defaultValue={selectedOption}
+                        onChange={setSelectedOption}
+                        options={options}
+                        placeholder="Select City"
+                      />
+                    </div>
+
+                    <div  className="radioInputCol2">
+                      <label htmlFor="">Select Package</label>
+                      <Select
+                        defaultValue={selectedPackage}
+                        onChange={setSelectedPackage}
+                        options={packages}
+                        placeholder="Select Package"
+                      />
+                    </div>
+
+                    <div className="radioInputCol2">
+                      <label>Date & Time</label>
+                      <DatePicker
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
+                        showTimeSelect
+                        dateFormat="MMMM d, yyyy h:mm aa"
+                      />
+                    </div>
+                </>
+              }
+              {
+                selectedTripType.id === 4 &&
+                 selectedAirportType.id === 1 &&
+                <>
+                    <div className="radioInputCol2">
+                      <label htmlFor="">Airport Type</label>
+                      <Select
+                        defaultValue={selectedAirportType}
+                        onChange={setSelectedAirportType}
+                        options={airportType}
+                      />
+                    </div>
+                    <div className="radioInputCol">
+                        <label htmlFor="">Select Airport</label>
+                        <Select
+                          defaultValue={selectedAirportList}
+                          onChange={setSelectedAirportList}
+                          options={airports}
+                          placeholder="Select Airport"
+                        />
+                    </div>
+                    <div className="radioInputCol">
+                        <label htmlFor="">City</label>
+                        <Select
+                          defaultValue={selectedOption}
+                          onChange={setSelectedOption}
+                          options={options}
+                          placeholder="Select City"
+                        />
+                    </div>
+                    <div className="radioInputCol">
+                        <label>Date & Time</label>
+                        <DatePicker
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                          showTimeSelect
+                          dateFormat="MMMM d, yyyy h:mm aa"
+                        />
+                    </div>
+                </>
+              }
+              {
+                selectedTripType.id === 4 &&
+                 selectedAirportType.id === 2 &&
+                <>
+                    <div className="radioInputCol2">
+                      <label htmlFor="">Airport Type</label>
+                      <Select
+                        defaultValue={selectedAirportType}
+                        onChange={setSelectedAirportType}
+                        options={airportType}
+                      />
+                    </div>
+                    <div className="radioInputCol">
+                        <label htmlFor="">City</label>
+                        <Select
+                          defaultValue={selectedOption}
+                          onChange={setSelectedOption}
+                          options={options}
+                          placeholder="Select City"
+                        />
+                    </div>
+                    <div className="radioInputCol">
+                        <label htmlFor="">Select Airport</label>
+                        <Select
+                          defaultValue={selectedAirportList}
+                          onChange={setSelectedAirportList}
+                          options={airports}
+                          placeholder="Select Airport"
+                        />
+                    </div>
+                    <div className="radioInputCol">
+                        <label>Date & Time</label>
+                        <DatePicker
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                          showTimeSelect
+                          dateFormat="MMMM d, yyyy h:mm aa"
+                        />
+                    </div>
+                </>
+              }
+              {
+                selectedTripType.id === 4 &&
+                 selectedAirportType.id === 3 &&
+                <>
+                    <div className="radioInputCol2">
+                      <label htmlFor="">Airport Type</label>
+                      <Select
+                        defaultValue={selectedAirportType}
+                        onChange={setSelectedAirportType}
+                        options={airportType}
+                      />
+                    </div>
+                    <div className="radioInputCol">
+                        <label htmlFor="">City</label>
+                        <Select
+                          defaultValue={selectedOption}
+                          onChange={setSelectedOption}
+                          options={options}
+                          placeholder="Select City"
+                        />
+                    </div>
+                    <div className="radioInputCol">
+                        <label htmlFor="">Select Airport</label>
+                        <Select
+                          defaultValue={selectedAirportList}
+                          onChange={setSelectedAirportList}
+                          options={airports}
+                          placeholder="Select Airport"
+                        />
+                    </div>
+                    <div className="radioInputCol">
+                        <label>Date & Time</label>
+                        <DatePicker
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                          showTimeSelect
+                          dateFormat="MMMM d, yyyy h:mm aa"
+                        />
+                    </div>
+                </>
+              }
+            </div>
+    </div>
+    
+    </>
   )
 }
 
