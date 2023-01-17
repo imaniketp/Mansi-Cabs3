@@ -8,6 +8,8 @@ const CabBooking = () => {
   const [showBooking, setShowBooking] = useState(false);
   const [showCancelModal, setShowCancelModal] = useState(false);
   const [Current, setCurrent] = useState(1);
+  const [activecurrenbook, setActivecurrenbook] = useState(true);
+  const [activeprevbook, setActiveprevbook] = useState(false);
 
   const openBooking = () => {
     setShowBooking(!showBooking);
@@ -15,13 +17,23 @@ const CabBooking = () => {
   const showcancelmodal = () => setShowCancelModal(true);
   const hidecancelmodal = () => setShowCancelModal(false);
 
+  const currentBooking = () =>{
+    setCurrent(1)
+    setActivecurrenbook(true)
+    setActiveprevbook(false)
+  }
+  const previousBooking = () =>{
+    setCurrent(2)
+    setActivecurrenbook(false)
+    setActiveprevbook(true)
+  }
 
   return (
     <Container className="cabbooking">
       <Row className="cabbooking1">
           <Row className="cabbooking11">
-          <Col className="cabbooking111" onClick={() => setCurrent(1)}>Current Bookings</Col>
-          <Col className="cabbooking111" onClick={() => setCurrent(2)}> Previously Cabs Booked</Col>
+          <Col className="cabbooking111" style={{color: activecurrenbook ? "white" : "black", backgroundColor: activecurrenbook ? "#7142f8" : "white"}}  onClick={currentBooking}>Current Bookings</Col>
+          <Col className="cabbooking111" style={{color: activeprevbook ? "white" : "black", backgroundColor: activeprevbook ? "#7142f8" : "white"}} onClick={previousBooking}> Previously Cabs Booked</Col>
         </Row>
 
         

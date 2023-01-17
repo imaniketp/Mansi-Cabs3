@@ -61,6 +61,9 @@
   margin: 1rem 1rem;
   padding-bottom: 0.5rem;
 }
+.search1row:hover{
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(113, 66, 248, 0.9) 0px 0px 0px 1px;
+}
 .search1row1{
   display: flex;
   align-items: flex-start;
@@ -68,15 +71,31 @@
   gap: 20px;
 }
 
-
-.star5{
-  fill: #54e8c3;
-  font-size: 16px;
+.cabSearchRating{
+  display: flex;
+  color: white;
+  background-color: #26bd99;
+  border-radius: 3px;
+  font-size: 13px;
+  width: 40px;
+  height: 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  float: right;
 }
-.star6{
-  fill: #e3dbfd;
-  font-size: 16px;
+.cabSearchRating p{
+  margin-bottom: 0;
+}
 
+.cabRating{
+  color: white !important;
+  font-size: 12px !important;
+}
+.totalRating{
+  color: white !important;
+  font-size: 10px !important;
+  margin-top: 2px;
 }
 
 
@@ -104,6 +123,11 @@
   flex-direction: column;
 }
 
+.acicons{
+  color: #0f8fc6;
+  font-size: 15px;
+}
+
 .search1ndcol div:first-child{
   margin-bottom: 13px;
 }
@@ -114,10 +138,7 @@
   font-size: 17px;
   margin-bottom: 0;
 }
-.search2ndcol h6{
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 10px;
+.search2ndcol{
     color: rgb(100, 93, 93);
 }
 
@@ -270,38 +291,39 @@ del{
 }
 
 .cabSearchBox{
- margin-top: 1.5rem;
- /* border: 2px solid #72c368;
- border-radius: 5px; */
+  width: 333px;
+ margin-top: 5px;
  padding: 3px 0;
 }
 
 
-.cabSearchBox h5{
+.cabSearchBox p{
   position: relative;
-  width: 385px;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
-  -webkit-box-reflect: below 1px linear-gradient(transparant, #131313);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
   outline: none;
-  animation: cabsearch 1s linear infinite;
+  animation: cabsearch 0.5s linear infinite;
 }
 
 @keyframes cabsearch{
   0%{
-    color: #7142f8;
+    color: #16ff1e;
   }
   100%{
-    color: #00eeff;
+    color: #b2fdb4;
   }
 }
 
 .filterDropMain{
-  background-color: #000000;
-  margin-top: 1rem;
+  background-color: #25aae1;
+  margin: 1rem 0;
   width: 150px;
+  height: 35px;
   text-align: center;
+}
+.dropdown-toggle:hover{
+  color: white;
 }
 
 @media all and (max-width:769px){
@@ -321,6 +343,9 @@ del{
 }
 
 @media all and (max-width:426px){
+  .ac{
+    flex-direction: row;
+  }
   .search1ndcol div:first-child{
     margin-bottom: 0;
   }
@@ -349,8 +374,8 @@ del{
 }
   .dropdown-toggle {
     color: white;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 13px;
   }
   .search1ndcol h5 {
     font-size: 14px;
@@ -481,7 +506,7 @@ del{
     margin-top: 1rem;
   }
   .search4rtcol button {
-    height: 24px;
+    height: 30px;
     width: 80px;
     margin-top: 13px;
     font-size: 12px;

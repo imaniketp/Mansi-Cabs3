@@ -113,6 +113,33 @@ function Transfer() {
                     </div>
                   </Col>
                 </Row> */}
+                <div className="transferouterInclusion">
+                      <div className="transfer-inclusion0" id="transfer-block">
+                        <div className="transfer-inclusion">
+                          <h5>
+                            <FcCheckmark className="transfer-inclusion-mark" />
+                            Inclusions
+                            <span>(Included In The Price) </span>
+                          </h5>
+                          <div className="inclusion-data">
+                            <li>Toll Charges</li>
+                            <li>Driver Allowance</li>
+                            <li>State Tax</li>
+                          </div>
+                        </div>
+
+                        <div className="transfer-exclusion">
+                          <h5>
+                            <RxCross2 className="transfer-exclusion-mark" />
+                            Exclusions <span>(Extra Charges)</span>
+                          </h5>
+                          <div className="exclusion-data">
+                            <li>Waiting Charges (After 45 mins, ₹ 100.0/hr)</li>
+                            <li>Fare beyond 166 Kms (₹ 20/Km)</li>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
 
                 <Row className="transferSpec">
 
@@ -236,27 +263,24 @@ function Transfer() {
                 <div className="cabDetailsinner">
                  
                   <div className="cabDetailsinnerdiv">
-                    <div className="cabImages">
+                    <div className="cabImages" onClick={() => setModalShow1(true)}>
                     <img
                       src="ferraribody.jpeg"
                       alt=""
-                      onClick={() => setModalShow1(true)}
                       />
                       <p>Car Image</p>
                     </div>
-                    <div className="cabImages">
+                    <div className="cabImages" onClick={() => setModalShow2(true)}>
                     <img
                       src="ferrariint.jpeg"
                       alt=""
-                      onClick={() => setModalShow2(true)}
                       />
                       <p>Car Interior</p>
                     </div>
-                    <div className="cabImages">
+                    <div className="cabImages" onClick={() => setModalShow3(true)}>
                     <img
                       src="ferrariseats.jpeg"
                       alt=""
-                      onClick={() => setModalShow3(true)}
                       />
                        <p>Car Exterior</p>
                     </div>

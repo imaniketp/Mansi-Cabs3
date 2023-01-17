@@ -34,10 +34,7 @@ function Navbars() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleCloseotp = () => setShowotp(false);
-  const handleShowotp = () => {
-    setShowotp(true);
-    setShow(false);
-  };
+
   const handleCloseres = () => setShowres(false);
   const handleShowres = () => {
     setShowres(true);
@@ -238,7 +235,7 @@ function Navbars() {
                   <br />
                   <Button
                     className="login-body-btn-mobile"
-                    onClick={handleShowotp}
+                    onClick={handleShownewotp}
                   >
                     Send OTP
                   </Button>
@@ -260,8 +257,7 @@ function Navbars() {
                     placeholder="Enter your Email"
                     
                   />
-{/* 
-                  <br /> */}
+
                   <label htmlFor="password">Enter your Password</label>
                   <input
                     type="password"
@@ -310,6 +306,9 @@ function Navbars() {
               <label>Mobile No.</label>
               <input type="number" placeholder="Enter your number" />
               
+            </div>
+            <div>
+              <p className="reset-getotp">Get Otp</p>
             </div>
             <div className="reset-otp">
               <label>Enter OTP</label>
@@ -369,12 +368,15 @@ function Navbars() {
             </div>
             <div className="reg-mob">
               <label>Mobile No. :</label>
-              <br />
+              <br/>
+              <div className="reg-mobInner">
               <input type="tel" placeholder="Enter your number"  onChange={(e) => validateMobile(e)}/>
+              <p>Get OTP</p>
+              </div>
               <div style={{color: 'red', fontSize:'12px'}}>{mobileError}</div>
             </div>
             <div className="reg-otp">
-              <p onClick={handleShownewotp}>Get OTP</p>
+              <input type='number'/>
             </div>
             <div className="reg-mail">
               <label>Email ID</label>

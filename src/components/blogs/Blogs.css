@@ -3,58 +3,7 @@
     background-color: #ecfffd;
 }
 
-/*.blogsrow1{
-    display: flex;
-    align-items: flex-end;
-     margin: 0;
-    padding: 0; /
-}
-.blogsrow1 img{
-    width: 100%;
-}
 
-.blogSearch{
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%;
-    background-color: white;
-    gap: 2rem;
-}
-.blogSearch h5{
-   text-align: center;
-}
-
-.blogserchimgmain{
-    display: flex;
-    gap: 0.2rem;
-}
-.blogserchimg{
-    display: flex;
-    gap: 1rem;
-    max-width: 13rem;
-}
-.blogserchimg img{
-    width: 80px;
-}
-
-@media all and (max-width:768px){
-    .blogserchimg img{
-        width: 80%;
-    }
-}
-.blogserchimg p{
-    font-size: 90%;
-}
-
-.placeserchbar{
-    width: 16rem;
-}
-*/
 .blogsrow2{
     margin: 1rem 0.5rem;
     display: flex;

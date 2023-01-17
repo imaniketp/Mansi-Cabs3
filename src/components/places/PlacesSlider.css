@@ -112,11 +112,11 @@
         width: 100%;
     }
     .mainplaceslider div .slick-slide{
-        padding: 0 60px;
+        padding: 0 10px;
     }
     .slides img{
-        width: 136px;
-        height: 150px; 
+        width: 100px;
+        height: 100px; 
     }
 }
 

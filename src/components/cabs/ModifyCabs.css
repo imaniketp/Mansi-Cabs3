@@ -1,102 +1,65 @@
-.cabserchtop{
-    background: url('../../Assets/offersbg.jpg');
-    background-size: cover;
-    background-position: 100%;
-    padding: 3rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+
+  .cabSearch2{
     width: 100%;
-  }
-
-  .cabsbannermain{
-    width: 70%;
-    background-color: #ffffff;
-    padding: 0 1rem;
-    border: 1px solid black;
-    border-radius: 1rem;
+    background: #e9e2ff;
     display: flex;
-    flex-direction: column;
-    min-height: 10rem;
-    
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 10rem;
+  }
+  
+  .radioInputCol2{
+    margin: 0 5px;
+  }
+.cabSearch2Inner{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 8px;
 }
-
-.modifybtn{
-    
-    width: 15rem;
-    position: absolute;
-    border-radius: 20px;
+.cabSearch2btn{  
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
     background-color: #7142ff;
     border: 0;
-    bottom: 35px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    text-align: center;
-    text-decoration: none;
+    font-weight: 600;
     color: white;
-    padding: 0.2rem 0;
+    margin: 0 10px;
+    margin-bottom: 8px;
   }
   
   .css-13cymwt-control{   
     font-size: 15px;
   }
-  .cabSearch2{
-    display: none;
-  }
-  .cabSearch2Inner{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 1rem;
-  }
+
   .cabSearch2Inner label{
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
   }
   .cabSearch2Inner .css-13cymwt-control{
-    border: none !important;
-    border-radius: 0 !important;
-    border-bottom: 1px solid black !important;
-    padding: 0;
+    border-radius: 5px !important;
+    border: 1px solid black !important;
     background-color: white !important;
-    font-size: 12px !important;
-    margin: 0 3px;
+    font-size: 15px !important;
+    font-weight: 600;
 }
 .cabSearch2Inner .react-datepicker__input-container {
-  font-size: 13px;
-  margin: 0 3px;
+  font-size: 15px;
+    font-weight: 600;
 }
 .cabSearch2Inner .react-datepicker-wrapper {
   display: flex;
   padding: 0;
   border: 0;
-  width: 192px;
+  width: 230px;
 }
 .cabSearch2Inner .react-datepicker__input-container input{
-  width: 190px;
-    border: 0;
-    border-bottom: 1px solid black;
-    padding: 9px 0px;
+    width: 230px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 6px 5px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-
-  @media all and (max-width:768px){
-    .modifybtn{
-        bottom: 34px;
-       
-  }
-}
-  @media all and (max-width:426px){
-    .modifybtn{
-      width: 50%;
-      font-size: 12px;
-      bottom: 38px;
-  }
-  .cabserchtop{
-    display: none;
-  }
-  .cabSearch2{
-    display: contents;
-  }
-}

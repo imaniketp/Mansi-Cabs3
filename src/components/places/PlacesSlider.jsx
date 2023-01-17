@@ -1,51 +1,54 @@
 import React from "react";
 import Slider from "react-slick";
 import "./PlacesSlider.css";
+import nashikimgs from '../../Assets/city/nashik1.jpg'
+import mumbaiimgs from '../../Assets/city/mumbai1.jpg'
+import puneimgs from '../../Assets/city/pune1.jpg'
 
 
 const nashik = [
   {
-    placeImg: "./city/nashik1.jpg",
+    placeImg: `${nashikimgs}`,
   },
   {
-    placeImg: "./city/nashik2.jpg",
+    placeImg: `${nashikimgs}`,
   },
   {
-    placeImg: "./city/nashik3.jpg",
+    placeImg: `${nashikimgs}`,
   },
   {
-    placeImg: "./city/nashik4.jpg",
+    placeImg: `${nashikimgs}`,
   },
 ];
 
 const mumbai = [
   {
-    placeImg: "./city/mumbai1.jpg",
+    placeImg: `${mumbaiimgs}`,
   },
   {
-    placeImg: "./city/mumbai2.jpg",
+    placeImg: `${mumbaiimgs}`,
   },
   {
-    placeImg: "./city/mumbai3.jpg",
+    placeImg: `${mumbaiimgs}`,
   },
   {
-    placeImg: "./city/mumbai4.jpg",
+    placeImg: `${mumbaiimgs}`,
   },
 ];
 
 
 const pune = [
   {
-    placeImg: "./city/pune1.jpg",
+    placeImg: `${puneimgs}`,
   },
   {
-    placeImg: "./city/pune2.jpg",
+    placeImg: `${puneimgs}`,
   },
   {
-    placeImg: "./city/pune3.jpg",
+    placeImg: `${puneimgs}`,
   },
   {
-    placeImg: "./city/pune4.jpg",
+    placeImg: `${puneimgs}`,
   },
 ];
 
@@ -74,13 +77,6 @@ function PlacesSlider() {
           slidesToScroll: 1
         }
       },
-      {
-        breakpoint: 321,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
     ]   
   };
 

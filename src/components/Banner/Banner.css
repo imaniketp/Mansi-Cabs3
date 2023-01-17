@@ -1,7 +1,6 @@
 
 
 .hero__form {
-     /* background: url('../../../public/main\ bg.jpg'); */
     background-position: 100%; 
     animation-name: bgimage;
   animation-duration: 20s;
@@ -13,26 +12,26 @@
 
   @keyframes bgimage{
     0%{
-      background-image: url('../../../public/main\ bg.jpg');
+      background-image: url('../../Assets/main\ bg.jpg');
       background-position: 100%;
     }
     25%{
-      background-image: url('../../../public/conuter\ bg.jpg');
+      background-image: url('../../Assets/conuter\ bg.jpg');
       background-position: 100%;
 
     }
     50%{
-      background-image: url('../../../public/image\ 4.jpg');
+      background-image: url('../../Assets/image\ 4.jpg');
       background-position: 100%;
 
     }
     75%{
-      background-image: url('../../../public/main\ bg.jpg');
+      background-image: url('../../Assets/main\ bg.jpg');
       background-position: 100%;
 
     }
     100%, 0%{
-      background-image: url('../../../public/conuter\ bg.jpg');
+      background-image: url('../../Assets/conuter\ bg.jpg');
       background-position: 100%;
 
     }
@@ -365,10 +364,6 @@
     font-size: 13px;
 }
 
-/* .addCity .css-13cymwt-control{
-    overflow-y: scroll;
-    height: 25px;
-} */
 
 .react-datepicker-popper{
     scroll-snap-type: none;

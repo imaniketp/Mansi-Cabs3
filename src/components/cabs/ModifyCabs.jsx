@@ -1,12 +1,6 @@
 import React,{useState} from 'react'
 import './ModifyCabs.css' 
 import Select from "react-select";
-import { CgArrowsExchangeAlt } from "react-icons/cg";
-import {  GiCommercialAirplane, GiRoad } from "react-icons/gi";
-import { Col, Container, Row } from 'react-bootstrap';
-import { BiTrip } from "react-icons/bi";
-import { BsCircleFill } from "react-icons/bs";
-import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import DatePicker from "react-datepicker";
 
 
@@ -67,105 +61,12 @@ function ModifyCabs() {
   const [selectedTripType, setSelectedTripType] = useState(tripType[0]);
   const [selectedAirportType, setSelectedAirportType] = useState(airportType[0]);
   
-  const [value, setValue] = useState(1);
-
-  const [onewayActive, setonewayActive] = useState(true);
-  const [roundActive, setroundActive] = useState(false);
-  const [rentalActive, setrentalActive] = useState(false);
-  const [airportActive, setairportActive] = useState(false);
-
-  const [airportValue, setairportValue] = useState(1);
-  const [airportPickUp, setairportPickUp] = useState(true);
-  const [airportDrop, setairportDrop] = useState(false);
-  const [airportReturn, setairportReturn] = useState(false);
-
-const oneWayTrip = () => {
-  setonewayActive(true)
-  setroundActive(false)
-  setrentalActive(false)
-  setairportActive(false)
-  setValue(1)
-}
-
-const roundTrip = () => {
-  setValue(2)
-  setroundActive(true)
-  setonewayActive(false)
-  setrentalActive(false)
-  setairportActive(false)
-}
-
-const rental = () => {
-  setValue(3)
-  setrentalActive(true)
-  setonewayActive(false)
-  setroundActive(false)
-  setairportActive(false)
-}
-
-const airport = () => {
-  setValue(4)
-  setairportActive(true)
-  setonewayActive(false)
-  setroundActive(false)
-  setrentalActive(false)
-}
-
-const oneWayTrip1 = () => {
-  setonewayActive(true);
-  setroundActive(false);
-  setrentalActive(false);
-  setairportActive(false);
-  setValue(1);
-};
-
-const roundTrip1 = () => {
-  setValue(2);
-  setroundActive(true);
-  setonewayActive(false);
-  setrentalActive(false);
-  setairportActive(false);
-};
-
-const rental1 = () => {
-  setValue(3);
-  setrentalActive(true);
-  setonewayActive(false);
-  setroundActive(false);
-  setairportActive(false);
-};
-
-const airport1 = () => {
-  setValue(4);
-  setairportActive(true);
-  setonewayActive(false);
-  setroundActive(false);
-  setrentalActive(false);
-};
-const airportpickup = () => {
-  setairportValue(1);
-  setairportPickUp(true);
-  setairportDrop(false);
-  setairportReturn(false);
-};
-const airportdrop = () => {
-  setairportValue(2);
-  setairportDrop(true);
-  setairportPickUp(false);
-  setairportReturn(false);
-};
-const airportreturn = () => {
-  setairportValue(3);
-  setairportDrop(false);
-  setairportPickUp(false);
-  setairportReturn(true);
-};
 
 const [startDate, setStartDate] = useState(new Date())
 
   return (
     <>
-    <div className="cabserchtop">
+    {/* <div className="cabserchtop">
     <Container className="cabsbannermain">
 
           <div className="radiobtn">
@@ -517,7 +418,7 @@ const [startDate, setStartDate] = useState(new Date())
         </Container>
             <button className="modifybtn">Modify Details</button>
         
-    </div>
+    </div> */}
     <div className='cabSearch2'>
             <div className='cabSearch2Inner'>
               <div className="radioInputCol2">
@@ -662,7 +563,7 @@ const [startDate, setStartDate] = useState(new Date())
                         options={airportType}
                       />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label htmlFor="">Select Airport</label>
                         <Select
                           defaultValue={selectedAirportList}
@@ -671,7 +572,7 @@ const [startDate, setStartDate] = useState(new Date())
                           placeholder="Select Airport"
                         />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label htmlFor="">City</label>
                         <Select
                           defaultValue={selectedOption}
@@ -680,7 +581,7 @@ const [startDate, setStartDate] = useState(new Date())
                           placeholder="Select City"
                         />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label>Date & Time</label>
                         <DatePicker
                           selected={startDate}
@@ -703,7 +604,7 @@ const [startDate, setStartDate] = useState(new Date())
                         options={airportType}
                       />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label htmlFor="">City</label>
                         <Select
                           defaultValue={selectedOption}
@@ -712,7 +613,7 @@ const [startDate, setStartDate] = useState(new Date())
                           placeholder="Select City"
                         />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label htmlFor="">Select Airport</label>
                         <Select
                           defaultValue={selectedAirportList}
@@ -721,7 +622,7 @@ const [startDate, setStartDate] = useState(new Date())
                           placeholder="Select Airport"
                         />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label>Date & Time</label>
                         <DatePicker
                           selected={startDate}
@@ -744,7 +645,7 @@ const [startDate, setStartDate] = useState(new Date())
                         options={airportType}
                       />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label htmlFor="">City</label>
                         <Select
                           defaultValue={selectedOption}
@@ -753,7 +654,7 @@ const [startDate, setStartDate] = useState(new Date())
                           placeholder="Select City"
                         />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label htmlFor="">Select Airport</label>
                         <Select
                           defaultValue={selectedAirportList}
@@ -762,7 +663,7 @@ const [startDate, setStartDate] = useState(new Date())
                           placeholder="Select Airport"
                         />
                     </div>
-                    <div className="radioInputCol">
+                    <div className="radioInputCol2">
                         <label>Date & Time</label>
                         <DatePicker
                           selected={startDate}
@@ -774,6 +675,7 @@ const [startDate, setStartDate] = useState(new Date())
                 </>
               }
             </div>
+              <button className='cabSearch2btn'>Modify</button>
     </div>
     
     </>

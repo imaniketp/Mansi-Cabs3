@@ -5,11 +5,7 @@
   align-items: center;
 }
 
-@media all and (max-width:450px){
-  .navbars{
-    flex-direction: column;
-    align-items: flex-start;
-  }
+@media all and (max-width:426px){
 
   .playstore p{
     font-size: 8px !important;
@@ -35,12 +31,10 @@
   font-size: 15px;
 }
 .logo{
-  max-width: 8rem;
-
+  width: 7rem;
 }
 .logo:hover{
-  max-width: 9rem;
-
+  width: 8rem;
 }
 
 .mainNavbar{
@@ -71,7 +65,7 @@
 }
 .offcanvas.offcanvas-start{
   width: 230px;
-  top: 125px;
+  top: 121px;
   background: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
@@ -225,40 +219,37 @@
 .user{
   font-size: 1.5rem;
 }
+@media all and (max-width:376px){
+  .innerplaystore{
+    width: 25px;
+    height: 25px;
+  }
+  .playstoreimg{
+    width: 12px;
+  }
+}
 
-@media all and (max-width:1401px){
+@media all and (max-width:1441px){
   .offcanvas.offcanvas-start{
-    top: 145px;
+    top: 122px;
   }
 }
-@media all and (max-width:1132px){
-  .offcanvas.offcanvas-start{
-    top: 145px;
-  }
-}
+
 @media all and (max-width:1025px){
   .offcanvas.offcanvas-start{
-    top: 123px;
+    top: 121px;
   }
 }
-@media all and (max-width:974px){
-  .offcanvas.offcanvas-start{
-    top: 137px;
-  }
-}
+
 @media all and (max-width:769px){
   .offcanvas.offcanvas-start{
-    top: 123px;
+    top: 121px;
   }
 }
-@media all and (max-width:670px){
+
+@media all and (max-width:426px){
   .offcanvas.offcanvas-start{
-    top: 125px;
-  }
-}
-@media all and (max-width:530px){
-  .offcanvas.offcanvas-start{
-    top: 145px !important;
+    top: 134px !important;
     background: rgba(0, 0, 0, 0.8);
     color: white;
   }
@@ -271,26 +262,13 @@
 }
 
 
-@media all and (max-width:441px){
+@media all and (max-width:376px){
   .offcanvas.offcanvas-start{
-    top: 162px !important;
+    top: 128px !important;
   }
 }
-@media all and (max-width:341px){
-  .offcanvas.offcanvas-start{
-    top: 173px !important;
-  }
-}
-@media all and (max-width:321px){
-  .offcanvas.offcanvas-start{
-    top: 162px !important;
-  }
-}
-@media all and (max-width:309px){
-  .offcanvas.offcanvas-start{
-    top: 167px !important;
-  }
-}
+
+
 
 
 
@@ -356,10 +334,12 @@
     width: 8em;
 }
 .login-body-btn-mobile{
-    width: 70%;
-    margin:0.9em 4em 2em 4em;
-    height: 3em;
+    width: 150px;
+    margin:1rem 10rem;
+    height: 30px;
     background-color: #7142f8;
+    border: 0;
+    padding: 0;
 }
 .login-body-btn-email{
     width: 70%;
@@ -426,11 +406,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
+}
+
+.get-otp p{
   margin: 0;
 }
 
@@ -455,33 +439,41 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
 }
 .reset-body input{
-    width: 66%;
-    height: 3rem;
+    width: 200px;
+    height: 30px;
     margin-left: 1em;
     padding-left: 2em;
+    font-size: 15px;
 }
 .reset-mail{
-    font-size: 1.2rem;
+    font-size: 15px;
     margin:1em 0em 0em 0em;
 }
 .reset-no{
-    font-size: 1.2rem;
+    font-size: 15px;
     margin:0em 0em 0.8em 0em;
 }
 .reset-otp{
-    font-size: 1.2rem;
+    font-size: 15px;
     margin:0.8em 0em 0.5em 0em;
     
+}
+.reset-getotp{
+  font-size: 18px;
+  color: #7142f8;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
 }
 
 
 
 .reg-body{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    margin-left: 5rem;
 }
 .reg-title{
     background-color: black;
@@ -490,12 +482,8 @@ input::-webkit-inner-spin-button {
     text-align: center;
     padding: 0.5em;
 }
-.reg-otp{
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-}
-.reg-otp p{
+
+.reg-mobInner p{
     color: #7142f8;
     font-weight: 500;
     cursor: pointer;
@@ -515,14 +503,19 @@ input::-webkit-inner-spin-button {
 .reg-mob{
     margin: 0.2em 0;
 }
+.reg-mob div{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
 .reg-name input{
     width: 300px;
     padding-left: 2em;
 }
-.reg-mob input{
-  width: 300px;
-    
+.reg-mobInner input{
+  width: 300px; 
+  height: 30px;
     padding-left: 2em;
 }
 .reg-mail input{
@@ -564,14 +557,13 @@ input::-webkit-inner-spin-button {
 }
 }
 .reg-body button{
-    width: 50%;
-    font-weight: 700;
-    color: white;
-    border-radius: 7px;
-    border: none;
-    font-size: 19px;
-
-    
+  width: 150px;
+  height: 33px;
+  font-weight: 500;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  font-size: 18px;
 }
 .reg-foot{
     display: flex;

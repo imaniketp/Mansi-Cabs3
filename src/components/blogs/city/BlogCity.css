@@ -6,37 +6,6 @@
     justify-content: center;
     flex-direction: column;
 }
-/* .blogSearch{
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    width: 100%;
-    background-color: white;
-    max-width: 50rem;
-}
-.blogserchimg{
-    display: flex;
-}
-.blogserchimg img{
-    max-width: 80px;
-}
-
-@media all and (max-width:768px){
-    .blogserchimg img{
-        width: 10%;
-    }
-}
-.blogserchimg p{
-    font-size: 90%;
-}
-
-.placeserchbar{
-    width: 12rem;
-} */
 
 .blogcitydata{
     margin: 2%;

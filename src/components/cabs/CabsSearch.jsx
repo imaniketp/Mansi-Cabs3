@@ -1,20 +1,21 @@
 import React from "react";
 import { Container, Nav, NavDropdown } from "react-bootstrap";
-import { AiFillStar } from "react-icons/ai";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdAirlineSeatReclineExtra, MdLuggage } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./CabsSearch.css";
 import ModifyCabs from "./ModifyCabs";
-import {
-  FcClearFilters,
-} from "react-icons/fc";
+import {FcClearFilters} from "react-icons/fc";
+import exkm from '../../Assets/exkm.jpeg'
+import fueltype from '../../Assets/fueltype.jpeg'
+import cancelimg from '../../Assets/cancelimg.jpeg'
+import etios from '../../Assets/etios.png'
 
 
 const searchCab = [
   {
     carType: "SEDAN",
-    carImg: "etios.png",
+    carImg: `${etios}`,
     carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
@@ -22,50 +23,51 @@ const searchCab = [
     price: "3100",
   },
   {
-    carType: "SUV",
-    carImg: "etios.png",
-    carName: "Ertiga, Innova, XUV",
-    passno: "7",
-    disprice: "10000",
-    save: "1500",
-    price: "8500",
+    carType: "SEDAN",
+    carImg: `${etios}`,
+    carName: "Indica, Swift, Alto",
+    passno: "4",
+    disprice: "4000",
+    save: "900",
+    price: "3100",
   },
   {
     carType: "SEDAN",
-    carImg: "etios.png",
+    carImg: `${etios}`,
     carName: "Indica, Swift, Alto",
     passno: "4",
-    disprice: "6000",
-    save: "1001",
-    price: "4999",
+    disprice: "4000",
+    save: "900",
+    price: "3100",
   },
   {
-    carType: "SUV",
-    carImg: "etios.png",
-    carName: "Ertiga, Innova",
-    passno: "7",
-    disprice: "5000",
-    save: "501",
-    price: "4499",
+    carType: "SEDAN",
+    carImg: `${etios}`,
+    carName: "Indica, Swift, Alto",
+    passno: "4",
+    disprice: "4000",
+    save: "900",
+    price: "3100",
   },
   {
-    carType: "SUV",
-    carImg: "etios.png",
-    carName: "Ertiga, Innova",
-    passno: "7",
-    disprice: "5000",
-    save: "501",
-    price: "4499",
+    carType: "SEDAN",
+    carImg: `${etios}`,
+    carName: "Indica, Swift, Alto",
+    passno: "4",
+    disprice: "4000",
+    save: "900",
+    price: "3100",
   },
   {
-    carType: "SUV",
-    carImg: "innova.png",
-    carName: "Ertiga, Innova",
-    passno: "7",
-    disprice: "5000",
-    save: "501",
-    price: "4499",
+    carType: "SEDAN",
+    carImg: `${etios}`,
+    carName: "Indica, Swift, Alto",
+    passno: "4",
+    disprice: "4000",
+    save: "900",
+    price: "3100",
   },
+  
 ];
 
 function CabsSearch() {
@@ -123,7 +125,7 @@ function CabsSearch() {
             <Nav>
               <NavDropdown
                 id="nav-dropdown-dark-example"
-                title="Car Model"
+                title="Car Type"
                 menuVariant="light"
                 className="filterDropMain"
               >
@@ -175,13 +177,13 @@ function CabsSearch() {
                     <h5>{item.carName}</h5>
                     <div className="ac">
                       <p>
-                        <IoMdCheckmarkCircleOutline /> AC
+                        <IoMdCheckmarkCircleOutline className="acicons"/> AC
                       </p>
                       <p>
-                        <MdLuggage /> Luggage
+                        <MdLuggage className="acicons"/> Luggage
                       </p>
                       <p>
-                        <MdAirlineSeatReclineExtra /> Passenger {item.passno}
+                        <MdAirlineSeatReclineExtra className="acicons"/> Passenger {item.passno}
                       </p>
                     </div>
                   </div>
@@ -190,7 +192,7 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                       <span>
-                        <img src="exkm.jpeg" alt="" />
+                        <img src={exkm} alt="" />
                       </span>
                       Extra Km fare
                     </p>
@@ -199,7 +201,7 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                     <span>
-                        <img src="fueltype.jpeg" alt="" />
+                        <img src={fueltype} alt="" />
                         </span>
                         Fuel Type
                     </p>
@@ -208,26 +210,22 @@ function CabsSearch() {
                   <div className="seperate">
                     <p className="cabs-etios2-spec2">
                     <span>
-                        <img src="cancelimg.jpeg" alt="" />
+                        <img src={cancelimg} alt="" />
                         </span>
                         Cancellation
                     </p>
                     <p className="cabs-etios2-spec3">&nbsp;&nbsp;Free within 30 mins</p>
                   </div>
                   <div className="cabSearchBox">
-                      <h5>Double Guarantee Confirmed cab arrival or 2X refund</h5>
+                      <p>Double Guarantee Confirmed cab arrival or 2X refund Double Guarantee Confirmed cab arrival or 2X refund</p>
                   </div>
                   
                 </div>
               </div>
 
               <div className="search4rtcol">
-                <div>
-                  <AiFillStar className="star5" />
-                  <AiFillStar className="star5" />
-                  <AiFillStar className="star5" />
-                  <AiFillStar className="star5" />
-                  <AiFillStar className="star6" />
+                <div className="cabSearchRating">
+                  <p className="cabRating">4.5</p>&nbsp;/&nbsp;<p className="totalRating">5</p>
                 </div>
                 <img src={item.carImg} alt="" />
 
