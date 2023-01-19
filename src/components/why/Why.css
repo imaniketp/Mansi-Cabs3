@@ -67,26 +67,12 @@
   cursor: pointer;
 }
 
-.whyimg1 {
+.whyimg{
   max-width: 8rem;
   margin-top: 1%;
   margin-bottom: 1rem;
 }
 
-.whyimg2 {
-  max-width: 10rem;
-  margin-bottom: 1rem;
-}
-.whyimg3 {
-  max-width: 5.5rem;
-  margin-top: 2%;
-  margin-bottom: 1rem;
-}
-.whyimg4 {
-  max-width: 5.5rem;
-  margin-top: 2%;
-  margin-bottom: 1rem;
-}
 
 @media all and (max-width: 769px) {
   .whySliderTitle h3 {

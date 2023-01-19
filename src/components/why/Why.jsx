@@ -59,7 +59,7 @@ function Why() {
             
             <div className="whyslides">
                 <div className="innerwhyslide">
-                    <img className="whyimg1" src={trust} alt="" />
+                    <img className="whyimg" src={trust} alt="" />
                     <h6>Trusted Advisor</h6>
                     <p>We Trust You For Your Safety</p>
                 </div>
@@ -67,7 +67,7 @@ function Why() {
             
             <div className="whyslides">
                 <div className="innerwhyslide">
-                    <img className="whyimg2" src={lowestp} alt="" />
+                    <img className="whyimg" src={lowestp} alt="" />
                     <h6>Trusted Advisor</h6>
                     <p>We Trust You For Your Safety</p>
                 </div>
@@ -75,7 +75,7 @@ function Why() {
             
             <div className="whyslides">
                 <div className="innerwhyslide">
-                    <img className="whyimg3" src={t4x7} alt="" />
+                    <img className="whyimg" src={t4x7} alt="" />
                     <h6>Trusted Advisor</h6>
                     <p>We Trust You For Your Safety</p>
                 </div>
@@ -83,7 +83,7 @@ function Why() {
             
             <div className="whyslides">
                 <div className="innerwhyslide">
-                    <img className="whyimg4" src={expdriver} alt="" />
+                    <img className="whyimg" src={expdriver} alt="" />
                     <h6>Trusted Advisor</h6>
                     <p>We Trust You For Your Safety</p>
                 </div>
