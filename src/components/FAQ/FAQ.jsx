@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./FAQ.css";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import faqbg from '../../Assets/image 4.jpg'
+
 
 function FAQ() {
 
@@ -90,6 +92,7 @@ const B2BActive = () => {
 
   return (
     <div className="faqContainer">
+      <img src={faqbg} alt="" className="faqbgimg" />
       <div className="faqtop">
         <h1>FAQ's all you need to know</h1>
       </div>

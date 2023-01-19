@@ -1,57 +1,54 @@
+.cabbooking3222 {
+  font-size: x-large;
+  margin-top: 29px;
+  float: left;
+}
+.cabbooking126cancel {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #7142f8;
+  font-size: medium;
+  font-weight: 700;
+  border: none;
+  margin-top: 1.5rem;
+}
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
 
-  .cabbooking3222 {
-    font-size: x-large;
-    margin-top: 29px;
-    float: left;
-  }
-  .cabbooking126cancel {
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    background-color: #7142f8;
-    font-size: medium;
-    font-weight: 700;
-    border: none;
-    margin-top: 1.5rem;
-  }
-  .ribbon {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    position: absolute;
-  }
-  
-  
-  .ribbon span {
-    position: absolute;
-    display: block;
-    width: 225px;
-    padding: 4px 0;
-    background-color: red;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
-    color: #fff;
-    font: 700 11px/1 'Lato', sans-serif;
-    text-shadow: 0 1px 1px rgba(0,0,0,.2);
-    text-align: center;
-  }
-  .ribbon-top-left {
-    top: 0px;
-    left: 0px;
-  }
-  .ribbon-top-left span {
-    right: 9px;
-      top: 21px;
-    transform: rotate(-45deg);
-  }
-  
-.cabbooking3232 button{
-    padding: 3px;
-    margin:8px 0 5px 70px;
-    background-color: red;
-    color: white;
-    font-weight: 600;
-    border: none;
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 4px 0;
+  background-color: red;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font: 700 11px/1 "Lato", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.ribbon-top-left {
+  top: 0px;
+  left: 0px;
+}
+.ribbon-top-left span {
+  right: 9px;
+  top: 21px;
+  transform: rotate(-45deg);
+}
 
+.cabbooking3232 button {
+  padding: 3px;
+  margin: 8px 0 5px 70px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  border: none;
 }
 .cabbooking110 {
   border: 2px solid rgb(206, 198, 198);
@@ -63,7 +60,7 @@
   border-radius: 7px;
   margin: 2px;
 }
-.cabcancelmain{
+.cabcancelmain {
   display: flex;
   align-items: center;
   justify-content: center;

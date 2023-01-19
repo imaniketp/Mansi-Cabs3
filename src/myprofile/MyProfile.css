@@ -1,105 +1,107 @@
-.myprofileContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.myprofileContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.myprofleft{
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    background-color: white;
-    border-radius: 10px;
-    padding: 1rem;
-    position: sticky;
-    top: 10px;
-    width: 200px;
-    height: 250px;
-    text-align: center;
+.myprofleft {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  position: sticky;
+  top: 10px;
+  width: 200px;
+  height: 250px;
+  text-align: center;
 }
 
-.myprofleft img{
-    width: 120px;
+.myprofleft img {
+  width: 120px;
 }
 
-.myprofleft h5{
-    font-weight: 600;
-    margin-top: 10px;
+.myprofleft h5 {
+  font-weight: 600;
+  margin-top: 10px;
 }
 
-.myprofright h2{
-    font-weight: 600;
+.myprofright h2 {
+  font-weight: 600;
 }
 
-
-.mainProfile{
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    background-color: white;
-    border-radius: 10px;
+.mainProfile {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: white;
+  border-radius: 10px;
 }
 
-.mainprofiletop{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 600;
+.mainprofiletop {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
 }
-.mainprofiletop div{
-    display: flex;
-    color: #7142f8;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.mainprofilebottom div{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0.8rem 0;
-}
-.mainprofilebottom label{
-    font-size: 15px;
-    font-weight: 500;
-}
-.mainprofilebottom input{
-    border: 0;
-    font-size: 18px;
-    font-weight: 600;
-    width: 300px;
+.mainprofiletop div {
+  display: flex;
+  color: #7142f8;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.loginDetails{
-    padding: 1rem;
-    margin: 1rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    background-color: white;
-    border-radius: 10px;
-    width: 60vw;
+.mainprofilebottom div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 0;
+}
+.mainprofilebottom label {
+  font-size: 15px;
+  font-weight: 500;
+}
+.mainprofilebottom input {
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  width: 300px;
 }
 
-.editprofile{
-    display: flex;
-    flex-wrap: wrap;
+.loginDetails {
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: white;
+  border-radius: 10px;
+  width: 60vw;
 }
-.editprofile div{
-    display: flex;
-    flex-direction: column;
+
+.editprofile {
+  display: flex;
+  flex-wrap: wrap;
 }
-.editprofile div label{
-   font-size: 16px;
-   font-weight: 500;
+.editprofile div {
+  display: flex;
+  flex-direction: column;
 }
-.editprofile div input{
-    width: 200px;
-    margin: 0.5rem 1rem;
-    margin-left: 0;
+.editprofile div label {
+  font-size: 16px;
+  font-weight: 500;
 }
-.editprofile div select{
-    width: 200px;
-    margin: 0.5rem 1rem;
-    margin-left: 0;
+.editprofile div input {
+  width: 200px;
+  margin: 0.5rem 1rem;
+  margin-left: 0;
+}
+.editprofile div select {
+  width: 200px;
+  margin: 0.5rem 1rem;
+  margin-left: 0;
 }

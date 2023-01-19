@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import {TfiAngleLeft, TfiAngleRight} from 'react-icons/tfi'
 import { useRef } from "react";
 import userProfile from '../../Assets/user.jpg'
+import testimobg from '../../Assets/testimonalbg.jpg'
 
 export default function Carousal2(){
   const testslider = useRef(null);
@@ -19,6 +20,8 @@ export default function Carousal2(){
     };
     return (
     <div className='maintestContainer'>
+      <img src={testimobg} alt="" className="tesimobgimg" />
+
       <div  className="testSliderContainer">
         <div className="testSliderTitle">
           <h1>What Our Clients Say</h1>

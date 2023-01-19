@@ -1,77 +1,79 @@
-.searchmain{
+.searchmain {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   background-color: #ecfffd;
 }
-.searchmain a{
+.searchmain a {
   text-decoration: none;
+  display: flex;
 }
-.searchfilter{
+.searchfilter {
   width: 20rem;
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
   position: sticky;
-  top: 10px;
-
+  top: 75px;
 }
-.searchfilter1{
+.searchfilter1 {
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.searchfilter1 p{
+.searchfilter1 p {
   font-weight: 600;
   font-size: small;
   margin-bottom: 0;
 }
-.searchfilter1 h3{
+.searchfilter1 h3 {
   font-weight: 700;
   font-size: large;
   margin-bottom: 0;
-
 }
-.searchfilter2 h6{
+.searchfilter2 h6 {
   font-size: medium;
   font-weight: 600;
 }
-.searchfilter2 input{
+.searchfilter2 input {
   font-size: medium;
   font-weight: 600;
   margin-left: 1.5rem;
 }
-.searchfilter2 label{
+.searchfilter2 label {
   font-size: small;
   font-weight: 500;
   margin-left: 15px;
 }
 
-.search1row{
+.search1row {
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   display: flex;
-  align-items:flex-start;
-  justify-content: space-between;
-  padding: 1.5rem;
+  align-items: flex-end;
+  flex-direction: column;
   background-color: white;
-  margin: 1rem 1rem;
-  padding-bottom: 0.5rem;
+  padding: 10px;
+  margin: 1rem;
+  padding-bottom: 5px;
 }
-.search1row:hover{
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(113, 66, 248, 0.9) 0px 0px 0px 1px;
+.search1row:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(113, 66, 248, 0.9) 0px 0px 0px 1px;
 }
-.search1row1{
+.search1row1 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
 }
 
-.cabSearchRating{
+.cabSearchRating {
   display: flex;
   color: white;
   background-color: #26bd99;
@@ -84,104 +86,99 @@
   justify-content: center;
   float: right;
 }
-.cabSearchRating p{
+.cabSearchRating p {
   margin-bottom: 0;
 }
 
-.cabRating{
+.cabRating {
   color: white !important;
   font-size: 12px !important;
 }
-.totalRating{
+.totalRating {
   color: white !important;
   font-size: 10px !important;
   margin-top: 2px;
 }
 
-
-.search4rtcol img{
+.search4rtcol img {
   width: 7rem;
 }
-.search1ndcol p{
+.search1ndcol p {
   font-weight: 700;
   color: #131c44;
   font-size: 28px;
-  margin-bottom: 0; 
+  margin-bottom: 0;
   text-align: left;
 }
 
-
-.ac p{
+.ac p {
   font-size: small;
   font-weight: 600;
   color: black;
 }
-.ac{
+.ac {
   display: flex;
   align-items: flex-start;
   gap: 5px;
   flex-direction: column;
 }
 
-.acicons{
+.acicons {
   color: #0f8fc6;
   font-size: 15px;
 }
 
-.search1ndcol div:first-child{
+.search1ndcol div:first-child {
   margin-bottom: 13px;
 }
 
-.search1ndcol h5{
+.search1ndcol h5 {
   text-align: left;
   font-weight: 600;
   font-size: 17px;
   margin-bottom: 0;
+  color: blue;
 }
-.search2ndcol{
-    color: rgb(100, 93, 93);
+.search2ndcol {
+  color: rgb(100, 93, 93);
 }
 
-.searchsefty p{
-    border: 1px solid green;
-    background-color: rgba(0, 225, 0, 0.5);
-    font-size: small;
-    font-weight: 400;
-    color: black;
+.searchsefty p {
+  border: 1px solid green;
+  background-color: rgba(0, 225, 0, 0.5);
+  font-size: small;
+  font-weight: 400;
+  color: black;
 }
-.search3rdcol{
+.search3rdcol {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  
 }
-.search3rdcol h6{
+.search3rdcol h6 {
   font-size: medium;
   font-weight: 600;
-  margin-bottom: 2px; 
+  margin-bottom: 2px;
 }
-.search3rdcol p{
+.search3rdcol p {
   font-size: 12px;
   font-weight: 600;
   color: rgb(114, 106, 106);
   margin: 0;
   margin-left: 19px;
 }
-.search7rdcol{
+.search7rdcol {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  
 }
-.search7rdcol h6{
+.search7rdcol h6 {
   font-size: medium;
   font-weight: 600;
   margin-bottom: 2px;
-  
-  
 }
-.search7rdcol p{
+.search7rdcol p {
   font-size: 12px;
   font-weight: 600;
   color: rgb(114, 106, 106);
@@ -189,36 +186,34 @@
   margin-left: 19px;
 }
 
-.search4rtcol{
-  padding-left:1rem ;
+.search4rtcol {
+  padding-left: 1rem;
 }
-.search4rtcol h6{
+.search4rtcol h6 {
   font-size: small;
-  font-weight:700 ;
-  color:black;
+  font-weight: 700;
+  color: black;
   margin-top: 30px;
   padding: 0;
   margin: 0;
 }
-del{
+del {
   text-decoration: line-through red;
-
 }
-.search4rtcol p{
+.search4rtcol p {
   color: green;
   font-size: small;
-  font-weight:600 ;
+  font-weight: 600;
   padding: 0;
 }
 
 .search4rtcol h4 {
-  font-size:  xx-large;
-  color:#000000;
+  font-size: xx-large;
+  color: #000000;
   font-weight: 600;
 }
 
-
-.search4rtcol button{
+.search4rtcol button {
   color: white;
   background-color: #7142f8;
   border: none;
@@ -228,154 +223,233 @@ del{
   padding: 0px 8px;
   height: 30px;
 }
- .search4rtcol button:hover{
+.search4rtcol button:hover {
   color: black;
   background-color: gold;
 }
-.cabsearchmore{
+.cabsearchmore {
   cursor: pointer;
   float: right;
   font-size: small;
   font-weight: 700;
   display: none;
 }
-.filterDropdown{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.filterDropdown {
   display: none;
 }
 
-.cabs-etios2-spec2{
+.cabs-etios2-spec2 {
   font-size: 16px;
   padding: 0;
   display: flex;
-  justify-content:center; 
+  justify-content: center;
   font-weight: 600;
-  line-height: 100%; 
+  line-height: 100%;
   display: inline-block;
   margin-bottom: 2px;
-
 }
-.cabs-etios2-spec2 span img{
+.cabs-etios2-spec2 span img {
   width: 20px;
   margin-right: 10px;
 }
-.cabs-etios2-spec3{
+.cabs-etios2-spec3 {
   float: left;
 }
-.cabs-etios2-spec3{
+.cabs-etios2-spec3 {
   font-size: 14px;
   padding: 0;
   text-align: left;
   font-weight: 500;
-  line-height: 160%; 
+  line-height: 160%;
   white-space: nowrap;
   margin-bottom: 2px;
 }
-.search2ndcol{
+.search2ndcol {
   margin-top: 10px;
 }
-.seperate{
+.seperate {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap:2rem;
+  gap: 2rem;
 }
-.search4rtcolinner{
-  width: 45%;
+.search4rtcolinner {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
 }
 
-.cabSearchBox{
+.cabSearchView {
+  color: #7142f8;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.cabSearchBox {
   width: 333px;
- margin-top: 5px;
- padding: 3px 0;
+  margin-top: 5px;
+  padding: 3px 0;
 }
 
-
-.cabSearchBox p{
+.cabSearchBox p {
   position: relative;
   font-size: 12px;
   font-weight: 500;
+  margin-bottom: 0;
   text-align: left;
   outline: none;
   animation: cabsearch 0.5s linear infinite;
 }
 
-@keyframes cabsearch{
-  0%{
+.dropdown-toggle::after {
+  display: none;
+}
+.cabSearchInclusion {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.cabSearch-inclusion div {
+  display: flex;
+  align-items: flex-start;
+}
+.cabSearch-exclusion div {
+  display: flex;
+}
+.cabSearch-inclusion h5 {
+  font-size: 16px;
+}
+.cabSearch-exclusion h5 {
+  font-size: 16px;
+}
+.cabSearch-inclusion-mark {
+  font-size: 20px;
+  color: green;
+  margin-right: 0.5rem;
+}
+.cabSearch-exclusion-mark {
+  font-size: 20px;
+  color: red;
+  margin-right: 0.5rem;
+}
+.inclusion-data {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 28px;
+}
+.exclusion-data {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 28px;
+}
+
+@keyframes cabsearch {
+  0% {
     color: #16ff1e;
   }
-  100%{
+  100% {
     color: #b2fdb4;
   }
 }
 
-.filterDropMain{
+.filterDropMain {
   background-color: #25aae1;
   margin: 1rem 0;
   width: 150px;
   height: 35px;
   text-align: center;
 }
-.dropdown-toggle:hover{
+.dropdown-toggle:hover {
   color: white;
 }
+.mobileAC {
+  display: none;
+}
 
-@media all and (max-width:769px){
+@media all and (max-width: 769px) {
   .filterDropdown {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1rem;
   }
-  .searchfilter{
+  .dropdown-toggle {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+  }
+  .searchfilter {
     display: none;
   }
-  .search1row{
+  .search1row {
     margin: 1rem 0;
     gap: 0;
+    padding-bottom: 0;
   }
 }
 
-@media all and (max-width:426px){
-  .ac{
-    flex-direction: row;
+@media all and (max-width: 426px) {
+  .mobileAC {
+    display: contents;
+    font-size: 10px;
   }
-  .search1ndcol div:first-child{
+  .cabSearchRating {
+    font-size: 10px;
+    width: 35px;
+    height: 15px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .cabRating {
+    color: white !important;
+    font-size: 9px !important;
+  }
+  .totalRating {
+    color: white !important;
+    font-size: 9px !important;
+  }
+  .cabs-etios2-spec2 span img {
+    width: 15px;
+    margin-right: 5px;
+  }
+  .ac {
+    flex-direction: row;
+    display: none;
+  }
+  .search4rtcol button {
+    display: none;
+  }
+  .search1ndcol div:first-child {
     margin-bottom: 0;
   }
   .cabSearchBox {
     margin-top: 0;
-    
+    width: 270px;
+    display: none;
   }
-  .cabSearchBox h5{
+  .cabSearchBox h5 {
     width: 285px;
-    
   }
   .filterDropdown {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.star5{
-  font-size: 12px;
-}
-.star6{
-  font-size: 12px;
+    text-align: center;
+  }
 
-}
-.search1ndcol p{
-  font-size:15px;
-}
+  .search1ndcol p {
+    font-size: 15px;
+  }
   .dropdown-toggle {
     color: white;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
   }
   .search1ndcol h5 {
     font-size: 14px;
@@ -385,96 +459,116 @@ del{
     gap: 0;
   }
   .search1row {
-  padding: 10px 5px;
-  margin: 20px;
-  gap: 10px;
-}
-.search4rtcol img {
-  width: 4rem;
-}
-.search1ndcol p {
-  font-size: 20px;
-}
-.search2ndcol h5 {
-  font-size: 10px;
-}
-.ac p{
-  font-size: 12px;
-}
-.search4rtcol h4 {
-  font-size: 19px;
-  margin-bottom: 0;
-}
-.search4rtcol h6 {
-  font-size: 10px;
-}
-.search4rtcol p {
-  font-size: 8px;
-  margin-bottom: 0;
-}
-.search4rtcolinner{
-  width: 20%;
-  flex-direction: column;
-  gap: 0;
-  margin-top: 1rem;
-}
-.search4rtcol button {
-  height: 24px;
-  width: 80px;
-  margin-top: 13px;
-  font-size: 12px;
-}
-.cabs-etios2-spec3 {
-  font-size: 10px;
-}
-.cabs-etios2-spec2 {
-  font-size: 12px;
-}
-.seperate {
-  gap: 10px;
-  flex-direction: row;
-}
-
-}
-
-  @media all and (max-width:376px){
-    .search1ndcol div:first-child{
-      margin-bottom: 0;
-    }
-    .cabSearchBox {
-      margin-top: 0;
-      
-    }
-    .cabSearchBox h5{
-      width: 235px;
-      
-    }
-    .filterDropdown {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    padding: 5px;
+    margin-top: 0.5rem;
+    padding-bottom: 0;
   }
-  .star5{
+  .search4rtcol img {
+    width: 80px;
+    height: 40px;
+  }
+  .search1ndcol p {
+    font-size: 20px;
+  }
+  .search2ndcol h5 {
+    font-size: 10px;
+  }
+  .ac p {
     font-size: 12px;
   }
-  .star6{
+  .search4rtcol h4 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .search4rtcol h6 {
     font-size: 12px;
-  
   }
-  .search1ndcol p{
-    font-size:15px;
+  .search4rtcol p {
+    font-size: 10px;
+    margin-bottom: 0;
   }
-    .search1ndcol h5 {
-      font-size: 14px;
-    }
-    .search1row1 {
-      flex-direction: column;
-      gap: 0;
-    }
-    .search1row {
-    padding: 10px 5px;
-    margin: 5px;
+  .search4rtcolinner {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 20px;
+    margin-left: 1rem;
+  }
+  .search4rtcolinner h6 {
+    display: flex;
+  }
+  .search4rtcolinner p {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .search4rtcol button {
+    height: 24px;
+    width: 80px;
+    margin-top: 13px;
+    font-size: 12px;
+  }
+  .cabs-etios2-spec3 {
+    font-size: 10px;
+  }
+  .cabs-etios2-spec2 {
+    font-size: 11px;
+  }
+  .seperate {
     gap: 10px;
+    flex-direction: row;
+  }
+  .cabSearch-inclusion h5 {
+    font-size: 13px;
+  }
+  .cabSearch-exclusion h5 {
+    font-size: 13px;
+  }
+  .cabSearch-inclusion-mark {
+    font-size: 20px;
+    margin-right: 0.2rem;
+  }
+  .cabSearch-exclusion-mark {
+    font-size: 15px;
+    margin-right: 0.2rem;
+  }
+  .cabSearchView {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .cabSearchRating {
+    margin-bottom: 10px;
+  }
+  .search1ndcol div:first-child {
+    margin-bottom: 0;
+  }
+  .cabSearchBox {
+    margin-top: 0;
+    width: 250px;
+  }
+  .cabSearchBox h5 {
+    width: 235px;
+  }
+  .filterDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search1ndcol p {
+    font-size: 15px;
+  }
+  .search1ndcol h5 {
+    font-size: 14px;
+  }
+  .search1row1 {
+    flex-direction: column;
+    gap: 0;
+  }
+  .search1row {
+    padding: 10px 5px;
+    margin-top: 0.5rem;
+    padding-bottom: 0;
   }
   .search4rtcol img {
     width: 4rem;
@@ -485,7 +579,7 @@ del{
   .search2ndcol h5 {
     font-size: 10px;
   }
-  .ac p{
+  .ac p {
     font-size: 12px;
   }
   .search4rtcol h4 {
@@ -499,11 +593,11 @@ del{
     font-size: 8px;
     margin-bottom: 0;
   }
-  .search4rtcolinner{
-    width: 20%;
+  .search4rtcolinner {
     flex-direction: column;
     gap: 0;
     margin-top: 1rem;
+    margin-left: 1rem;
   }
   .search4rtcol button {
     height: 30px;
@@ -525,50 +619,72 @@ del{
     width: 14px;
     margin-right: 4px;
   }
+  .cabSearch-inclusion h5 {
+    font-size: 12px;
+  }
+  .cabSearch-exclusion h5 {
+    font-size: 12px;
+  }
+  .cabSearch-inclusion-mark {
+    font-size: 18px;
+    margin-right: 0.2rem;
+  }
+  .cabSearch-exclusion-mark {
+    font-size: 13px;
+    margin-right: 0.2rem;
+  }
+  .inclusion-data {
+    font-size: 10px !important;
+    margin-left: 16px !important;
+  }
+  .exclusion-data {
+    font-size: 10px !important;
+    margin-left: 16px !important;
+  }
+}
+
+@media all and (max-width: 321px) {
+  .cabSearchBox h5 {
+    width: 178px;
+  }
+  .search1ndcol div:first-child {
+    margin-bottom: 0;
+  }
+  .cabSearchBox {
+    margin-top: 0;
+  }
+  .filterDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filterDropMain {
+    background-color: #25aae1;
+    margin: 1rem 0;
+    width: 140px;
+    height: 35px;
   }
 
-  @media all and (max-width:321px){
-    .cabSearchBox h5{
-      width: 178px;
-    }
-    .search1ndcol div:first-child{
-      margin-bottom: 0;
-    }
-    .cabSearchBox {
-      margin-top: 0;
-      
-    }
-    .filterDropdown {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .search1ndcol p {
+    font-size: 15px;
   }
-  .star5{
-    font-size: 12px;
+  .dropdown-toggle {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    justify-content: center;
   }
-  .star6{
-    font-size: 12px;
-  
+  .search1ndcol h5 {
+    font-size: 14px;
   }
-  .search1ndcol p{
-    font-size:15px;
+  .search1row1 {
+    flex-direction: column;
+    gap: 0;
   }
-    .dropdown-toggle {
-      color: #7142f8;
-      font-weight: 500;
-      font-size: 13px;
-    }
-    .search1ndcol h5 {
-      font-size: 14px;
-    }
-    .search1row1 {
-      flex-direction: column;
-      gap: 0;
-    }
-    .search1row {
+  .search1row {
     padding: 10px 5px;
-    margin: 5px;
-    gap: 10px;
+    margin-top: 0.5rem;
+    padding-bottom: 0;
   }
   .search4rtcol img {
     width: 4rem;
@@ -579,7 +695,7 @@ del{
   .search2ndcol h5 {
     font-size: 10px;
   }
-  .ac p{
+  .ac p {
     font-size: 10px;
   }
   .search4rtcol h4 {
@@ -593,7 +709,7 @@ del{
     font-size: 8px;
     margin-bottom: 0;
   }
-  .search4rtcolinner{
+  .search4rtcolinner {
     width: 20%;
     flex-direction: column;
     gap: 0;
@@ -619,8 +735,29 @@ del{
     width: 14px;
     margin-right: 4px;
   }
+  .cabSearch-inclusion h5 {
+    font-size: 10px;
   }
-
-
- 
-  
+  .cabSearch-exclusion h5 {
+    font-size: 10px;
+  }
+  .cabSearch-inclusion-mark {
+    font-size: 18px;
+    margin-right: 0.2rem;
+  }
+  .cabSearch-exclusion-mark {
+    font-size: 13px;
+    margin-right: 0.2rem;
+  }
+  .inclusion-data {
+    font-size: 9px !important;
+    margin-left: 16px !important;
+  }
+  .exclusion-data {
+    font-size: 9px !important;
+    margin-left: 16px !important;
+  }
+  .cabSearchView {
+    font-size: 10px;
+  }
+}

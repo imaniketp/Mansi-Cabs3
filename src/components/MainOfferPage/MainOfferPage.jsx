@@ -1,11 +1,13 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./MainOfferPage.css";
+import offersbg from '../../Assets/offersbg.png'
+import offerimg from '../../Assets/offer3img.jpg'
 
 const offerCards = [
   {
     mainTitle: "One Way Trip",
-    cardImg: "offer3img.jpg",
+    cardImg: `${offerimg}`,
     cardTitle: "Introducing Double Guarantee on Outstation Cabs",
     cardText: "Get confirmed cab arrival else 2X money back!",
     offer: "Grab FLAT 10% OFF* on SBI Credit Cards",
@@ -17,6 +19,7 @@ const offerCards = [
 function MainOfferPage() {
   return (
     <div>
+      <img src={offersbg} className='offersbgimg' alt="" />
       <div className="topOfferSection">
         <Row className="offerrow1">
           <Col md={8} className="col1">

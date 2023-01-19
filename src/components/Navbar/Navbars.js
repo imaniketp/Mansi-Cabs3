@@ -191,7 +191,6 @@ function Navbars() {
         </div>
       </Offcanvas>
 
-      {/* -----------------------------------------------------------------modal------------------------------------------------------------------------- */}
 
       <Modal show={show} onHide={handleClose} size="md">
         <Modal.Header closeButton className="text-center modal-header border-0">

@@ -10,6 +10,9 @@ import { Col, Row } from "react-bootstrap";
 import {TfiAngleLeft, TfiAngleRight} from 'react-icons/tfi'
 import { useRef } from "react";
 import Slider from "react-slick";
+import aboutbg from '../../Assets/image 4.jpg'
+import aboutbg2 from '../../Assets/offersbg.jpg'
+
 
 
 function AboutUs() {
@@ -50,6 +53,7 @@ function AboutUs() {
 
   return (
     <div className="aboutUsContainer">
+      <img src={aboutbg} alt="" className="aboutbgimg" />
       <div className="aboutUsHeader">
         <h1>About US</h1>
       </div>
@@ -96,6 +100,7 @@ function AboutUs() {
           </Col>
         </Row>
       </div>
+      <img src={aboutbg2} alt="" className="aboutbgimg2" />
 
       <div className="aboutUsMiddle2">
         <p>
@@ -140,7 +145,7 @@ function AboutUs() {
             
             <div className="aboutslides">
                 <div className="inneraboutslide">
-                    <img className="aboutimg1" src={trust} alt="" />
+                    <img className="aboutimg" src={trust} alt="" />
                     <h5>Trusted Advisor</h5>
                     <p>We Trust You For Your Safety</p>
                 </div>
@@ -148,7 +153,7 @@ function AboutUs() {
             
             <div className="aboutslides">
                 <div className="inneraboutslide">
-                    <img className="aboutimg2" src={lowestp} alt="" />
+                    <img className="aboutimg" src={lowestp} alt="" />
                     <h5>Trusted Advisor</h5>
                     <p>We Trust You For Your Safety</p>
                 </div>
@@ -156,7 +161,7 @@ function AboutUs() {
             
             <div className="aboutslides">
                 <div className="inneraboutslide">
-                    <img className="aboutimg3" src={t4x7} alt="" />
+                    <img className="aboutimg" src={t4x7} alt="" />
                     <h5>Trusted Advisor</h5>
                     <p>We Trust You For Your Safety</p>
                 </div>
@@ -164,43 +169,12 @@ function AboutUs() {
             
             <div className="aboutslides">
                 <div className="inneraboutslide">
-                    <img className="aboutimg4" src={expdriver} alt="" />
+                    <img className="aboutimg" src={expdriver} alt="" />
                     <h5>Trusted Advisor</h5>
                     <p>We Trust You For Your Safety</p>
                 </div>
             </div>            
-            
-            <div className="aboutslides">
-                <div className="inneraboutslide">
-                    <img className="aboutimg1" src={trust} alt="" />
-                    <h5>Trusted Advisor</h5>
-                    <p>We Trust You For Your Safety</p>
-                </div>
-            </div>            
-            
-            <div className="aboutslides">
-                <div className="inneraboutslide">
-                    <img className="aboutimg2" src={lowestp} alt="" />
-                    <h5>Trusted Advisor</h5>
-                    <p>We Trust You For Your Safety</p>
-                </div>
-            </div>            
-            
-            <div className="aboutslides">
-                <div className="inneraboutslide">
-                    <img className="aboutimg3" src={t4x7} alt="" />
-                    <h5>Trusted Advisor</h5>
-                    <p>We Trust You For Your Safety</p>
-                </div>
-            </div>            
-            
-            <div className="aboutslides">
-                <div className="inneraboutslide">
-                    <img className="aboutimg4" src={expdriver} alt="" />
-                    <h5>Trusted Advisor</h5>
-                    <p>We Trust You For Your Safety</p>
-                </div>
-            </div>            
+                 
                       
 
           </Slider>

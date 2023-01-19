@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, NavDropdown } from "react-bootstrap";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdAirlineSeatReclineExtra, MdLuggage } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./CabsSearch.css";
 import ModifyCabs from "./ModifyCabs";
-import {FcClearFilters} from "react-icons/fc";
+import {FcCheckmark, FcClearFilters} from "react-icons/fc";
 import exkm from '../../Assets/exkm.jpeg'
 import fueltype from '../../Assets/fueltype.jpeg'
 import cancelimg from '../../Assets/cancelimg.jpeg'
 import etios from '../../Assets/etios.png'
+import { RxCross2 } from "react-icons/rx";
 
 
 const searchCab = [
@@ -19,7 +20,7 @@ const searchCab = [
     carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
-    save: "900",
+    save: "20% Off",
     price: "3100",
   },
   {
@@ -28,7 +29,7 @@ const searchCab = [
     carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
-    save: "900",
+    save: "20% Off",
     price: "3100",
   },
   {
@@ -37,7 +38,7 @@ const searchCab = [
     carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
-    save: "900",
+    save: "20% Off",
     price: "3100",
   },
   {
@@ -46,7 +47,7 @@ const searchCab = [
     carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
-    save: "900",
+    save: "20% Off",
     price: "3100",
   },
   {
@@ -55,7 +56,7 @@ const searchCab = [
     carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
-    save: "900",
+    save: "20% Off",
     price: "3100",
   },
   {
@@ -64,13 +65,28 @@ const searchCab = [
     carName: "Indica, Swift, Alto",
     passno: "4",
     disprice: "4000",
-    save: "900",
+    save: "20% Off",
     price: "3100",
   },
+  {
+    carType: "SEDAN",
+    carImg: `${etios}`,
+    carName: "Indica, Swift, Alto",
+    passno: "4",
+    disprice: "4000",
+    save: "20% Off",
+    price: "3100",
+  },
+  
   
 ];
 
 function CabsSearch() {
+  const [showInclusion, setShowInclusion] = useState(false);
+
+  const showinclusion = () =>{
+    setShowInclusion(!showInclusion)
+  }
 
   return (
     <>
@@ -168,12 +184,12 @@ function CabsSearch() {
           </div>
 
           {searchCab.map((item, index) => (
-          <Link to="/transfer-details">
             <div key={index} className="search1row">
+              <Link to="/transfer-details">
               <div className="search1row1">
                 <div className="search1ndcol">
                   <div>
-                    <p>{item.carType}</p>
+                    <p>{item.carType} <span className="mobileAC">AC | 4 Seat</span></p>
                     <h5>{item.carName}</h5>
                     <div className="ac">
                       <p>
@@ -232,15 +248,46 @@ function CabsSearch() {
                 <div className="search4rtcolinner">
                   <h6>
                     ₹<del>{item.disprice}</del>
-                    <p>10%Off</p>
+                    <p>{item.save}</p>
                   </h6>
 
                   <h4>₹{item.price}</h4>
                 </div>
                   <button>Book Now</button>
               </div>
-            </div>
                 </Link>
+              <p className="cabSearchView" onClick={showinclusion}>View</p>
+              { showInclusion &&
+              <div className="cabSearchInclusion">
+                  <div className="cabSearch-inclusion">
+                    <div>
+                            <FcCheckmark className="cabSearch-inclusion-mark" />
+                          <h5>
+                            Inclusion <span>(Included In The Price) </span>
+                          </h5>
+                          </div>
+                          <div className="inclusion-data">
+                            <li>Toll Charges</li>
+                            <li>Driver Allowance</li>
+                            <li>State Tax</li>
+                          </div>
+                        </div>
+
+                        <div className="cabSearch-exclusion">
+                          <div>
+                            <RxCross2 className="cabSearch-exclusion-mark" />
+                          <h5>
+                            Exclusions <span>(Extra Charges)</span>
+                          </h5>
+                          </div>
+                          <div className="exclusion-data">
+                            <li>Waiting Charges (After 45 mins, ₹ 100.0/hr)</li>
+                            <li>Fare beyond 166 Kms (₹ 20/Km)</li>
+                          </div>
+                        </div>
+              </div>
+              }
+            </div>
           ))}
         </div>
       </Container>

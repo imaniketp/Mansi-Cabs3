@@ -1,52 +1,58 @@
+.cabSearch2 {
+  width: 100%;
+  background: #e9e2ff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
-  .cabSearch2{
-    width: 100%;
-    background: #e9e2ff;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 0 10rem;
-  }
-  
-  .radioInputCol2{
-    margin: 0 5px;
-  }
-.cabSearch2Inner{
+.radioInputCol2 {
+  margin: 0 5px;
+}
+.cabSearch2Inner {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   margin-bottom: 8px;
 }
-.cabSearch2btn{  
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-    background-color: #7142ff;
-    border: 0;
-    font-weight: 600;
-    color: white;
-    margin: 0 10px;
-    margin-bottom: 8px;
-  }
-  
-  .css-13cymwt-control{   
-    font-size: 15px;
-  }
+.cabSearch2btn {
+  width: 100px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #7142ff;
+  border: 0;
+  font-weight: 600;
+  color: white;
+  margin: 0 10px;
+}
 
-  .cabSearch2Inner label{
-    font-size: 15px;
-    font-weight: 600;
-  }
-  .cabSearch2Inner .css-13cymwt-control{
-    border-radius: 5px !important;
-    border: 1px solid black !important;
-    background-color: white !important;
-    font-size: 15px !important;
-    font-weight: 600;
+.cabSearch2Inner2date {
+  display: flex;
+  gap: 1rem;
+}
+
+.css-13cymwt-control {
+  font-size: 15px;
+}
+
+.cabSearch2Inner label {
+  font-size: 15px;
+  font-weight: 600;
+}
+.cabSearch2Inner .css-13cymwt-control {
+  border-radius: 5px !important;
+  border: 1px solid black !important;
+  background-color: white !important;
+  font-size: 15px !important;
+  font-weight: 600;
 }
 .cabSearch2Inner .react-datepicker__input-container {
   font-size: 15px;
-    font-weight: 600;
+  font-weight: 600;
 }
 .cabSearch2Inner .react-datepicker-wrapper {
   display: flex;
@@ -54,12 +60,167 @@
   border: 0;
   width: 230px;
 }
-.cabSearch2Inner .react-datepicker__input-container input{
-    width: 230px;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 6px 5px;
-    font-size: 15px;
-    font-weight: 600;
+.cabSearch2Inner .react-datepicker__input-container input {
+  width: 230px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 6px 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.cabSearch2Inner2 {
+  display: none;
+  position: relative;
 }
 
+.backbtn {
+  position: absolute;
+  font-size: 18px;
+  left: -40px;
+  display: none;
+}
+
+.cabSearch2Inner2 p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.cabSearch2Inner2Places {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabSearch2Inner2btn {
+  font-size: 15px;
+  font-weight: 600;
+  color: #7142ff;
+  cursor: pointer;
+}
+.radioInputCol4 .css-qbdosj-Input {
+  height: 30px;
+}
+.cabSearch2Inner2date {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid gray;
+}
+.radioInputCol4 {
+  margin: 5px 0;
+}
+.radioInputCol4 label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.radioInputCol4 input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.radioInputCol3 {
+  width: 200px;
+}
+.radioInputCol4btn {
+  background-color: #7142f8;
+  border: none;
+}
+
+@media all and (max-width: 1025px) {
+  .cabSearch2 {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .cabSearch2Inner {
+    display: none;
+  }
+  .backbtn {
+    position: absolute;
+    font-size: 18px;
+    left: -140px;
+    top: -8px;
+    display: block;
+  }
+  .cabSearch2Inner2 {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem 0;
+  }
+  .radioInputCol3 label {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .cabSearch2Inner2date {
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .radioInputCol3 input {
+    width: 200px;
+    height: 35px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 0;
+  }
+}
+
+@media all and (max-width: 426px) {
+  .backbtn {
+    font-size: 18px;
+    left: -64px;
+    top: -8px;
+  }
+  .cabSearch2Inner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .radioInputCol3 {
+    width: 230px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .backbtn {
+    font-size: 18px;
+    left: -40px;
+    top: -8px;
+  }
+}
+
+@media all and (max-width: 321px) {
+  .backbtn {
+    font-size: 18px;
+    left: -30px;
+    top: -8px;
+  }
+  .cabSearch2Inner2 .react-datepicker__time-container {
+    float: right;
+    border-left: 1px solid #aeaeae;
+    width: 75px;
+    height: 200px;
+  }
+  .cabSearch2Inner2 .css-13cymwt-control {
+    font-size: 13px !important;
+  }
+  .cabSearch2Inner2 label {
+    font-size: 13px;
+  }
+  .cabSearch2Inner2 input {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .radioInputCol3 input {
+    width: 190px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .cabSearch2Inner2date {
+    gap: 0;
+  }
+}

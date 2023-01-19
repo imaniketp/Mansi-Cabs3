@@ -10,7 +10,6 @@ import { RxCross2 } from "react-icons/rx";
 import { AiOutlineDown } from "react-icons/ai";
 import Slider from "react-slick";
 import "./Transfer.css";
-import ModifyCabs from "./ModifyCabs";
 
 function Transfer() {
   const [showView, setShowView] = useState(false);
@@ -43,7 +42,6 @@ function Transfer() {
 
   return (
     <>
-    <ModifyCabs />
     <Container fluid className="transfer0">
       <Container fluid="md">
         <Row>

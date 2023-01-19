@@ -9,6 +9,8 @@ import { BiTrip } from "react-icons/bi";
 import { BsCircleFill } from "react-icons/bs";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import DatePicker from "react-datepicker";
+import bannerbg from '../../Assets/main bg.jpg'
+import styled from 'styled-components';
 
 const options = [
   { value: "mumbai", label: "Mumbai" },
@@ -56,6 +58,14 @@ const packages = [
   { value: "4hr40km", label: "2 Hr 40km" },
   { value: "5hr50km", label: "2 Hr 50km" },
 ];
+
+const BannerDiv = styled.div`
+background-image: url('${bannerbg}')!important;
+background-size: cover;
+background-position: 100%;
+padding: 4rem 0;
+padding-top: 10rem;
+`
 
 function Banner() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -161,8 +171,8 @@ function Banner() {
   
 
   return (
-    <section className="p-0 hero__slider-section" id="chilla">
-
+    <BannerDiv className="p-0 hero__slider-section">
+      {/* <img src={bannerbg} alt="" className="bannerbgimg" /> */}
       <div className="hero__form">
         <Container className="bannermain">
           
@@ -521,7 +531,7 @@ function Banner() {
           </div>
         </Container>
       </div>
-    </section>
+    </BannerDiv>
   );
 }
 

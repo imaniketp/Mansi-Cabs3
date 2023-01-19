@@ -8,14 +8,12 @@ import Places from '../components/places/Places'
 import PlacesSlider from '../components/places/PlacesSlider'
 import Offers from '../components/offers/Offers'
 import MainServices from '../components/mainServices/MainServices'
-import { Container } from 'react-bootstrap'
 
 
 function Home() {
   return (
     <>
     <Banner/>
-    <Container fluid='md' className='homeContainer'>
         <Offers />
         <MainServices />
         <Services2 />
@@ -24,7 +22,6 @@ function Home() {
         <Why />
         <PlacesSlider />
         <Places />
-    </Container>
     </>
   )
 }

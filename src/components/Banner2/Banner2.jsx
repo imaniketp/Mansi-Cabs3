@@ -3,12 +3,15 @@ import { Row ,Col} from 'react-bootstrap'
 import './Banner2.css'
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
+import tajmahal from '../../Assets/tajmahal.jpg'
 
 function Banner2() {
     const [counterOn, setCounterOn] = useState(false);
   return (
     <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
    <div className='banner2'>
+   <img src={tajmahal} alt="" className="banner2bgimg" />
+
     <div className='banner2-second'>
     <Row>
         <Col className='banner2-left' md={6}>

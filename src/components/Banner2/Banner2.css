@@ -1,7 +1,40 @@
+.banner2bgimg {
+  width: 1168px;
+  height: 160px;
+  position: absolute;
+  border-radius: 15px;
+}
+@media all and (max-width: 1025px) {
+  .banner2bgimg {
+    width: 808px;
+    height: 160px;
+  }
+}
+@media all and (max-width: 769px) {
+  .banner2bgimg {
+    width: 568px;
+    height: 160px;
+  }
+}
+@media all and (max-width: 426px) {
+  .banner2bgimg {
+    width: 400px;
+    height: 192px;
+  }
+}
+@media all and (max-width: 376px) {
+  .banner2bgimg {
+    width: 352px;
+    height: 192px;
+  }
+}
+@media all and (max-width: 321px) {
+  .banner2bgimg {
+    width: 296px;
+    height: 240px;
+  }
+}
 .banner2 {
-  background-image: url("../../Assets/tajmahal.jpg");
-  background-size: cover;
-  background-position: 100% center;
   margin: 4rem;
   border-radius: 15px;
   margin-bottom: 2rem;
@@ -40,6 +73,8 @@
 }
 
 .banner2-second {
+  position: relative;
+  z-index: 1;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   padding: 2rem;

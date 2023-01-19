@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { useRef } from "react";
 import "./MainServices.css";
-import { Col, Row } from "react-bootstrap";
 import airport from "../../Assets/airport.jpg";
 import round from "../../Assets/round.jpg";
 import rental from "../../Assets/rental.jpg";
@@ -24,13 +22,12 @@ import rating from "../../Assets/ratings.png";
 import { Link } from "react-router-dom";
 
 function MainServices() {
-  const serviceslider = useRef(null);
 
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
-    speed: 5000,
+    autoplay: false,
+    speed: 1000,
     autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -45,7 +42,7 @@ function MainServices() {
       <div className="outerServiceSlider">
         <div className="servicesliderControls">
           <div className="mainServiceslider">
-            <Slider {...settings} ref={serviceslider}>
+            <Slider {...settings}>
               <div className="serviceslides">
                 <div className="innerServiceSlider1">
                   <h2>ROUNDTRIP CABS</h2>
@@ -53,11 +50,11 @@ function MainServices() {
                     <img src={car} alt="" />
                   </div>
                 </div>
-                <Row className="innerServiceSlider2">
-                  <Col className="innerServiceSlider2Col1" md={6}>
+                <div className="innerServiceSlider2">
+                  <div className="innerServiceSlider2Col1" md={6}>
                     <img src={round} alt="" />
-                  </Col>
-                  <Col className="innerServiceSlider2Col2" md={6}>
+                  </div>
+                  <div className="innerServiceSlider2Col2" md={6}>
                     <p>
                       Our Premium Round Trip Services Will Pamper You With An
                       Absolutely
@@ -68,7 +65,6 @@ function MainServices() {
                         Memorable. Affordable Luxury, As We'd Like To Call it.
                       </span>
                     </p>
-                    {/* <h6>Read more.</h6> */}
 
                     <div className="pranay">
                       <div className="servicecol2outerDiv">
@@ -98,8 +94,8 @@ function MainServices() {
                         </Link>
                       </div>
                     </div>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
               </div>
 
               <div className="serviceslides">
@@ -109,11 +105,11 @@ function MainServices() {
                     <img src={highwayy} alt="" />
                   </div>
                 </div>
-                <Row className="innerServiceSlider2">
-                  <Col className="innerServiceSlider2Col1" md={6}>
+                <div className="innerServiceSlider2">
+                  <div className="innerServiceSlider2Col1" md={6}>
                     <img src={caronroad} alt="" />
-                  </Col>
-                  <Col className="innerServiceSlider2Col2" md={6}>
+                  </div>
+                  <div className="innerServiceSlider2Col2" md={6}>
                     <p>
                       Our Premium Round Trip Services Will Pamper You With An
                       Absolutely
@@ -124,7 +120,6 @@ function MainServices() {
                         Memorable. Affordable Luxury, As We'd Like To Call it.
                       </span>
                     </p>
-                    {/* <h6>Read more.</h6> */}
 
                     <div className="pranay">
                       <div className="servicecol2outerDiv">
@@ -153,8 +148,8 @@ function MainServices() {
                       </Link>
                       </div>
                     </div>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
               </div>
 
               <div className="serviceslides">
@@ -164,11 +159,11 @@ function MainServices() {
                     <img src={turn} alt="" />
                   </div>
                 </div>
-                <Row className="innerServiceSlider2">
-                  <Col className="innerServiceSlider2Col1" md={6}>
+                <div className="innerServiceSlider2">
+                  <div className="innerServiceSlider2Col1" md={6}>
                     <img src={rental} alt="" />
-                  </Col>
-                  <Col className="innerServiceSlider2Col2" md={6}>
+                  </div>
+                  <div className="innerServiceSlider2Col2" md={6}>
                     <p>
                       Our Premium Round Trip Services Will Pamper You With An
                       Absolutely
@@ -179,7 +174,6 @@ function MainServices() {
                         Memorable. Affordable Luxury, As We'd Like To Call it.
                       </span>
                     </p>
-                    {/* <h6>Read more.</h6> */}
                     <div className="pranay">
                       <div className="servicecol2outerDiv">
                         <div className="servicecol2innerdiv">
@@ -207,8 +201,8 @@ function MainServices() {
                       </Link>
                       </div>
                     </div>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
               </div>
 
               <div className="serviceslides">
@@ -218,11 +212,11 @@ function MainServices() {
                     <img src={route} alt="" />
                   </div>
                 </div>
-                <Row className="innerServiceSlider2">
-                  <Col className="innerServiceSlider2Col1" md={6}>
+                <div className="innerServiceSlider2">
+                  <div className="innerServiceSlider2Col1" md={6}>
                     <img src={airport} alt="" />
-                  </Col>
-                  <Col className="innerServiceSlider2Col2" md={6}>
+                  </div>
+                  <div className="innerServiceSlider2Col2" md={6}>
                     <p>
                       Our Premium Round Trip Services Will Pamper You With An
                       Absolutely
@@ -233,7 +227,6 @@ function MainServices() {
                         Memorable. Affordable Luxury, As We'd Like To Call it.
                       </span>
                     </p>
-                    {/* <h6>Read more.</h6> */}
                     <div className="pranay">
                       <div className="servicecol2outerDiv">
                         <div className="servicecol2innerdiv">
@@ -261,8 +254,8 @@ function MainServices() {
                       </Link>
                       </div>
                     </div>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
               </div>
             </Slider>
           </div>
